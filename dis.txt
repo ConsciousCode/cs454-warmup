@@ -1,0 +1,13444 @@
+MOV 3, 2, 0
+ADD 3, 0, 0
+LDI 1, 0x14
+LDI 2, '['
+LDI 3, '5'
+LDI 0, 0x0d
+PRG 6, 0
+MOV 0, 0, 0
+DIV 3, 2, 0
+ADD 3, 0, 0
+PRG 6, 1
+PRG 6, 1
+PRG 6, 1
+PRG 6, 2
+PRG 6, 3
+PRG 6, 3
+PRG 6, 3
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+LDI 7, 'P'
+LDI 0, 'O'
+LDI 2, 'L'
+LDI 3, 'A'
+LDI 1, 'G'
+LDI 5, 'D'
+LDI 4, 'R'
+OUT 2
+OUT 0
+OUT 3
+OUT 5
+OUT 7
+OUT 4
+OUT 0
+OUT 1
+LDI 1, ' '
+OUT 1
+LDI 4, 'o'
+OUT 4
+LDI 7, 'f'
+OUT 7
+OUT 7
+OUT 1
+LDI 7, '('
+OUT 7
+LDI 7, 'l'
+OUT 7
+OUT 4
+LDI 7, 'w'
+OUT 7
+LDI 7, ')'
+OUT 7
+HLT 
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+LDI 0, 'L'
+LDI 7, 'A'
+LDI 2, 'D'
+LDI 3, 'R'
+LDI 1, 'G'
+LDI 4, 'P'
+LDI 5, 'O'
+OUT 0
+OUT 5
+OUT 7
+OUT 2
+OUT 4
+OUT 3
+OUT 5
+OUT 1
+LDI 1, ' '
+OUT 1
+LDI 3, 'o'
+OUT 3
+LDI 3, 'f'
+OUT 3
+OUT 3
+OUT 1
+LDI 3, '('
+OUT 3
+LDI 3, 'h'
+OUT 3
+LDI 1, 'i'
+OUT 1
+LDI 1, 'g'
+OUT 1
+OUT 3
+LDI 1, ')'
+OUT 1
+HLT 
+LDI 0, 's'
+PRG 6, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 3, 3, 2
+NAND 3, 2, 2
+NAND 3, 2, 4
+NAND 3, 3, 6
+NAND 3, 2, 6
+NAND 3, 3, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 2, 4, 0
+MOV 1, 6, 0
+HLT 
+LDI 0, 0x8be
+LDI 1, 'w'
+MOV 1, 0, 6
+PRG 6, 1
+LDI 4, 0x8d
+LDI 5, '{'
+MOV 4, 5, 6
+PRG 6, 4
+LDI 2, 'N'
+LDI 0, 'o'
+LDI 3, 'A'
+LDI 5, 'e'
+LDI 1, 'D'
+LDI 7, 'r'
+LDI 4, ' '
+OUT 2
+OUT 3
+OUT 2
+OUT 1
+OUT 4
+OUT 5
+OUT 7
+OUT 7
+OUT 0
+OUT 7
+HLT 
+LDI 0, 0x00
+LDI 1, 0x00
+NAND 2, 0, 1
+LDI 4, '{'
+LDI 5, 0x94
+MOV 4, 5, 2
+PRG 6, 4
+LDI 0, 0x00
+LDI 1, 0x01
+NAND 2, 0, 1
+NAND 3, 1, 0
+NAND 0, 2, 3
+LDI 4, '{'
+LDI 5, 0x9d
+MOV 5, 4, 0
+PRG 6, 5
+LDI 0, '*'
+NAND 5, 0, 0
+NAND 1, 0, 0
+NAND 1, 5, 1
+NAND 5, 0, 0
+NAND 1, 5, 1
+NAND 1, 1, 1
+LDI 4, '{'
+LDI 5, 0xa8
+MOV 5, 4, 1
+PRG 6, 5
+LDI 4, 0xbc
+LDI 5, 0xac
+MOV 4, 5, 6
+PRG 6, 4
+LDI 0, 'r'
+LDI 7, 'o'
+LDI 3, ' '
+LDI 1, 'e'
+LDI 2, 'D'
+LDI 5, 'A'
+OUT 5
+OUT 2
+OUT 2
+OUT 3
+OUT 1
+OUT 0
+OUT 0
+OUT 7
+OUT 0
+HLT 
+LDI 0, 0x00
+LDI 1, 0xea
+ADD 2, 0, 1
+LDI 4, 0xea
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xac
+LDI 5, 0xca
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 'H'
+LDI 1, 0x33f
+ADD 2, 0, 1
+LDI 4, 0x387
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xac
+LDI 5, 0xd8
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 'H'
+LDI 1, 0x33f
+ADD 0, 0, 1
+LDI 4, 0x387
+NAND 5, 0, 0
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 0, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xac
+LDI 5, 0xe6
+MOV 5, 4, 3
+PRG 6, 5
+LDI 4, 0xfb
+LDI 5, 0xea
+MOV 4, 5, 6
+PRG 6, 4
+LDI 5, 'o'
+LDI 7, 'L'
+LDI 1, 'r'
+LDI 3, 'U'
+LDI 2, 'e'
+LDI 0, ' '
+LDI 4, 'M'
+OUT 4
+OUT 3
+OUT 7
+OUT 0
+OUT 2
+OUT 1
+OUT 1
+OUT 5
+OUT 1
+HLT 
+LDI 0, '{'
+LDI 1, 0x00
+MUL 2, 0, 1
+LDI 4, 0x00
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xea
+LDI 5, 0x109
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 0x02
+LDI 1, 0x07
+MUL 2, 0, 1
+LDI 4, 0x0e
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xea
+LDI 5, 0x117
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 0x02
+LDI 1, 0x07
+MUL 1, 0, 1
+LDI 4, 0x0e
+NAND 5, 1, 1
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 1, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xea
+LDI 5, 0x125
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 0xf0000
+LDI 1, 0x10000
+MUL 2, 0, 1
+LDI 4, 0x00
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0xea
+LDI 5, 0x133
+MOV 5, 4, 3
+PRG 6, 5
+LDI 4, 0x159
+LDI 5, 0x137
+MOV 4, 5, 6
+PRG 6, 4
+LDI 4, 't'
+LDI 1, 'a'
+LDI 5, 'O'
+LDI 3, 'r'
+LDI 0, 'g'
+LDI 2, 'h'
+LDI 7, 'o'
+OUT 5
+OUT 3
+OUT 4
+OUT 2
+OUT 7
+OUT 0
+OUT 3
+OUT 1
+LDI 0, 'p'
+OUT 0
+OUT 2
+LDI 0, 'y'
+OUT 0
+LDI 0, ' '
+OUT 0
+LDI 0, 'f'
+OUT 0
+OUT 1
+LDI 0, 'i'
+OUT 0
+LDI 0, 'l'
+OUT 0
+LDI 0, 'e'
+OUT 0
+LDI 0, 'd'
+OUT 0
+HLT 
+NAND 0, 6, 6
+LDI 0, 0x00
+LDI 4, 0x137
+LDI 5, 0x15f
+MOV 5, 4, 0
+PRG 6, 5
+LDI 0, 0x1ffffff
+LDI 1, 0x1ff
+LDI 2, 0x10000
+MUL 1, 1, 2
+LDI 2, 0xffff
+ADD 1, 1, 2
+NAND 4, 0, 0
+NAND 3, 1, 1
+NAND 3, 4, 3
+NAND 4, 0, 1
+NAND 3, 4, 3
+NAND 3, 3, 3
+LDI 4, 0x137
+LDI 5, 0x16f
+MOV 5, 4, 3
+PRG 6, 5
+LDI 4, 0x192
+LDI 5, 0x173
+MOV 4, 5, 6
+PRG 6, 4
+LDI 5, 'I'
+LDI 4, 'o'
+LDI 3, 'D'
+LDI 1, 'e'
+LDI 7, 'V'
+LDI 0, 'r'
+LDI 2, ' '
+OUT 3
+OUT 5
+OUT 7
+OUT 2
+OUT 1
+OUT 0
+OUT 0
+OUT 4
+OUT 0
+HLT 
+LDI 0, 0x315
+LDI 1, 0x01
+DIV 2, 0, 1
+LDI 4, 0x315
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0x173
+LDI 5, 0x192
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 0x01
+NAND 1, 6, 6
+DIV 2, 0, 1
+LDI 4, 0x00
+NAND 5, 2, 2
+NAND 3, 4, 4
+NAND 3, 5, 3
+NAND 5, 2, 4
+NAND 3, 5, 3
+NAND 3, 3, 3
+LDI 4, 0x173
+LDI 5, 0x1a0
+MOV 5, 4, 3
+PRG 6, 5
+LDI 0, 0x586
+LDA 1, 6, 0
+LDI 2, 0x9fbf1
+NAND 4, 1, 1
+NAND 3, 2, 2
+NAND 3, 4, 3
+NAND 4, 1, 2
+NAND 3, 4, 3
+NAND 3, 3, 3
+LDI 4, 0x898
+LDI 5, 0x1ad
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0xf0f0
+STA 6, 0, 2
+LDA 1, 6, 0
+NAND 4, 1, 1
+NAND 3, 2, 2
+NAND 3, 4, 3
+NAND 4, 1, 2
+NAND 3, 4, 3
+NAND 3, 3, 3
+LDI 4, 0x869
+LDI 5, 0x1ba
+MOV 5, 4, 3
+PRG 6, 5
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'z'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, '0'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+NEW 0, 6
+LDI 4, 0x83f
+LDI 5, 0x207
+MOV 4, 5, 0
+PRG 6, 4
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'b'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'z'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, '0'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+DEL 0
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'z'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, '1'
+OUT 6
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 1, 0x0b
+NEW 0, 1
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'I'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'x'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 2, 0x00
+LDA 1, 0, 2
+LDI 4, 0x820
+LDI 5, 0x2e0
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x01
+LDA 1, 0, 2
+LDI 4, 0x801
+LDI 5, 0x2e6
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x02
+LDA 1, 0, 2
+LDI 4, 0x7e2
+LDI 5, 0x2ec
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x03
+LDA 1, 0, 2
+LDI 4, 0x7c3
+LDI 5, 0x2f2
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x04
+LDA 1, 0, 2
+LDI 4, 0x7a4
+LDI 5, 0x2f8
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x05
+LDA 1, 0, 2
+LDI 4, 0x785
+LDI 5, 0x2fe
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x06
+LDA 1, 0, 2
+LDI 4, 0x766
+LDI 5, 0x304
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x07
+LDA 1, 0, 2
+LDI 4, 0x747
+LDI 5, 0x30a
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x08
+LDA 1, 0, 2
+LDI 4, 0x728
+LDI 5, 0x310
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x09
+LDA 1, 0, 2
+LDI 4, 0x709
+LDI 5, 0x316
+MOV 5, 4, 1
+PRG 6, 5
+LDI 2, 0x0a
+LDA 1, 0, 2
+LDI 4, 0x6ea
+LDI 5, 0x31c
+MOV 5, 4, 1
+PRG 6, 5
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 2, 0x00
+LDI 1, 0x0b
+STA 0, 2, 1
+LDI 2, 0x01
+LDI 1, 0x0c
+STA 0, 2, 1
+LDI 2, 0x02
+LDI 1, 0x0d
+STA 0, 2, 1
+LDI 2, 0x03
+LDI 1, 0x0e
+STA 0, 2, 1
+LDI 2, 0x04
+LDI 1, 0x0f
+STA 0, 2, 1
+LDI 2, 0x05
+LDI 1, 0x10
+STA 0, 2, 1
+LDI 2, 0x06
+LDI 1, 0x11
+STA 0, 2, 1
+LDI 2, 0x07
+LDI 1, 0x12
+STA 0, 2, 1
+LDI 2, 0x08
+LDI 1, 0x13
+STA 0, 2, 1
+LDI 2, 0x09
+LDI 1, 0x14
+STA 0, 2, 1
+LDI 2, 0x0a
+LDI 1, 0x15
+STA 0, 2, 1
+LDI 6, 'c'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'k'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 2, 0x00
+LDA 1, 0, 2
+LDI 4, 0x0b
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x6d1
+LDI 5, 0x3e0
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x01
+LDA 1, 0, 2
+LDI 4, 0x0c
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x6b8
+LDI 5, 0x3eb
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x02
+LDA 1, 0, 2
+LDI 4, 0x0d
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x69f
+LDI 5, 0x3f6
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x03
+LDA 1, 0, 2
+LDI 4, 0x0e
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x686
+LDI 5, 0x401
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x04
+LDA 1, 0, 2
+LDI 4, 0x0f
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x66d
+LDI 5, 0x40c
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x05
+LDA 1, 0, 2
+LDI 4, 0x10
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x654
+LDI 5, 0x417
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x06
+LDA 1, 0, 2
+LDI 4, 0x11
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x63b
+LDI 5, 0x422
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x07
+LDA 1, 0, 2
+LDI 4, 0x12
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x622
+LDI 5, 0x42d
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x08
+LDA 1, 0, 2
+LDI 4, 0x13
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x609
+LDI 5, 0x438
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x09
+LDA 1, 0, 2
+LDI 4, 0x14
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x5f0
+LDI 5, 0x443
+MOV 5, 4, 3
+PRG 6, 5
+LDI 2, 0x0a
+LDA 1, 0, 2
+LDI 4, 0x15
+NAND 5, 1, 1
+ADD 3, 4, 5
+LDI 5, 0x01
+ADD 3, 5, 3
+LDI 4, 0x5d7
+LDI 5, 0x44e
+MOV 5, 4, 3
+PRG 6, 5
+DEL 0
+LDI 0, 0x08
+NEW 7, 0
+LDI 0, 0x03
+LDI 1, 0xcafe
+STA 7, 0, 1
+LDI 6, 't'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'A'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, '('
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, ','
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, ')'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 0, 0xfa0
+NEW 0, 0
+LDI 1, 0xf9f
+STA 0, 1, 1
+DEL 0
+LDI 6, 'c'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 2, 0x04
+NEW 0, 2
+NEW 1, 2
+NAND 4, 1, 1
+ADD 2, 0, 4
+LDI 4, 0x01
+ADD 2, 4, 2
+LDI 4, 0x5b8
+LDI 5, 0x4ec
+MOV 4, 5, 2
+PRG 6, 4
+LDI 6, 'p'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+NAND 4, 0, 0
+NAND 2, 1, 1
+NAND 2, 4, 2
+NAND 4, 0, 1
+NAND 2, 4, 2
+NAND 2, 2, 2
+LDI 1, 0x00
+STA 0, 1, 2
+LDA 3, 0, 1
+NAND 4, 0, 0
+NAND 1, 3, 3
+NAND 1, 4, 1
+NAND 4, 0, 3
+NAND 1, 4, 1
+NAND 1, 1, 1
+DEL 0
+DEL 1
+LDI 6, 'c'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'k'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 0, 0x03
+LDA 2, 7, 0
+LDI 1, 0xcafe
+NAND 4, 2, 2
+ADD 3, 1, 4
+LDI 4, 0x01
+ADD 3, 4, 3
+LDI 4, 0x589
+LDI 5, 0x55f
+MOV 5, 4, 3
+PRG 6, 5
+LDI 6, 's'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'k'
+OUT 6
+LDI 6, '!'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 1, 0x8d8
+PRG 6, 1
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 7, 6, 1
+MOV 0, 0, 0
+MOV 0, 0, 0
+LDI 7, 'D'
+LDI 2, ' '
+LDI 4, 'N'
+LDI 5, '/'
+LDI 1, 'X'
+LDI 3, 'E'
+LDI 0, 'I'
+OUT 0
+OUT 4
+OUT 7
+OUT 3
+OUT 1
+OUT 2
+OUT 5
+OUT 2
+LDI 5, 'A'
+OUT 5
+LDI 5, 'M'
+OUT 5
+OUT 3
+OUT 4
+OUT 7
+OUT 2
+LDI 5, 'o'
+OUT 5
+LDI 1, 'l'
+OUT 1
+LDI 3, 'd'
+OUT 3
+OUT 2
+LDI 3, 'a'
+OUT 3
+OUT 1
+OUT 1
+OUT 5
+LDI 5, 'c'
+OUT 5
+OUT 2
+LDI 5, 'f'
+OUT 5
+OUT 3
+LDI 5, 'i'
+OUT 5
+OUT 1
+LDI 5, 0x0a
+OUT 5
+HLT 
+LDI 0, 'n'
+LDI 3, 'A'
+LDI 7, 'O'
+LDI 4, 'o'
+LDI 1, 'L'
+LDI 5, 'C'
+LDI 2, ' '
+OUT 3
+OUT 1
+OUT 1
+OUT 7
+OUT 5
+OUT 2
+OUT 0
+OUT 4
+LDI 4, 't'
+OUT 4
+OUT 2
+LDI 4, 'u'
+OUT 4
+OUT 0
+LDI 0, 'i'
+OUT 0
+LDI 0, 'q'
+OUT 0
+OUT 4
+LDI 0, 'e'
+OUT 0
+LDI 0, 0x0a
+OUT 0
+HLT 
+LDI 2, 'E'
+LDI 0, ' '
+LDI 3, 'N'
+LDI 4, '/'
+LDI 1, 'D'
+LDI 7, 'I'
+LDI 5, 'X'
+OUT 7
+OUT 3
+OUT 1
+OUT 2
+OUT 5
+OUT 0
+OUT 4
+OUT 0
+LDI 4, 'A'
+OUT 4
+LDI 4, 'M'
+OUT 4
+OUT 2
+OUT 3
+OUT 1
+LDI 4, 0x0a
+OUT 4
+HLT 
+LDI 2, 'E'
+LDI 5, ' '
+LDI 0, 'D'
+LDI 1, 'X'
+LDI 7, '/'
+LDI 3, 'I'
+LDI 4, 'N'
+OUT 3
+OUT 4
+OUT 0
+OUT 2
+OUT 1
+OUT 5
+OUT 7
+OUT 5
+LDI 7, 'A'
+OUT 7
+LDI 7, 'M'
+OUT 7
+OUT 2
+OUT 4
+OUT 0
+LDI 7, 0x0a
+OUT 7
+HLT 
+LDI 1, '/'
+LDI 4, 'D'
+LDI 5, 'X'
+LDI 0, 'E'
+LDI 7, 'N'
+LDI 2, ' '
+LDI 3, 'I'
+OUT 3
+OUT 7
+OUT 4
+OUT 0
+OUT 5
+OUT 2
+OUT 1
+OUT 2
+LDI 1, 'A'
+OUT 1
+LDI 1, 'M'
+OUT 1
+OUT 0
+OUT 7
+OUT 4
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 3, ' '
+LDI 2, 'E'
+LDI 0, 'N'
+LDI 5, 'D'
+LDI 7, 'X'
+LDI 1, '/'
+LDI 4, 'I'
+OUT 4
+OUT 0
+OUT 5
+OUT 2
+OUT 7
+OUT 3
+OUT 1
+OUT 3
+LDI 1, 'A'
+OUT 1
+LDI 1, 'M'
+OUT 1
+OUT 2
+OUT 0
+OUT 5
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 2, ' '
+LDI 3, 'N'
+LDI 5, 'E'
+LDI 0, 'D'
+LDI 4, 'X'
+LDI 7, 'I'
+LDI 1, '/'
+OUT 7
+OUT 3
+OUT 0
+OUT 5
+OUT 4
+OUT 2
+OUT 1
+OUT 2
+LDI 1, 'A'
+OUT 1
+LDI 1, 'M'
+OUT 1
+OUT 5
+OUT 3
+OUT 0
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 1, ' '
+LDI 4, 'I'
+LDI 2, 'D'
+LDI 3, 'E'
+LDI 0, 'N'
+LDI 7, 'X'
+LDI 5, '/'
+OUT 4
+OUT 0
+OUT 2
+OUT 3
+OUT 7
+OUT 1
+OUT 5
+OUT 1
+LDI 5, 'A'
+OUT 5
+LDI 5, 'M'
+OUT 5
+OUT 3
+OUT 0
+OUT 2
+LDI 5, 0x0a
+OUT 5
+HLT 
+LDI 0, 'I'
+LDI 7, 'N'
+LDI 1, ' '
+LDI 5, 'E'
+LDI 2, '/'
+LDI 4, 'D'
+LDI 3, 'X'
+OUT 0
+OUT 7
+OUT 4
+OUT 5
+OUT 3
+OUT 1
+OUT 2
+OUT 1
+LDI 2, 'A'
+OUT 2
+LDI 2, 'M'
+OUT 2
+OUT 5
+OUT 7
+OUT 4
+LDI 2, 0x0a
+OUT 2
+HLT 
+LDI 7, '/'
+LDI 0, ' '
+LDI 5, 'D'
+LDI 3, 'I'
+LDI 1, 'E'
+LDI 2, 'N'
+LDI 4, 'X'
+OUT 3
+OUT 2
+OUT 5
+OUT 1
+OUT 4
+OUT 0
+OUT 7
+OUT 0
+LDI 7, 'A'
+OUT 7
+LDI 7, 'M'
+OUT 7
+OUT 1
+OUT 2
+OUT 5
+LDI 7, 0x0a
+OUT 7
+HLT 
+LDI 3, 'I'
+LDI 0, 'X'
+LDI 1, '/'
+LDI 7, 'D'
+LDI 4, 'E'
+LDI 5, ' '
+LDI 2, 'N'
+OUT 3
+OUT 2
+OUT 7
+OUT 4
+OUT 0
+OUT 5
+OUT 1
+OUT 5
+LDI 1, 'A'
+OUT 1
+LDI 1, 'M'
+OUT 1
+OUT 4
+OUT 2
+OUT 7
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 7, 'X'
+LDI 0, 'I'
+LDI 4, 'N'
+LDI 1, '/'
+LDI 2, 'E'
+LDI 5, ' '
+LDI 3, 'D'
+OUT 0
+OUT 4
+OUT 3
+OUT 2
+OUT 7
+OUT 5
+OUT 1
+OUT 5
+LDI 1, 'A'
+OUT 1
+LDI 1, 'M'
+OUT 1
+OUT 2
+OUT 4
+OUT 3
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 2, ' '
+LDI 3, 'D'
+LDI 1, 'X'
+LDI 0, 'N'
+LDI 7, '/'
+LDI 5, 'E'
+LDI 4, 'I'
+OUT 4
+OUT 0
+OUT 3
+OUT 5
+OUT 1
+OUT 2
+OUT 7
+OUT 2
+LDI 7, 'A'
+OUT 7
+LDI 7, 'M'
+OUT 7
+OUT 5
+OUT 0
+OUT 3
+LDI 7, 0x0a
+OUT 7
+HLT 
+LDI 1, 'y'
+LDI 0, 'a'
+LDI 4, 't'
+LDI 2, 'o'
+LDI 5, 'r'
+LDI 3, ' '
+LDI 7, 'n'
+OUT 0
+OUT 5
+OUT 5
+OUT 0
+OUT 1
+OUT 3
+OUT 7
+OUT 2
+OUT 4
+OUT 3
+LDI 1, 'i'
+OUT 1
+OUT 7
+OUT 1
+OUT 4
+OUT 3
+OUT 4
+OUT 2
+OUT 3
+LDI 1, '0'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 2, 't'
+LDI 7, 'o'
+LDI 1, 'y'
+LDI 3, 'r'
+LDI 5, 'a'
+LDI 0, ' '
+LDI 4, 'n'
+OUT 5
+OUT 3
+OUT 3
+OUT 5
+OUT 1
+OUT 0
+OUT 4
+OUT 7
+OUT 2
+OUT 0
+LDI 1, 'i'
+OUT 1
+OUT 4
+OUT 1
+OUT 2
+OUT 0
+OUT 2
+OUT 7
+OUT 0
+LDI 1, '0'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 2, 'n'
+LDI 1, 'o'
+LDI 0, ' '
+LDI 3, 'y'
+LDI 5, 't'
+LDI 7, 'a'
+LDI 4, 'r'
+OUT 7
+OUT 4
+OUT 4
+OUT 7
+OUT 3
+OUT 0
+OUT 2
+OUT 1
+OUT 5
+OUT 0
+LDI 3, 'i'
+OUT 3
+OUT 2
+OUT 3
+OUT 5
+OUT 0
+OUT 5
+OUT 1
+OUT 0
+LDI 3, '0'
+OUT 3
+LDI 3, 0x0a
+OUT 3
+HLT 
+LDI 2, 't'
+LDI 1, 'y'
+LDI 7, 'o'
+LDI 3, 'a'
+LDI 4, 'n'
+LDI 5, 'r'
+LDI 0, ' '
+OUT 3
+OUT 5
+OUT 5
+OUT 3
+OUT 1
+OUT 0
+OUT 4
+OUT 7
+OUT 2
+OUT 0
+LDI 1, 'i'
+OUT 1
+OUT 4
+OUT 1
+OUT 2
+OUT 0
+OUT 2
+OUT 7
+OUT 0
+LDI 1, '0'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 0, 'n'
+LDI 4, 'y'
+LDI 5, 'o'
+LDI 3, ' '
+LDI 7, 'r'
+LDI 1, 't'
+LDI 2, 'a'
+OUT 2
+OUT 7
+OUT 7
+OUT 2
+OUT 4
+OUT 3
+OUT 0
+OUT 5
+OUT 1
+OUT 3
+LDI 4, 'i'
+OUT 4
+OUT 0
+OUT 4
+OUT 1
+OUT 3
+OUT 1
+OUT 5
+OUT 3
+LDI 4, '0'
+OUT 4
+LDI 4, 0x0a
+OUT 4
+HLT 
+LDI 2, 't'
+LDI 5, 'y'
+LDI 7, 'o'
+LDI 1, 'a'
+LDI 0, ' '
+LDI 3, 'r'
+LDI 4, 'n'
+OUT 1
+OUT 3
+OUT 3
+OUT 1
+OUT 5
+OUT 0
+OUT 4
+OUT 7
+OUT 2
+OUT 0
+LDI 5, 'i'
+OUT 5
+OUT 4
+OUT 5
+OUT 2
+OUT 0
+OUT 2
+OUT 7
+OUT 0
+LDI 5, '0'
+OUT 5
+LDI 5, 0x0a
+OUT 5
+HLT 
+LDI 4, 'n'
+LDI 2, 'r'
+LDI 5, 'y'
+LDI 3, 'o'
+LDI 7, ' '
+LDI 1, 't'
+LDI 0, 'a'
+OUT 0
+OUT 2
+OUT 2
+OUT 0
+OUT 5
+OUT 7
+OUT 4
+OUT 3
+OUT 1
+OUT 7
+LDI 5, 'i'
+OUT 5
+OUT 4
+OUT 5
+OUT 1
+OUT 7
+OUT 1
+OUT 3
+OUT 7
+LDI 5, '0'
+OUT 5
+LDI 5, 0x0a
+OUT 5
+HLT 
+LDI 4, 'a'
+LDI 7, 'n'
+LDI 2, 't'
+LDI 5, 'r'
+LDI 0, ' '
+LDI 1, 'o'
+LDI 3, 'y'
+OUT 4
+OUT 5
+OUT 5
+OUT 4
+OUT 3
+OUT 0
+OUT 7
+OUT 1
+OUT 2
+OUT 0
+LDI 3, 'i'
+OUT 3
+OUT 7
+OUT 3
+OUT 2
+OUT 0
+OUT 2
+OUT 1
+OUT 0
+LDI 3, '0'
+OUT 3
+LDI 3, 0x0a
+OUT 3
+HLT 
+LDI 2, 'y'
+LDI 1, 't'
+LDI 7, 'o'
+LDI 4, 'r'
+LDI 0, ' '
+LDI 3, 'n'
+LDI 5, 'a'
+OUT 5
+OUT 4
+OUT 4
+OUT 5
+OUT 2
+OUT 0
+OUT 3
+OUT 7
+OUT 1
+OUT 0
+LDI 2, 'i'
+OUT 2
+OUT 3
+OUT 2
+OUT 1
+OUT 0
+OUT 1
+OUT 7
+OUT 0
+LDI 2, '0'
+OUT 2
+LDI 2, 0x0a
+OUT 2
+HLT 
+LDI 5, 't'
+LDI 1, 'y'
+LDI 7, 'n'
+LDI 0, 'a'
+LDI 4, 'o'
+LDI 3, 'r'
+LDI 2, ' '
+OUT 0
+OUT 3
+OUT 3
+OUT 0
+OUT 1
+OUT 2
+OUT 7
+OUT 4
+OUT 5
+OUT 2
+LDI 1, 'i'
+OUT 1
+OUT 7
+OUT 1
+OUT 5
+OUT 2
+OUT 5
+OUT 4
+OUT 2
+LDI 1, '0'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 5, 't'
+LDI 3, 'o'
+LDI 0, 'a'
+LDI 2, 'n'
+LDI 7, 'r'
+LDI 1, 'y'
+LDI 4, ' '
+OUT 0
+OUT 7
+OUT 7
+OUT 0
+OUT 1
+OUT 4
+OUT 2
+OUT 3
+OUT 5
+OUT 4
+LDI 1, 'i'
+OUT 1
+OUT 2
+OUT 1
+OUT 5
+OUT 4
+OUT 5
+OUT 3
+OUT 4
+LDI 1, '0'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 2, 'w'
+LDI 7, 'O'
+LDI 4, 'L'
+LDI 3, 'A'
+LDI 0, ' '
+LDI 1, 'n'
+LDI 5, 'e'
+OUT 1
+OUT 5
+OUT 2
+OUT 0
+OUT 3
+OUT 4
+OUT 4
+OUT 7
+LDI 7, 'C'
+OUT 7
+OUT 0
+LDI 7, 'm'
+OUT 7
+LDI 7, 'u'
+OUT 7
+LDI 7, 's'
+OUT 7
+LDI 7, 't'
+OUT 7
+OUT 0
+LDI 7, 'b'
+OUT 7
+OUT 5
+OUT 0
+OUT 1
+LDI 7, 'o'
+OUT 7
+OUT 1
+LDI 7, '-'
+OUT 7
+LDI 7, '0'
+OUT 7
+LDI 7, 0x0a
+OUT 7
+HLT 
+LDI 7, 'I'
+LDI 2, 'x'
+LDI 5, 'd'
+LDI 3, 'A'
+LDI 4, '/'
+LDI 1, 'n'
+LDI 0, 'e'
+OUT 7
+OUT 1
+OUT 5
+OUT 0
+OUT 2
+OUT 4
+OUT 3
+LDI 3, 'm'
+OUT 3
+OUT 0
+OUT 1
+OUT 5
+LDI 3, ' '
+OUT 3
+LDI 4, 'i'
+OUT 4
+OUT 1
+OUT 3
+LDI 2, '0'
+OUT 2
+LDI 2, '-'
+OUT 2
+LDI 2, 'a'
+OUT 2
+LDI 0, 'r'
+OUT 0
+OUT 0
+OUT 2
+LDI 0, 'y'
+OUT 0
+OUT 3
+LDI 0, 'f'
+OUT 0
+OUT 2
+OUT 4
+LDI 0, 'l'
+OUT 0
+LDI 0, 0x0a
+OUT 0
+HLT 
+LDI 7, ' '
+LDI 1, 'n'
+LDI 0, 'd'
+LDI 2, 'i'
+LDI 5, 'x'
+LDI 4, 'e'
+LDI 3, 'I'
+OUT 3
+OUT 1
+OUT 0
+OUT 4
+OUT 5
+OUT 7
+OUT 2
+OUT 1
+OUT 7
+LDI 5, '0'
+OUT 5
+LDI 5, '-'
+OUT 5
+LDI 5, 'a'
+OUT 5
+LDI 4, 'r'
+OUT 4
+OUT 4
+OUT 5
+LDI 4, 'y'
+OUT 4
+OUT 7
+LDI 4, 'f'
+OUT 4
+OUT 5
+OUT 2
+LDI 4, 'l'
+OUT 4
+LDI 4, 0x0a
+OUT 4
+HLT 
+LDI 2, 'o'
+LDI 0, 'e'
+LDI 3, 'g'
+LDI 5, '6'
+LDI 4, 'r'
+LDI 7, 'n'
+LDI 1, ' '
+OUT 4
+OUT 0
+OUT 3
+OUT 1
+OUT 5
+OUT 1
+OUT 7
+OUT 2
+LDI 7, 't'
+OUT 7
+OUT 1
+LDI 7, 'z'
+OUT 7
+OUT 0
+OUT 4
+OUT 2
+LDI 7, 0x0a
+OUT 7
+HLT 
+LDI 6, 0x00
+LDI 2, '0'
+LDI 3, 0x958
+LDI 4, 0x8e6
+LDI 5, 0x8df
+MOV 4, 5, 2
+PRG 6, 4
+NAND 7, 6, 6
+ADD 2, 7, 2
+ADD 0, 3, 2
+LDA 0, 6, 0
+STA 6, 2, 0
+LDI 5, 0x8db
+PRG 6, 5
+LDI 2, 0x2d83
+NEW 0, 2
+LDI 5, 0x988
+LDI 3, 0x8ea
+LDI 1, 0x8f4
+LDI 4, 0x8ee
+MOV 1, 4, 2
+PRG 6, 1
+NAND 7, 6, 6
+ADD 2, 7, 2
+ADD 4, 2, 5
+LDA 4, 6, 4
+STA 0, 2, 4
+PRG 6, 3
+LDI 2, 0x2d83
+LDI 6, 'a'
+OUT 6
+LDI 6, 'b'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+PRG 0, 6
+LDI 3, 'd'
+LDI 1, 'l'
+LDI 0, 'o'
+LDI 2, 'r'
+LDI 7, 'p'
+LDI 5, 'a'
+LDI 4, 'g'
+OUT 1
+OUT 0
+OUT 5
+OUT 3
+OUT 7
+OUT 2
+OUT 0
+OUT 4
+LDI 4, ' '
+OUT 4
+OUT 3
+LDI 0, 'i'
+OUT 0
+OUT 3
+LDI 0, 'n'
+OUT 0
+LDI 0, '''
+OUT 0
+LDI 0, 't'
+OUT 0
+OUT 4
+OUT 2
+LDI 0, 'e'
+OUT 0
+OUT 7
+OUT 1
+OUT 5
+LDI 7, 'c'
+OUT 7
+OUT 0
+OUT 4
+LDI 7, '0'
+OUT 7
+OUT 4
+OUT 5
+OUT 2
+OUT 2
+OUT 5
+LDI 7, 'y'
+OUT 7
+HLT 
+LDI 4, 0x03
+PRG 6, 4
+MOV 0, 1, 0
+LDI 6, 's'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 'c'
+OUT 6
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+OUT 6
+LDI 6, '.'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 6, 'v'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'c'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'y'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'h'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'm'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 1, 0x7f
+LDI 4, 0x90
+LDI 5, 0x83
+MOV 4, 5, 2
+PRG 6, 4
+NAND 7, 6, 6
+ADD 2, 7, 2
+LDA 4, 6, 2
+LDA 3, 0, 2
+NAND 7, 4, 4
+ADD 4, 3, 7
+LDI 7, 0x01
+ADD 4, 7, 4
+LDI 3, 0x23a
+LDI 5, 0x8f
+MOV 5, 3, 4
+PRG 6, 5
+PRG 6, 1
+LDI 6, 's'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 'c'
+OUT 6
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+OUT 6
+LDI 6, '.'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 's'
+OUT 6
+LDI 6, 'i'
+OUT 6
+LDI 6, 'n'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 4, 0x17a
+LDI 5, 0xbeef
+STA 6, 4, 5
+LDA 3, 0, 4
+NAND 7, 3, 3
+ADD 3, 5, 7
+LDI 7, 0x01
+ADD 3, 7, 3
+LDI 1, 0x1d8
+LDI 2, 0xd2
+MOV 1, 2, 3
+PRG 6, 1
+LDA 4, 6, 4
+NAND 7, 5, 5
+ADD 4, 4, 7
+LDI 7, 0x01
+ADD 4, 7, 4
+LDI 1, 0x17c
+LDI 2, 0xdb
+MOV 2, 1, 4
+PRG 6, 2
+LDI 4, 0x17b
+LDI 5, 0xca8
+LDI 7, 0x10000
+MUL 5, 7, 5
+LDI 7, 0x8a6e
+ADD 5, 7, 5
+STA 0, 4, 5
+LDA 3, 6, 4
+NAND 7, 3, 3
+ADD 3, 5, 7
+LDI 7, 0x01
+ADD 3, 7, 3
+LDI 1, 0x209
+LDI 2, 0xeb
+MOV 1, 2, 3
+PRG 6, 1
+LDA 4, 0, 4
+NAND 7, 5, 5
+ADD 4, 4, 7
+LDI 7, 0x01
+ADD 4, 7, 4
+LDI 1, 0x1a9
+LDI 2, 0xf4
+MOV 2, 1, 4
+PRG 6, 2
+LDI 6, 's'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 'c'
+OUT 6
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+OUT 6
+LDI 6, '.'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'e'
+OUT 6
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'f'
+OUT 6
+LDI 6, 't'
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'l'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, '.'
+OUT 6
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+DEL 0
+LDI 0, 0x07
+NEW 0, 0
+LDI 1, 0x07
+NEW 1, 1
+LDI 2, 0x07
+NEW 2, 2
+LDI 3, 0x07
+NEW 3, 3
+LDI 4, 0x07
+NEW 4, 4
+LDI 5, 0x07
+NEW 5, 5
+LDI 7, 0x07
+NEW 7, 7
+DEL 0
+DEL 1
+DEL 2
+DEL 3
+DEL 4
+DEL 5
+DEL 7
+LDI 6, 's'
+OUT 6
+LDI 6, 'u'
+OUT 6
+LDI 6, 'c'
+OUT 6
+OUT 6
+LDI 6, 'e'
+OUT 6
+LDI 6, 's'
+OUT 6
+OUT 6
+LDI 6, '.'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 6, 'l'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'a'
+OUT 6
+LDI 6, 'd'
+OUT 6
+LDI 6, 'p'
+OUT 6
+LDI 6, 'r'
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'g'
+OUT 6
+LDI 6, ' '
+OUT 6
+LDI 6, 'o'
+OUT 6
+LDI 6, 'k'
+OUT 6
+LDI 6, '.'
+OUT 6
+LDI 6, 0x0a
+OUT 6
+LDI 6, 0x00
+LDI 0, 0x00
+LDI 1, 0x00
+LDI 2, 0x00
+LDI 3, 0x00
+LDI 5, 0x00
+LDI 6, 0x00
+LDI 7, 0x00
+LDI 4, 0x259
+PRG 6, 4
+MOV 6, 5, 5
+INP 7
+LDI 3, 'l'
+LDI 4, 'p'
+LDI 2, 'g'
+LDI 7, 'd'
+LDI 0, 'r'
+LDI 5, 'o'
+LDI 1, 'a'
+OUT 3
+OUT 5
+OUT 1
+OUT 7
+OUT 4
+OUT 0
+OUT 5
+OUT 2
+LDI 2, ':'
+OUT 2
+LDI 2, ' '
+OUT 2
+LDI 4, 'w'
+OUT 4
+OUT 0
+LDI 4, 'i'
+OUT 4
+LDI 7, 't'
+OUT 7
+LDI 7, 'e'
+OUT 7
+OUT 2
+LDI 7, '0'
+OUT 7
+OUT 2
+OUT 1
+OUT 0
+OUT 0
+OUT 1
+LDI 7, 'y'
+OUT 7
+OUT 2
+LDI 7, 'f'
+OUT 7
+OUT 1
+OUT 4
+OUT 3
+HLT 
+LDI 4, 'd'
+LDI 2, 'p'
+LDI 7, 'a'
+LDI 1, 'g'
+LDI 3, 'r'
+LDI 0, 'l'
+LDI 5, 'o'
+OUT 0
+OUT 5
+OUT 7
+OUT 4
+OUT 2
+OUT 3
+OUT 5
+OUT 1
+LDI 1, ':'
+OUT 1
+LDI 1, ' '
+OUT 1
+LDI 2, 'w'
+OUT 2
+OUT 3
+LDI 2, 'i'
+OUT 2
+LDI 2, 't'
+OUT 2
+LDI 2, 'e'
+OUT 2
+OUT 1
+OUT 5
+OUT 0
+OUT 4
+OUT 1
+OUT 7
+OUT 3
+OUT 3
+OUT 7
+LDI 2, 'y'
+OUT 2
+OUT 1
+LDI 2, 'f'
+OUT 2
+OUT 7
+LDI 2, 'i'
+OUT 2
+OUT 0
+HLT 
+LDI 1, 'p'
+LDI 5, 'l'
+LDI 4, 'r'
+LDI 3, 'd'
+LDI 0, 'g'
+LDI 7, 'a'
+LDI 2, 'o'
+OUT 5
+OUT 2
+OUT 7
+OUT 3
+OUT 1
+OUT 4
+OUT 2
+OUT 0
+LDI 0, ':'
+OUT 0
+LDI 0, ' '
+OUT 0
+OUT 7
+OUT 4
+OUT 4
+OUT 7
+LDI 4, 'y'
+OUT 4
+OUT 0
+LDI 4, 'n'
+OUT 4
+OUT 2
+LDI 4, 't'
+OUT 4
+OUT 0
+LDI 4, 'c'
+OUT 4
+OUT 2
+OUT 1
+LDI 4, 'i'
+OUT 4
+LDI 4, 'e'
+OUT 4
+OUT 3
+OUT 0
+LDI 4, '('
+OUT 4
+LDI 4, '1'
+OUT 4
+LDI 4, ')'
+OUT 4
+HLT 
+LDI 0, 'a'
+LDI 1, 'l'
+LDI 4, 'o'
+LDI 2, 'p'
+LDI 3, 'g'
+LDI 7, 'r'
+LDI 5, 'd'
+OUT 1
+OUT 4
+OUT 0
+OUT 5
+OUT 2
+OUT 7
+OUT 4
+OUT 3
+LDI 3, ':'
+OUT 3
+LDI 3, ' '
+OUT 3
+OUT 0
+OUT 7
+OUT 7
+OUT 0
+LDI 7, 'y'
+OUT 7
+OUT 3
+LDI 7, 'n'
+OUT 7
+OUT 4
+LDI 7, 't'
+OUT 7
+OUT 3
+LDI 7, 'c'
+OUT 7
+OUT 4
+OUT 2
+LDI 7, 'i'
+OUT 7
+LDI 7, 'e'
+OUT 7
+OUT 5
+OUT 3
+LDI 7, '('
+OUT 7
+LDI 7, '2'
+OUT 7
+LDI 7, ')'
+OUT 7
+HLT 
+LDI 1, 'r'
+LDI 4, 'o'
+LDI 5, 'a'
+LDI 0, 'p'
+LDI 3, 'g'
+LDI 7, 'l'
+LDI 2, 'd'
+OUT 7
+OUT 4
+OUT 5
+OUT 2
+OUT 0
+OUT 1
+OUT 4
+OUT 3
+LDI 3, ' '
+OUT 3
+LDI 1, 'c'
+OUT 1
+OUT 4
+OUT 0
+LDI 1, 'y'
+OUT 1
+OUT 3
+LDI 1, 'f'
+OUT 1
+OUT 5
+LDI 1, 'i'
+OUT 1
+OUT 7
+HLT 
+LDI 0, 0x43b
+LDI 1, 0x428
+LDI 2, 0x299
+PRG 6, 2
+MOV 0, 0, 1
+MOV 0, 0, 2
+MOV 0, 0, 4
+MOV 0, 1, 0
+MOV 0, 2, 0
+MOV 0, 4, 0
+MOV 1, 0, 0
+MOV 2, 0, 0
+MOV 4, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+LDA 0, 0, 0
+STA 0, 0, 0
+MUL 0, 0, 0
+NEW 0, 0
+MOV 0, 0, 1
+MOV 4, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+MOV 0, 0, 0
+LDI 7, 0x285
+STA 6, 7, 1
+LDI 7, 0x284
+STA 6, 7, 0
+LDI 2, 0x03
+ADD 1, 0, 2
+LDI 7, 0x289
+STA 6, 7, 1
+LDI 2, ' '
+LDI 7, 0x28b
+STA 6, 7, 2
+LDI 2, 0x00
+ADD 1, 0, 2
+LDA 1, 6, 1
+LDI 7, 0x28a
+STA 6, 7, 1
+LDI 2, 0x01
+ADD 1, 0, 2
+LDA 1, 6, 1
+NEW 1, 1
+LDI 7, 0x283
+STA 6, 7, 1
+LDI 2, 0x02
+ADD 1, 0, 2
+LDA 1, 6, 1
+NEW 2, 1
+NEW 3, 1
+LDI 7, 0x281
+STA 6, 7, 2
+LDI 7, 0x282
+STA 6, 7, 3
+LDI 7, 0x286
+STA 6, 7, 6
+LDI 7, 0x287
+STA 6, 7, 6
+LDI 7, 0x290
+STA 6, 7, 6
+LDI 0, 0x09
+LDI 7, 0x288
+STA 6, 7, 0
+LDI 0, 0x2c4
+LDI 7, 0x3e1
+PRG 6, 7
+NAND 7, 6, 6
+ADD 1, 7, 1
+LDI 7, 0x28f
+STA 6, 7, 1
+LDI 0, 0x2cb
+LDI 7, 0x3ca
+PRG 6, 7
+LDI 0, 0x01
+LDI 7, 0x28e
+STA 6, 7, 0
+LDI 7, 0x28d
+STA 6, 7, 6
+LDI 0, 0x2da
+PRG 6, 0
+LDI 7, 0x288
+LDA 0, 6, 7
+LDI 1, 0x01
+ADD 0, 1, 0
+LDI 7, 0x288
+STA 6, 7, 0
+LDI 0, 0x2da
+PRG 6, 0
+LDI 0, 0x2dd
+LDI 7, 0x3e1
+PRG 6, 7
+LDI 4, 0x2d2
+LDI 5, 0x2e1
+MOV 4, 5, 1
+PRG 6, 4
+NAND 7, 6, 6
+ADD 1, 7, 1
+LDI 0, 0xff
+NAND 0, 1, 0
+NAND 0, 0, 0
+NAND 7, 0, 0
+ADD 0, 1, 7
+LDI 7, 0x01
+ADD 0, 7, 0
+LDI 4, 0x307
+LDI 5, 0x2ee
+MOV 5, 4, 0
+PRG 6, 5
+LDI 7, 0x28f
+STA 6, 7, 1
+LDI 0, 0x2f3
+LDI 7, 0x3ca
+PRG 6, 7
+LDI 7, 0x28e
+LDA 3, 6, 7
+LDI 2, 0x01
+ADD 1, 3, 2
+LDI 7, 0x295
+STA 6, 7, 1
+LDI 7, 0x28d
+LDA 0, 6, 7
+LDI 7, 0x294
+STA 6, 7, 0
+ADD 0, 0, 3
+LDI 7, 0x28d
+STA 6, 7, 0
+LDI 7, 0x28e
+STA 6, 7, 2
+LDI 0, 0x305
+LDI 7, 0x3b9
+PRG 6, 7
+LDI 0, 0x2da
+PRG 6, 0
+LDI 0, 0x100
+LDI 7, 0x286
+LDA 2, 6, 7
+ADD 2, 2, 0
+NAND 5, 2, 2
+ADD 2, 1, 5
+LDI 5, 0x01
+ADD 2, 5, 2
+LDI 3, 0x381
+LDI 4, 0x313
+MOV 3, 4, 2
+PRG 6, 3
+LDI 0, 0x100
+NAND 5, 0, 0
+ADD 1, 1, 5
+LDI 5, 0x01
+ADD 1, 5, 1
+LDI 7, 0x281
+LDA 5, 6, 7
+LDA 2, 5, 1
+LDI 7, 0x282
+LDA 5, 6, 7
+LDA 3, 5, 1
+LDI 7, 0x291
+STA 6, 7, 2
+LDI 7, 0x292
+STA 6, 7, 3
+LDI 7, 0x293
+STA 6, 7, 3
+LDI 0, 0x340
+PRG 6, 0
+LDI 7, 0x28e
+LDA 2, 6, 7
+LDI 5, 0x01
+ADD 2, 2, 5
+LDI 7, 0x295
+STA 6, 7, 2
+LDI 7, 0x28d
+LDA 2, 6, 7
+LDI 7, 0x294
+STA 6, 7, 2
+LDI 0, 0x333
+LDI 7, 0x3b9
+PRG 6, 7
+LDI 7, 0x28d
+LDA 0, 6, 7
+LDI 7, 0x28e
+LDA 1, 6, 7
+ADD 0, 1, 0
+LDI 7, 0x28d
+STA 6, 7, 0
+LDI 7, 0x293
+LDA 0, 6, 7
+LDI 7, 0x28e
+STA 6, 7, 0
+LDI 0, 0x2da
+PRG 6, 0
+LDI 7, 0x292
+LDA 1, 6, 7
+LDI 3, 0x326
+LDI 4, 0x346
+MOV 3, 4, 1
+PRG 6, 3
+NAND 0, 6, 6
+ADD 1, 0, 1
+LDI 7, 0x292
+STA 6, 7, 1
+LDI 7, 0x291
+LDA 3, 6, 7
+LDI 0, 0x01
+ADD 2, 0, 3
+LDI 7, 0x291
+STA 6, 7, 2
+LDI 0, 0x359
+PRG 6, 0
+LDI 7, 0x28f
+STA 6, 7, 1
+LDI 0, 0x357
+LDI 7, 0x3ca
+PRG 6, 7
+LDI 0, 0x340
+PRG 6, 0
+LDI 7, 0x290
+LDA 4, 6, 7
+LDI 2, 0x03
+NAND 1, 4, 2
+NAND 1, 1, 1
+LDI 2, 0x04
+NAND 7, 1, 1
+ADD 1, 2, 7
+LDI 7, 0x01
+ADD 1, 7, 1
+DIV 4, 4, 2
+DIV 0, 3, 2
+NAND 7, 0, 0
+ADD 5, 4, 7
+LDI 7, 0x01
+ADD 5, 7, 5
+MOV 1, 6, 5
+LDI 7, 0x283
+LDA 4, 6, 7
+LDA 0, 4, 0
+LDI 2, 0x03
+NAND 3, 3, 2
+NAND 3, 3, 3
+NAND 7, 3, 3
+ADD 3, 2, 7
+LDI 7, 0x01
+ADD 3, 7, 3
+NAND 7, 1, 1
+ADD 3, 3, 7
+LDI 7, 0x01
+ADD 3, 7, 3
+LDI 1, 0x27d
+ADD 1, 1, 3
+LDA 3, 6, 1
+DIV 0, 0, 3
+LDI 2, 0xff
+NAND 1, 2, 0
+NAND 1, 1, 1
+LDI 0, 0x352
+PRG 6, 0
+LDI 4, ':'
+LDI 7, ' '
+LDI 1, 'E'
+LDI 2, 'o'
+LDI 3, 'R'
+LDI 5, 'O'
+LDI 0, 'c'
+OUT 1
+OUT 3
+OUT 3
+OUT 5
+OUT 3
+OUT 4
+OUT 7
+OUT 0
+OUT 2
+LDI 4, 'm'
+OUT 4
+LDI 4, 'p'
+OUT 4
+LDI 5, 'r'
+OUT 5
+LDI 3, 'e'
+OUT 3
+LDI 1, 's'
+OUT 1
+OUT 1
+OUT 3
+LDI 1, 'd'
+OUT 1
+OUT 7
+OUT 1
+LDI 1, 'a'
+OUT 1
+LDI 3, 't'
+OUT 3
+OUT 1
+OUT 7
+OUT 1
+OUT 5
+LDI 1, 'e'
+OUT 1
+OUT 7
+OUT 0
+OUT 2
+OUT 5
+OUT 5
+LDI 1, 'u'
+OUT 1
+OUT 4
+OUT 3
+LDI 1, '?'
+OUT 1
+LDI 1, 0x0a
+OUT 1
+HLT 
+LDI 7, 0x286
+LDA 1, 6, 7
+LDI 7, 0x295
+LDA 2, 6, 7
+LDI 7, 0x282
+LDA 5, 6, 7
+STA 5, 1, 2
+LDI 7, 0x294
+LDA 3, 6, 7
+LDI 7, 0x281
+LDA 5, 6, 7
+STA 5, 1, 3
+LDI 2, 0x01
+ADD 1, 1, 2
+LDI 7, 0x286
+STA 6, 7, 1
+PRG 6, 0
+LDI 7, 0x290
+LDA 4, 6, 7
+LDI 1, 0x04
+DIV 1, 4, 1
+LDI 3, 0x01
+ADD 4, 4, 3
+LDI 7, 0x290
+STA 6, 7, 4
+LDI 7, 0x283
+LDA 4, 6, 7
+LDA 2, 4, 1
+LDI 3, 0x100
+MUL 2, 2, 3
+LDI 7, 0x28f
+LDA 3, 6, 7
+ADD 2, 2, 3
+STA 4, 1, 2
+PRG 6, 0
+LDI 7, 0x283
+LDA 0, 6, 7
+LDI 7, 0x285
+LDA 2, 6, 7
+PRG 6, 2
+LDI 7, 0x28c
+STA 6, 7, 0
+LDI 7, 0x28a
+LDA 2, 6, 7
+LDI 3, 0x3dc
+LDI 4, 0x3e9
+MOV 3, 4, 2
+PRG 6, 3
+NAND 3, 6, 6
+ADD 2, 3, 2
+LDI 7, 0x28a
+STA 6, 7, 2
+LDI 1, 0x00
+LDI 7, 0x288
+LDA 3, 6, 7
+LDI 0, 0x3f2
+PRG 6, 0
+LDI 7, 0x28b
+LDA 2, 6, 7
+NAND 7, 3, 3
+ADD 0, 2, 7
+LDI 7, 0x01
+ADD 0, 7, 0
+LDI 4, 0x8000
+LDI 7, 0x10000
+MUL 4, 7, 4
+NAND 4, 0, 4
+MOV 0, 3, 4
+NAND 4, 4, 4
+MOV 0, 2, 4
+NAND 7, 0, 0
+ADD 2, 2, 7
+LDI 7, 0x01
+ADD 2, 7, 2
+LDI 7, ' '
+MOV 2, 7, 4
+LDI 7, 0x28b
+STA 6, 7, 2
+NAND 7, 0, 0
+ADD 3, 3, 7
+LDI 7, 0x01
+ADD 3, 7, 3
+LDI 7, 0x289
+LDA 2, 6, 7
+LDA 2, 6, 2
+LDI 5, 0x25d
+ADD 5, 0, 5
+LDA 5, 6, 5
+MUL 1, 1, 5
+DIV 0, 2, 5
+NAND 7, 6, 6
+ADD 5, 7, 5
+NAND 7, 5, 2
+NAND 7, 7, 7
+ADD 1, 1, 7
+LDI 7, 0x289
+LDA 5, 6, 7
+STA 6, 5, 0
+LDI 0, 0x00
+LDI 7, 0x01
+MOV 0, 7, 4
+ADD 5, 0, 5
+LDI 0, 0x289
+STA 6, 0, 5
+LDI 5, 0x3f2
+LDI 7, 0x425
+MOV 7, 5, 3
+PRG 6, 7
+LDI 7, 0x28c
+LDA 0, 6, 7
+PRG 6, 0
+LDI 1, 0x296
+LDI 5, 0x00
+ADD 1, 1, 5
+LDA 1, 6, 1
+LDI 4, 0x11db
+STA 0, 4, 1
+LDI 1, 0x296
+LDI 5, 0x01
+ADD 1, 1, 5
+LDA 1, 6, 1
+LDI 4, 0x11dc
+STA 0, 4, 1
+LDI 1, 0x296
+LDI 5, 0x02
+ADD 1, 1, 5
+LDA 1, 6, 1
+LDI 4, 0x11dd
+STA 0, 4, 1
+PRG 0, 6
+MOV 0, 1, 0
+MOV 0, 3, 5
+MOV 0, 1, 2
+MUL 3, 2, 1
+MOV 0, 3, 6
+NEW 6, 1
+OUT 1
+NEW 1, 5
+DEL 7
+NEW 2, 3
+NEW 5, 7
+NEW 7, 3
+DEL 7
+PRG 6, 1
+DEL 5
+OUT 1
+DEL 5
+DEL 7
+DEL 0
+DEL 0
+DEL 3
+OUT 5
+LDI 0, 0xe89400
+OUT 3
+OUT 6
+OUT 5
+INP 4
+OUT 2
+OUT 3
+OUT 0
+INP 7
+LDI 4, 0x16c3612
+INP 4
+OUT 7
+INP 2
+INP 5
+INP 4
+INP 5
+INP 1
+INP 4
+INVALID PRG 0, 6
+INVALID PRG 1, 3
+LDI 4, 0x11c963a
+PRG 2, 1
+PRG 6, 0
+PRG 3, 3
+LDI 3, 0x873b9d
+INVALID LDI 1, 0x14da7a3
+INVALID LDI 4, 0x1acd62d
+LDI 5, 0x13d7ebc
+LDI 5, 0xdb6cb2
+LDI 6, 0x1c6e76b
+LDI 6, 0x1eef798
+INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID NEW 7, 5
+NEW 0, 1
+NEW 6, 4
+NEW 3, 3
+OUT 1
+NEW 1, 4
+NEW 1, 7
+NEW 4, 2
+NEW 2, 5
+OUT 0
+NEW 3, 3
+NEW 3, 6
+NEW 2, 1
+NEW 4, 0
+OUT 3
+NEW 5, 6
+NEW 6, 1
+NEW 6, 4
+NEW 3, 3
+OUT 1
+NEW 7, 4
+DEL 7
+DEL 2
+DEL 5
+OUT 0
+DEL 3
+DEL 6
+DEL 1
+DEL 0
+OUT 3
+DEL 6
+DEL 1
+DEL 4
+DEL 3
+LDA 7, 2, 7
+MOV 6, 0, 1
+MOV 7, 0, 2
+MUL 0, 4, 1
+MOV 6, 2, 6
+NEW 1, 3
+STA 5, 7, 3
+MOV 3, 0, 4
+MUL 4, 4, 1
+DEL 5
+NEW 0, 5
+STA 1, 6, 5
+DEL 5
+STA 3, 5, 3
+DEL 4
+STA 2, 1, 1
+ADD 4, 6, 2
+MOV 0, 4, 5
+MOV 7, 7, 0
+OUT 2
+STA 4, 0, 1
+STA 2, 1, 5
+OUT 2
+OUT 1
+MOV 0, 3, 2
+OUT 0
+STA 5, 6, 2
+LDA 6, 0, 4
+ADD 6, 0, 5
+STA 3, 4, 1
+STA 4, 1, 1
+MUL 4, 6, 3
+MUL 5, 0, 0
+ADD 0, 2, 6
+MUL 7, 4, 0
+STA 2, 4, 4
+LDA 0, 0, 1
+OUT 3
+STA 5, 4, 4
+INP 5
+MOV 0, 0, 1
+LDA 6, 3, 3
+INP 3
+MOV 2, 2, 7
+STA 5, 6, 5
+DEL 7
+OUT 7
+STA 5, 5, 5
+OUT 1
+OUT 1
+OUT 2
+DEL 0
+ADD 5, 6, 2
+INP 1
+DEL 7
+STA 1, 6, 2
+MUL 7, 5, 1
+INP 1
+DEL 6
+PRG 0, 7
+LDA 4, 0, 6
+PRG 0, 3
+DEL 7
+STA 0, 5, 3
+DEL 2
+PRG 4, 7
+PRG 7, 2
+DEL 2
+INP 3
+OUT 0
+OUT 6
+MUL 2, 5, 3
+OUT 6
+OUT 4
+OUT 0
+STA 2, 3, 6
+ADD 4, 6, 1
+INP 2
+ADD 2, 3, 6
+MOV 3, 4, 0
+NEW 3, 3
+LDI 5, 0xec2ca8
+LDI 5, 0xbd3c9d
+MOV 3, 2, 7
+MOV 6, 6, 6
+OUT 0
+LDA 7, 0, 4
+INP 7
+MOV 3, 6, 1
+MOV 6, 3, 5
+STA 3, 6, 1
+MOV 2, 6, 7
+INP 3
+LDI 5, 0x1aed06a
+INP 5
+STA 0, 0, 1
+INP 4
+LDI 6, 0x2d005f
+STA 5, 1, 0
+OUT 0
+LDA 0, 5, 1
+INP 7
+MUL 6, 0, 4
+MOV 1, 5, 7
+MUL 7, 7, 2
+NEW 2, 5
+ADD 7, 3, 7
+LDI 6, 0x79da9c
+PRG 7, 2
+OUT 5
+NEW 0, 3
+LDA 6, 6, 1
+INP 5
+STA 1, 2, 1
+STA 3, 0, 6
+STA 5, 5, 2
+INVALID INP 6
+ADD 5, 6, 1
+LDA 5, 1, 0
+STA 7, 4, 1
+INVALID LDI 6, 0x5eda8f
+INVALID DEL 6
+HLT 
+HLT 
+NAND 5, 5, 2
+DIV 7, 7, 0
+STA 3, 6, 1
+DIV 2, 4, 0
+NAND 2, 7, 7
+HLT 
+HLT 
+MOV 4, 5, 4
+MOV 4, 2, 3
+NAND 4, 5, 1
+MOV 6, 5, 2
+NAND 2, 0, 4
+MUL 3, 3, 5
+STA 7, 5, 5
+DIV 5, 3, 5
+MOV 1, 3, 5
+HLT 
+HLT 
+HLT 
+DIV 4, 5, 6
+MOV 1, 1, 0
+DIV 6, 0, 1
+MUL 4, 3, 5
+LDA 3, 3, 7
+STA 3, 5, 4
+NAND 1, 6, 2
+NAND 2, 7, 5
+MOV 5, 5, 3
+NAND 7, 2, 5
+DIV 7, 4, 2
+HLT 
+NEW 7, 2
+LDA 4, 2, 6
+NEW 5, 7
+DIV 4, 5, 0
+LDA 3, 0, 4
+NAND 3, 7, 5
+LDA 2, 3, 1
+HLT 
+HLT 
+LDA 1, 4, 1
+HLT 
+HLT 
+MOV 1, 1, 0
+MUL 2, 2, 3
+DEL 1
+LDA 1, 2, 7
+STA 3, 5, 4
+NAND 0, 0, 5
+MOV 0, 1, 4
+STA 0, 4, 1
+MOV 3, 4, 1
+STA 2, 2, 3
+STA 0, 0, 6
+NAND 4, 1, 1
+NEW 1, 4
+STA 6, 3, 1
+PRG 1, 1
+DEL 6
+DEL 2
+DEL 7
+DIV 1, 6, 1
+STA 5, 4, 4
+MOV 5, 5, 1
+MOV 5, 5, 2
+MOV 2, 5, 2
+MOV 7, 5, 2
+MOV 0, 7, 5
+MOV 0, 5, 6
+LDA 3, 5, 2
+DIV 5, 3, 5
+LDA 3, 5, 7
+MUL 7, 5, 6
+NAND 2, 1, 6
+DIV 2, 3, 0
+LDA 1, 1, 1
+DIV 3, 2, 0
+DIV 0, 5, 5
+MOV 5, 6, 5
+MOV 2, 6, 2
+MOV 2, 1, 6
+MOV 1, 6, 7
+MUL 4, 2, 1
+STA 1, 0, 5
+NAND 0, 6, 6
+DEL 0
+DEL 1
+NAND 6, 5, 0
+NEW 2, 1
+LDA 7, 5, 7
+MOV 2, 2, 1
+HLT 
+LDA 0, 1, 3
+OUT 2
+MUL 6, 2, 1
+LDA 2, 1, 3
+DIV 7, 2, 2
+DIV 6, 4, 4
+MOV 4, 4, 4
+NAND 2, 6, 3
+MUL 0, 5, 0
+LDA 3, 4, 4
+STA 0, 2, 3
+LDA 3, 6, 2
+DEL 0
+NEW 3, 0
+LDA 2, 3, 1
+OUT 3
+MOV 0, 4, 3
+OUT 2
+DIV 2, 5, 1
+OUT 7
+DIV 4, 6, 1
+STA 0, 0, 1
+DIV 2, 2, 4
+DEL 7
+OUT 5
+DEL 5
+STA 2, 3, 3
+LDA 1, 0, 6
+OUT 3
+LDA 2, 2, 3
+NEW 0, 1
+NEW 1, 6
+OUT 6
+NAND 4, 0, 0
+OUT 7
+OUT 2
+MUL 0, 6, 6
+HLT 
+LDA 6, 1, 0
+OUT 6
+OUT 6
+NAND 0, 7, 6
+MUL 6, 3, 4
+OUT 1
+OUT 0
+OUT 2
+DIV 7, 3, 3
+OUT 0
+MOV 0, 3, 4
+NAND 0, 4, 1
+DIV 2, 2, 2
+OUT 6
+NAND 1, 4, 4
+LDI 3, 0x412ee4
+OUT 6
+OUT 1
+OUT 3
+OUT 3
+MOV 3, 1, 3
+OUT 1
+LDA 2, 3, 3
+OUT 1
+INP 3
+OUT 0
+LDI 5, 0x1caf347
+LDA 5, 1, 3
+OUT 3
+OUT 1
+INP 0
+OUT 2
+OUT 2
+MOV 2, 6, 4
+INP 1
+DEL 6
+OUT 2
+MOV 6, 3, 3
+DEL 4
+STA 6, 4, 1
+MOV 4, 7, 0
+MUL 1, 6, 1
+DIV 0, 1, 5
+HLT 
+NAND 6, 1, 0
+LDA 6, 4, 6
+MOV 5, 7, 5
+MUL 3, 6, 5
+DIV 1, 7, 3
+DIV 3, 2, 2
+DIV 0, 5, 5
+MUL 7, 7, 5
+STA 3, 6, 3
+OUT 1
+INP 1
+INP 4
+NEW 6, 2
+MOV 5, 1, 1
+OUT 4
+MOV 5, 0, 1
+PRG 1, 0
+INP 6
+DIV 4, 7, 5
+LDA 6, 7, 0
+STA 3, 7, 7
+OUT 6
+PRG 0, 3
+PRG 5, 3
+OUT 7
+PRG 5, 3
+NEW 6, 4
+MOV 0, 6, 7
+PRG 1, 1
+STA 2, 0, 3
+PRG 5, 2
+OUT 4
+NAND 5, 6, 5
+PRG 6, 1
+PRG 1, 0
+LDA 7, 1, 3
+INVALID INVALID PRG 2, 7
+INP 4
+PRG 1, 6
+PRG 1, 0
+PRG 6, 5
+MOV 1, 4, 6
+PRG 0, 1
+PRG 2, 6
+LDI 4, 0x16eeb59
+ADD 4, 6, 1
+MUL 2, 4, 3
+MOV 2, 4, 3
+PRG 7, 3
+NEW 0, 1
+PRG 5, 1
+LDI 0, 0x20835
+PRG 5, 6
+INP 6
+DIV 5, 3, 0
+PRG 0, 6
+PRG 1, 1
+INVALID LDI 1, 0x2ab655
+PRG 4, 3
+PRG 2, 4
+MOV 2, 6, 2
+MUL 1, 7, 1
+PRG 2, 5
+LDI 0, 0x106d57e
+LDI 0, 0x39dad
+LDI 4, 0x1575c27
+INVALID INVALID PRG 5, 2
+STA 0, 3, 3
+MOV 5, 1, 2
+MOV 2, 2, 5
+LDI 1, 0x1ad362d
+LDI 5, 0x1329062
+LDI 4, 0xe0023
+INP 7
+LDA 4, 1, 2
+INP 4
+NEW 5, 7
+PRG 2, 2
+MOV 0, 1, 7
+PRG 7, 7
+LDI 4, 0xdde042
+MUL 2, 7, 7
+LDA 1, 5, 6
+PRG 0, 7
+PRG 4, 6
+LDI 5, 0x12b7158
+INVALID INVALID OUT 5
+LDI 1, 0x173e668
+INVALID OUT 7
+INVALID INP 3
+LDA 0, 5, 4
+PRG 5, 1
+INVALID INVALID INVALID INVALID MUL 0, 6, 3
+LDA 5, 2, 5
+INVALID LDI 5, 0x1ccf5ac
+LDI 5, 0x19b017c
+MOV 1, 7, 1
+INVALID DIV 4, 3, 1
+INVALID NAND 3, 5, 0
+MOV 2, 5, 3
+INVALID INVALID LDI 5, 0x1589d7
+MOV 5, 4, 2
+MOV 6, 7, 2
+MOV 3, 4, 1
+INVALID INVALID ADD 1, 4, 0
+DEL 5
+MOV 3, 7, 6
+PRG 5, 1
+INVALID MOV 6, 6, 2
+INVALID INVALID STA 3, 5, 6
+LDI 7, 0xdc0886
+INVALID ADD 1, 5, 6
+INVALID MOV 7, 6, 4
+MOV 5, 6, 3
+MOV 4, 3, 4
+INVALID LDI 5, 0x1db8147
+INVALID INVALID MOV 7, 5, 6
+INVALID INVALID INVALID INVALID MOV 3, 2, 4
+INVALID PRG 0, 3
+LDI 0, 0x1c3a8de
+INVALID INVALID INVALID INVALID PRG 4, 3
+HLT 
+PRG 6, 6
+PRG 6, 7
+PRG 6, 0
+INVALID INVALID INVALID MOV 1, 5, 6
+INVALID LDI 7, 0x7c1e95
+INVALID INVALID INVALID MUL 1, 5, 5
+NAND 2, 3, 6
+MOV 7, 6, 2
+LDA 5, 1, 1
+INP 5
+MUL 3, 2, 5
+MOV 2, 6, 2
+MOV 0, 0, 0
+NAND 7, 7, 6
+MUL 5, 2, 0
+ADD 5, 0, 3
+ADD 0, 1, 2
+LDA 3, 5, 4
+ADD 4, 0, 6
+HLT 
+HLT 
+ADD 3, 6, 2
+HLT 
+ADD 0, 6, 7
+MOV 3, 2, 1
+NAND 2, 6, 5
+NAND 4, 7, 6
+ADD 6, 7, 4
+HLT 
+NEW 0, 2
+MOV 2, 3, 6
+HLT 
+DIV 6, 0, 4
+ADD 0, 0, 4
+MUL 3, 6, 6
+NAND 2, 1, 3
+MUL 3, 3, 7
+NAND 2, 6, 5
+NAND 0, 4, 6
+OUT 1
+DIV 0, 6, 1
+MOV 4, 2, 6
+ADD 4, 6, 2
+NAND 2, 7, 3
+NAND 3, 3, 5
+STA 5, 3, 2
+MOV 5, 7, 3
+MOV 0, 3, 3
+MUL 2, 6, 3
+DIV 5, 0, 2
+MOV 3, 1, 5
+ADD 1, 2, 2
+DIV 1, 2, 3
+HLT 
+INP 4
+NEW 4, 3
+NEW 7, 2
+PRG 5, 4
+LDA 0, 3, 3
+HLT 
+ADD 3, 3, 3
+NEW 3, 0
+NEW 4, 6
+PRG 6, 6
+NEW 7, 4
+NEW 1, 1
+MOV 0, 0, 0
+NEW 5, 0
+NAND 3, 3, 5
+PRG 3, 4
+NEW 5, 2
+ADD 4, 5, 5
+DEL 6
+MOV 0, 3, 5
+MUL 6, 7, 1
+ADD 7, 1, 1
+NAND 2, 7, 2
+NEW 2, 6
+PRG 3, 7
+STA 1, 7, 4
+LDA 7, 0, 5
+ADD 0, 0, 6
+NEW 1, 4
+HLT 
+ADD 2, 7, 4
+NAND 3, 3, 6
+NEW 6, 7
+INP 1
+HLT 
+NAND 6, 2, 3
+PRG 6, 4
+NEW 3, 6
+NEW 1, 0
+MOV 2, 7, 0
+NEW 7, 7
+NEW 7, 1
+NEW 3, 4
+NAND 3, 3, 1
+NEW 5, 6
+MUL 1, 2, 5
+NAND 1, 1, 1
+HLT 
+ADD 3, 3, 3
+MOV 4, 4, 3
+NAND 5, 3, 1
+PRG 4, 6
+HLT 
+NEW 0, 4
+MUL 3, 0, 5
+NEW 0, 3
+NEW 3, 0
+MUL 6, 4, 5
+NEW 7, 3
+NAND 1, 1, 7
+MUL 3, 3, 4
+NAND 2, 6, 5
+HLT 
+ADD 4, 7, 4
+HLT 
+DEL 3
+DEL 3
+MOV 1, 0, 0
+HLT 
+NEW 4, 7
+DEL 2
+HLT 
+MUL 5, 6, 1
+DEL 5
+DEL 2
+INP 1
+NEW 3, 5
+DEL 7
+MUL 2, 7, 4
+DEL 7
+HLT 
+MUL 4, 1, 5
+DEL 7
+DEL 4
+ADD 7, 1, 2
+DEL 7
+NEW 2, 0
+INP 5
+HLT 
+HLT 
+INP 5
+HLT 
+NAND 5, 4, 5
+PRG 4, 6
+HLT 
+HLT 
+MUL 6, 0, 7
+NEW 1, 7
+HLT 
+MUL 4, 7, 6
+DEL 5
+HLT 
+MUL 5, 0, 4
+DEL 7
+DEL 2
+ADD 6, 5, 6
+HLT 
+HLT 
+PRG 0, 7
+HLT 
+HLT 
+MUL 6, 0, 7
+DEL 6
+DEL 3
+ADD 5, 1, 2
+DEL 6
+DEL 0
+ADD 1, 1, 2
+NEW 5, 4
+MOV 4, 4, 7
+MUL 2, 0, 3
+MOV 2, 7, 5
+HLT 
+MUL 5, 7, 6
+MOV 6, 3, 2
+NEW 4, 1
+ADD 2, 0, 6
+NAND 5, 2, 6
+STA 0, 6, 5
+ADD 3, 6, 2
+NAND 0, 1, 3
+MOV 2, 0, 5
+PRG 0, 1
+DIV 3, 2, 3
+NEW 1, 0
+OUT 3
+LDA 2, 4, 4
+MOV 7, 7, 6
+NEW 7, 6
+DEL 6
+DEL 1
+NEW 4, 1
+DEL 7
+DIV 1, 1, 0
+NEW 2, 5
+MOV 7, 4, 0
+NEW 6, 0
+PRG 5, 6
+DEL 7
+MOV 7, 1, 3
+ADD 1, 0, 1
+DEL 1
+DIV 6, 5, 5
+MUL 1, 1, 7
+NAND 0, 0, 3
+HLT 
+PRG 3, 3
+HLT 
+NEW 4, 3
+INP 4
+HLT 
+NEW 1, 7
+DIV 6, 4, 5
+NEW 0, 0
+NEW 5, 4
+DEL 6
+DEL 5
+MOV 7, 7, 7
+DIV 0, 0, 1
+NAND 1, 1, 1
+OUT 0
+PRG 6, 5
+HLT 
+MUL 6, 0, 0
+NEW 4, 5
+MOV 0, 6, 3
+NEW 3, 5
+PRG 4, 5
+NEW 7, 5
+OUT 4
+NEW 0, 4
+NAND 2, 7, 7
+OUT 5
+PRG 1, 0
+MOV 7, 7, 4
+NAND 2, 1, 7
+INP 5
+OUT 6
+NEW 6, 1
+DIV 0, 3, 2
+MOV 3, 1, 0
+OUT 0
+OUT 6
+MOV 7, 5, 3
+NEW 1, 1
+INP 6
+OUT 3
+NAND 0, 5, 6
+DIV 5, 3, 7
+OUT 2
+NEW 7, 6
+NEW 6, 0
+NEW 2, 1
+OUT 1
+INP 0
+DEL 5
+OUT 6
+DIV 2, 2, 1
+NAND 4, 5, 3
+ADD 5, 3, 5
+LDI 1, 0x155269a
+OUT 1
+OUT 1
+LDI 2, 0x68830f
+MOV 4, 2, 6
+OUT 1
+PRG 5, 5
+OUT 0
+OUT 0
+LDI 1, 0x9a24b4
+LDA 4, 5, 5
+OUT 6
+LDI 1, 0x17000bd
+OUT 4
+NEW 7, 4
+PRG 2, 4
+OUT 5
+OUT 3
+LDI 2, 0x16c9fd7
+OUT 4
+DEL 5
+INP 1
+OUT 4
+OUT 6
+PRG 0, 1
+DEL 5
+OUT 4
+ADD 5, 3, 4
+OUT 3
+OUT 1
+INP 7
+OUT 3
+OUT 1
+ADD 3, 0, 1
+OUT 1
+OUT 7
+DIV 7, 6, 1
+OUT 5
+OUT 5
+DIV 4, 6, 1
+INP 6
+OUT 1
+LDI 2, 0x16cbe4e
+DEL 4
+INP 1
+PRG 0, 3
+NAND 2, 5, 5
+OUT 4
+PRG 5, 3
+NAND 4, 2, 7
+HLT 
+LDI 2, 0x8d60d1
+NAND 6, 2, 1
+INP 4
+INP 3
+NAND 6, 3, 2
+DEL 5
+INP 5
+DEL 5
+INP 0
+DIV 6, 3, 2
+INP 0
+MOV 5, 3, 1
+PRG 2, 3
+DIV 0, 6, 0
+DIV 1, 5, 2
+MUL 5, 6, 7
+MOV 7, 7, 3
+DIV 7, 5, 4
+PRG 2, 3
+DEL 5
+ADD 1, 4, 1
+MUL 6, 4, 4
+NEW 1, 6
+MOV 2, 5, 5
+MUL 6, 4, 1
+MOV 3, 1, 7
+DEL 6
+DIV 3, 4, 4
+NAND 4, 7, 4
+DEL 4
+DIV 6, 5, 6
+MOV 2, 0, 1
+MOV 5, 5, 0
+LDI 2, 0xdcfbd0
+HLT 
+NEW 0, 7
+DIV 2, 6, 1
+OUT 4
+DIV 0, 3, 5
+LDI 5, 0x1517482
+INP 5
+NEW 3, 3
+DIV 7, 4, 2
+INP 7
+INP 3
+NEW 2, 6
+OUT 3
+MOV 0, 5, 0
+ADD 4, 4, 1
+MUL 3, 2, 4
+NAND 2, 4, 1
+PRG 5, 7
+OUT 6
+STA 4, 7, 1
+NEW 6, 1
+OUT 5
+MOV 6, 2, 6
+DIV 7, 2, 5
+OUT 0
+MOV 2, 6, 0
+LDI 1, 0x386b01
+NAND 6, 3, 2
+MOV 0, 5, 1
+NEW 2, 7
+INP 4
+NEW 0, 2
+LDI 2, 0xe5dac4
+STA 6, 6, 7
+MOV 1, 0, 1
+NEW 3, 0
+HLT 
+INP 4
+LDI 1, 0x19cd7cc
+MUL 6, 5, 2
+OUT 5
+LDI 6, 0x25ed6f
+INP 2
+NEW 1, 1
+DIV 4, 4, 1
+OUT 1
+INP 1
+DIV 5, 3, 5
+MOV 3, 3, 3
+INP 3
+DIV 7, 4, 5
+INP 4
+PRG 0, 5
+INVALID NAND 2, 2, 2
+INP 5
+LDI 5, 0x145c872
+MOV 7, 3, 7
+OUT 4
+INP 2
+PRG 3, 0
+OUT 5
+OUT 4
+PRG 4, 0
+OUT 2
+INP 3
+PRG 7, 5
+OUT 6
+INP 4
+PRG 1, 2
+OUT 2
+NAND 5, 0, 4
+NEW 4, 6
+STA 5, 5, 5
+PRG 5, 6
+NAND 1, 0, 2
+PRG 0, 6
+NAND 2, 7, 4
+PRG 5, 2
+PRG 7, 6
+PRG 2, 3
+DEL 4
+OUT 3
+INVALID MOV 5, 3, 2
+PRG 4, 1
+PRG 1, 4
+OUT 3
+OUT 3
+LDI 4, 0x2e37ff
+DEL 3
+HLT 
+LDI 3, 0x4cb915
+PRG 3, 3
+INP 0
+INP 5
+INP 6
+DEL 2
+LDI 7, 0x13e3280
+PRG 3, 3
+PRG 0, 7
+INVALID PRG 4, 7
+DEL 5
+NAND 0, 2, 2
+PRG 0, 7
+PRG 6, 2
+INVALID PRG 5, 5
+PRG 5, 5
+LDI 5, 0x1650e5
+PRG 0, 7
+MUL 5, 3, 0
+MOV 6, 4, 3
+INP 2
+MOV 7, 1, 0
+MUL 2, 0, 3
+DEL 2
+DEL 3
+PRG 0, 7
+ADD 0, 1, 5
+MOV 5, 5, 1
+LDI 5, 0x1cdb2de
+OUT 5
+DEL 5
+MOV 1, 6, 0
+NAND 7, 6, 2
+PRG 7, 5
+DEL 1
+NEW 1, 6
+MOV 1, 4, 5
+ADD 2, 0, 1
+INP 0
+MOV 1, 4, 7
+MUL 1, 0, 3
+OUT 0
+PRG 1, 7
+NEW 2, 4
+INP 2
+NAND 0, 2, 5
+NAND 5, 3, 7
+INP 4
+HLT 
+ADD 3, 3, 3
+INP 2
+OUT 4
+NEW 5, 4
+MOV 3, 7, 3
+NEW 4, 3
+INP 4
+PRG 4, 4
+PRG 1, 0
+NAND 7, 1, 7
+LDI 0, 0x87261c
+INP 4
+INP 4
+PRG 2, 2
+OUT 5
+INVALID LDI 0, 0x1872bed
+INP 6
+INVALID PRG 2, 5
+LDI 2, 0x1ea6797
+NAND 0, 4, 2
+LDI 0, 0x1821801
+MOV 3, 5, 0
+MOV 5, 4, 6
+INP 6
+INP 1
+MOV 3, 5, 2
+MOV 3, 2, 5
+INP 7
+INP 4
+PRG 1, 6
+PRG 1, 5
+DIV 7, 5, 2
+MOV 3, 5, 0
+INP 0
+INP 6
+NEW 2, 7
+MOV 5, 1, 5
+NAND 5, 5, 1
+OUT 3
+OUT 5
+DIV 2, 0, 5
+PRG 2, 5
+MOV 1, 6, 5
+NEW 5, 2
+PRG 2, 0
+LDI 3, 0x9e9a90
+INVALID LDI 2, 0x875bed
+LDI 2, 0x7f075f
+INVALID LDI 1, 0x16b0418
+NAND 0, 1, 3
+NAND 7, 3, 4
+PRG 3, 3
+LDI 1, 0x1606c9d
+INVALID LDI 3, 0x1e16c57
+LDI 3, 0x9e673d
+ADD 7, 3, 1
+MOV 3, 5, 4
+LDI 5, 0x1b23334
+INVALID LDA 0, 6, 5
+LDI 7, 0x1ceaf6
+INVALID HLT 
+HLT 
+NEW 6, 6
+NAND 4, 4, 6
+NAND 1, 6, 7
+INVALID LDI 5, 0x1e27501
+PRG 5, 6
+OUT 2
+LDI 6, 0x56c554
+LDI 7, 0x2c671e
+INVALID LDI 1, 0x6dd2e3
+LDI 7, 0xdd62f0
+INVALID LDI 6, 0xd77dcc
+HLT 
+INVALID MOV 1, 5, 3
+LDI 7, 0x376eb1
+INVALID HLT 
+LDI 7, 0xf2cb55
+INVALID LDI 6, 0x1cb8d8b
+PRG 0, 6
+OUT 0
+DEL 3
+INP 5
+NEW 2, 5
+LDI 7, 0x646514
+LDI 6, 0x18fd045
+INVALID PRG 7, 2
+INP 5
+INP 4
+LDA 2, 3, 5
+PRG 6, 6
+INVALID OUT 5
+NAND 7, 6, 0
+INVALID DEL 5
+INVALID INVALID OUT 2
+NAND 0, 2, 0
+STA 3, 5, 0
+INP 5
+INP 2
+INP 0
+MOV 5, 3, 3
+DEL 1
+MUL 5, 1, 2
+ADD 5, 6, 2
+MOV 0, 7, 5
+LDI 6, 0x136656e
+DIV 5, 6, 3
+MOV 5, 6, 7
+MOV 5, 5, 7
+PRG 6, 5
+LDI 3, 0x65eb00
+INVALID INVALID PRG 5, 2
+HLT 
+OUT 3
+INVALID NEW 6, 0
+MOV 1, 3, 6
+INVALID HLT 
+INVALID STA 4, 1, 5
+MUL 1, 6, 5
+INVALID INP 0
+HLT 
+NAND 5, 3, 3
+NEW 5, 4
+ADD 4, 5, 6
+HLT 
+INVALID INVALID OUT 6
+INVALID NEW 1, 5
+INVALID INVALID PRG 4, 7
+INVALID INP 3
+INP 6
+NAND 2, 1, 7
+INVALID PRG 6, 4
+STA 2, 2, 1
+MOV 7, 2, 7
+STA 3, 6, 6
+INVALID LDI 1, 0x14af57e
+INVALID MOV 1, 5, 1
+MOV 7, 2, 7
+INVALID INVALID NEW 1, 1
+ADD 5, 5, 7
+INVALID INVALID INP 7
+INVALID INVALID MOV 3, 4, 7
+MOV 3, 7, 1
+INVALID INVALID INVALID MOV 1, 1, 0
+NEW 7, 2
+HLT 
+NEW 7, 4
+STA 7, 6, 5
+INVALID INVALID HLT 
+INVALID INVALID INVALID DEL 6
+INVALID PRG 4, 7
+INVALID INVALID HLT 
+INVALID LDI 7, 0x16a3ad9
+INP 4
+INVALID LDI 7, 0x18e35ae
+INP 4
+INVALID NAND 1, 1, 0
+DIV 3, 3, 4
+INVALID NAND 0, 1, 0
+LDI 3, 0x9785c0
+INVALID LDA 1, 1, 4
+INVALID INVALID INVALID INVALID INVALID INVALID HLT 
+INVALID INVALID INVALID INVALID INVALID INVALID INVALID MUL 4, 6, 2
+INVALID INVALID INVALID INVALID INVALID INP 0
+INVALID INVALID INVALID INVALID INVALID INVALID INP 0
+INVALID INVALID INVALID INVALID INVALID INP 1
+INVALID INVALID OUT 6
+INVALID NAND 7, 0, 4
+STA 3, 3, 7
+MUL 3, 7, 5
+INP 2
+PRG 2, 5
+MUL 5, 3, 1
+PRG 0, 6
+NAND 5, 0, 2
+MOV 0, 3, 4
+LDI 2, 0x1db7256
+INVALID NAND 2, 7, 1
+MOV 7, 7, 0
+NEW 7, 6
+INVALID OUT 4
+HLT 
+INVALID INVALID INVALID NEW 6, 3
+NAND 7, 6, 7
+HLT 
+PRG 7, 0
+INVALID DIV 7, 3, 0
+NEW 4, 1
+INVALID INVALID INVALID INVALID HLT 
+INVALID ADD 6, 6, 3
+NAND 1, 1, 5
+HLT 
+HLT 
+MOV 6, 1, 2
+HLT 
+ADD 6, 2, 1
+HLT 
+NAND 7, 4, 7
+HLT 
+DEL 6
+HLT 
+ADD 7, 6, 0
+ADD 7, 5, 4
+NAND 4, 5, 6
+MUL 3, 1, 3
+HLT 
+HLT 
+HLT 
+NAND 3, 1, 5
+HLT 
+NEW 1, 7
+MOV 0, 5, 1
+DEL 2
+HLT 
+STA 2, 5, 2
+MUL 5, 6, 3
+NEW 7, 5
+HLT 
+NEW 2, 5
+NEW 2, 2
+NEW 3, 5
+NAND 0, 1, 2
+NEW 3, 7
+STA 6, 2, 6
+NEW 0, 7
+DEL 3
+MOV 0, 4, 6
+MOV 6, 1, 2
+HLT 
+HLT 
+MOV 1, 3, 7
+NEW 0, 5
+ADD 7, 4, 6
+STA 5, 7, 3
+NEW 1, 1
+NAND 1, 1, 4
+DEL 0
+ADD 0, 0, 0
+NAND 4, 7, 7
+HLT 
+INP 4
+STA 0, 2, 1
+MUL 7, 3, 6
+NEW 6, 2
+NEW 0, 4
+ADD 7, 7, 6
+HLT 
+HLT 
+MOV 3, 5, 7
+MUL 1, 4, 4
+NEW 5, 1
+NEW 5, 2
+NEW 2, 5
+MUL 4, 6, 7
+NEW 0, 1
+NEW 2, 3
+NAND 7, 4, 4
+LDA 2, 7, 5
+NEW 0, 0
+NAND 2, 4, 6
+HLT 
+HLT 
+HLT 
+HLT 
+NEW 7, 0
+NEW 6, 4
+MUL 1, 2, 7
+HLT 
+NAND 0, 6, 2
+NEW 7, 7
+NEW 4, 4
+NEW 3, 2
+DIV 1, 7, 2
+NEW 5, 3
+NEW 0, 1
+NEW 5, 3
+NEW 1, 5
+OUT 3
+MUL 3, 1, 7
+INP 6
+NEW 0, 5
+NAND 5, 0, 7
+NAND 3, 0, 7
+NEW 0, 6
+NEW 7, 1
+ADD 3, 0, 7
+MOV 0, 2, 5
+NEW 0, 6
+HLT 
+NEW 1, 3
+NAND 3, 5, 2
+NEW 1, 0
+MOV 3, 2, 1
+NEW 2, 4
+DIV 0, 6, 3
+MUL 3, 6, 1
+NEW 3, 4
+NEW 7, 1
+NEW 6, 0
+NEW 3, 5
+HLT 
+HLT 
+NEW 4, 5
+MUL 6, 3, 0
+MOV 4, 1, 1
+MOV 6, 4, 1
+MOV 3, 6, 5
+LDA 5, 1, 5
+HLT 
+HLT 
+ADD 5, 2, 7
+HLT 
+LDA 5, 7, 4
+MUL 6, 4, 4
+NAND 0, 2, 0
+NEW 7, 7
+MOV 3, 6, 7
+NEW 0, 2
+ADD 7, 3, 6
+NEW 1, 7
+ADD 6, 3, 5
+MOV 2, 3, 3
+HLT 
+NEW 4, 0
+LDA 1, 4, 7
+DIV 1, 0, 6
+NEW 4, 0
+HLT 
+HLT 
+DEL 7
+NEW 3, 0
+PRG 3, 0
+HLT 
+NEW 4, 6
+HLT 
+ADD 5, 5, 2
+NEW 3, 5
+MOV 5, 3, 5
+NEW 2, 3
+NEW 4, 2
+DIV 0, 2, 7
+DIV 1, 6, 6
+NEW 0, 1
+MOV 5, 5, 2
+MUL 6, 2, 4
+NEW 1, 6
+NEW 1, 5
+LDA 0, 2, 5
+HLT 
+NEW 1, 7
+NEW 4, 0
+NEW 1, 4
+MOV 3, 4, 1
+MOV 0, 4, 6
+NEW 2, 6
+OUT 7
+LDA 5, 1, 6
+NEW 7, 6
+NEW 2, 2
+DIV 2, 5, 4
+NEW 6, 5
+MOV 2, 3, 2
+NEW 4, 4
+NEW 7, 0
+MUL 7, 7, 5
+NEW 1, 2
+HLT 
+NEW 2, 5
+NAND 4, 5, 4
+NEW 3, 0
+PRG 7, 1
+STA 0, 1, 0
+NEW 7, 6
+NEW 7, 7
+STA 6, 2, 5
+NEW 4, 2
+NEW 3, 5
+NEW 5, 2
+NEW 1, 5
+NEW 6, 5
+NAND 6, 2, 2
+OUT 1
+ADD 0, 4, 0
+MUL 0, 1, 0
+HLT 
+STA 7, 7, 0
+NEW 0, 0
+NEW 7, 5
+MOV 0, 7, 1
+MUL 4, 3, 4
+NEW 1, 2
+NEW 3, 7
+DEL 4
+NEW 2, 5
+STA 4, 4, 1
+HLT 
+INP 7
+NEW 6, 5
+NEW 5, 2
+NEW 6, 2
+HLT 
+NEW 3, 2
+MOV 5, 5, 6
+NEW 4, 6
+NEW 4, 1
+DEL 5
+DEL 2
+NAND 1, 3, 5
+NEW 6, 2
+PRG 1, 1
+DEL 7
+ADD 5, 3, 4
+NEW 0, 5
+DEL 2
+HLT 
+HLT 
+NEW 7, 2
+HLT 
+DEL 7
+DEL 0
+STA 0, 0, 2
+DEL 7
+MUL 7, 6, 6
+DEL 4
+NEW 4, 7
+NEW 4, 4
+ADD 2, 6, 5
+NEW 7, 1
+DEL 1
+DEL 0
+HLT 
+HLT 
+HLT 
+DEL 7
+NEW 6, 1
+PRG 7, 7
+NEW 6, 5
+DEL 1
+LDA 3, 5, 4
+ADD 1, 6, 2
+NEW 2, 1
+DEL 7
+DEL 4
+ADD 1, 4, 4
+HLT 
+HLT 
+OUT 2
+NEW 6, 5
+INP 4
+DEL 7
+DEL 3
+DEL 6
+NEW 5, 7
+NEW 2, 3
+MUL 0, 2, 4
+NAND 3, 0, 6
+NAND 2, 6, 7
+NAND 6, 2, 6
+NEW 6, 4
+MUL 0, 3, 3
+ADD 1, 0, 3
+MUL 1, 1, 5
+MOV 0, 3, 5
+ADD 5, 0, 2
+NEW 0, 5
+ADD 2, 6, 0
+DIV 7, 2, 4
+NAND 5, 6, 7
+MOV 6, 7, 7
+DEL 6
+NEW 0, 6
+DEL 6
+MOV 0, 0, 1
+NEW 2, 5
+STA 2, 3, 5
+STA 3, 2, 5
+MOV 2, 5, 7
+MOV 2, 6, 0
+DEL 7
+NAND 4, 5, 7
+MOV 1, 1, 4
+MOV 4, 1, 4
+DEL 0
+NAND 5, 6, 7
+NEW 5, 7
+OUT 1
+HLT 
+MUL 5, 6, 0
+ADD 1, 1, 1
+NEW 0, 7
+DEL 7
+MOV 5, 2, 5
+MOV 6, 6, 0
+DEL 2
+DEL 2
+MOV 3, 1, 2
+LDA 5, 0, 3
+NEW 4, 3
+NAND 1, 0, 1
+DEL 1
+NEW 2, 2
+ADD 6, 2, 5
+NAND 0, 6, 7
+DEL 1
+STA 2, 7, 6
+HLT 
+NEW 4, 4
+HLT 
+ADD 7, 5, 7
+NEW 2, 7
+NEW 7, 3
+STA 6, 7, 3
+DEL 1
+NEW 1, 5
+NEW 2, 4
+DEL 5
+DEL 6
+NEW 2, 0
+MUL 5, 4, 6
+HLT 
+LDA 3, 7, 5
+LDA 6, 1, 0
+NEW 4, 0
+DEL 1
+NEW 1, 7
+MUL 3, 3, 7
+MUL 4, 0, 7
+ADD 4, 7, 4
+DEL 4
+ADD 5, 3, 3
+NEW 2, 5
+DEL 5
+NEW 5, 0
+DEL 0
+DEL 6
+HLT 
+HLT 
+OUT 4
+NEW 7, 4
+NEW 7, 4
+DEL 1
+DEL 2
+DEL 4
+DEL 1
+HLT 
+ADD 7, 6, 2
+HLT 
+DIV 7, 4, 4
+NEW 6, 0
+DEL 2
+OUT 2
+NAND 6, 6, 4
+DEL 2
+DEL 7
+DEL 1
+DEL 1
+NEW 5, 3
+MOV 4, 6, 5
+NEW 5, 4
+MOV 2, 4, 5
+ADD 0, 5, 1
+DEL 4
+NEW 1, 7
+OUT 3
+DEL 4
+MUL 5, 6, 6
+ADD 7, 4, 4
+DEL 6
+NEW 2, 6
+NEW 5, 3
+MOV 6, 4, 0
+NEW 0, 2
+DEL 0
+DEL 0
+DEL 5
+MOV 5, 5, 6
+NEW 6, 2
+DEL 1
+PRG 3, 6
+DEL 7
+DEL 5
+DEL 6
+NAND 1, 6, 5
+STA 1, 0, 1
+STA 2, 0, 1
+STA 3, 2, 7
+STA 7, 2, 5
+STA 7, 2, 2
+MOV 5, 1, 4
+MOV 0, 1, 2
+STA 7, 0, 2
+LDA 3, 2, 4
+STA 4, 5, 2
+DEL 5
+STA 0, 6, 5
+DIV 1, 1, 6
+DIV 0, 0, 5
+STA 3, 5, 5
+MOV 0, 3, 5
+STA 0, 5, 2
+STA 6, 2, 7
+MOV 7, 4, 1
+NEW 0, 2
+MOV 3, 2, 2
+MUL 3, 4, 1
+DEL 5
+DEL 6
+NEW 5, 0
+NAND 7, 3, 1
+STA 7, 4, 6
+MOV 5, 4, 1
+LDA 7, 2, 1
+STA 1, 6, 2
+STA 5, 5, 6
+DEL 5
+STA 0, 7, 1
+DEL 6
+PRG 5, 5
+OUT 6
+MOV 5, 1, 5
+DEL 4
+STA 1, 6, 1
+MUL 1, 4, 6
+MOV 6, 2, 6
+DIV 0, 4, 1
+NEW 2, 5
+OUT 3
+OUT 3
+OUT 5
+HLT 
+PRG 4, 3
+OUT 5
+DEL 3
+NEW 3, 0
+DEL 3
+DEL 7
+OUT 5
+DEL 7
+NEW 3, 1
+STA 6, 5, 2
+DEL 4
+NAND 3, 6, 5
+MOV 1, 6, 7
+ADD 6, 7, 4
+OUT 0
+DIV 0, 2, 4
+OUT 7
+MOV 6, 0, 5
+STA 1, 4, 0
+MOV 1, 5, 0
+MOV 2, 0, 3
+DEL 1
+MOV 3, 2, 3
+DEL 3
+MOV 4, 2, 0
+LDA 3, 7, 6
+MUL 4, 7, 3
+MOV 0, 5, 6
+OUT 6
+LDA 4, 6, 4
+MOV 3, 3, 1
+LDA 5, 2, 0
+MOV 2, 7, 3
+MOV 0, 6, 1
+MOV 2, 7, 3
+MOV 0, 5, 0
+DEL 6
+MOV 2, 6, 1
+LDA 0, 5, 3
+NEW 1, 5
+MOV 2, 1, 0
+STA 4, 0, 6
+OUT 7
+STA 4, 2, 1
+DEL 4
+STA 6, 1, 1
+LDA 2, 5, 1
+MOV 5, 5, 5
+OUT 6
+MUL 2, 1, 3
+STA 4, 1, 7
+MOV 6, 0, 3
+LDA 6, 1, 5
+OUT 7
+LDA 2, 5, 7
+OUT 1
+OUT 0
+MOV 0, 0, 5
+LDA 4, 0, 1
+STA 3, 5, 3
+MOV 0, 5, 1
+OUT 1
+OUT 2
+OUT 4
+MOV 2, 4, 6
+ADD 5, 0, 1
+MOV 0, 5, 1
+MOV 7, 6, 6
+OUT 4
+OUT 6
+LDA 6, 2, 3
+HLT 
+MOV 6, 3, 2
+OUT 6
+INP 7
+OUT 5
+STA 6, 0, 7
+OUT 5
+NEW 1, 5
+OUT 7
+OUT 3
+OUT 4
+DIV 3, 1, 4
+MOV 1, 2, 2
+MOV 5, 3, 1
+OUT 0
+OUT 1
+INP 0
+STA 2, 7, 2
+NEW 5, 1
+DEL 7
+LDI 2, 0x3a93f5
+OUT 6
+ADD 4, 5, 1
+MOV 0, 1, 7
+OUT 3
+OUT 5
+OUT 7
+ADD 1, 1, 7
+MOV 0, 1, 7
+STA 5, 5, 1
+STA 3, 1, 5
+MOV 1, 5, 7
+MOV 4, 0, 6
+MOV 2, 4, 2
+STA 3, 3, 0
+LDA 4, 3, 2
+MOV 1, 6, 6
+MOV 2, 1, 1
+MOV 2, 1, 1
+OUT 6
+OUT 0
+OUT 4
+OUT 7
+MOV 5, 2, 1
+NEW 1, 1
+OUT 4
+DIV 3, 2, 4
+OUT 1
+ADD 5, 0, 7
+OUT 4
+OUT 4
+STA 1, 3, 3
+STA 3, 1, 4
+STA 5, 1, 0
+STA 3, 2, 6
+MOV 0, 0, 5
+DEL 2
+LDA 1, 5, 0
+LDA 4, 2, 5
+NEW 7, 6
+HLT 
+LDA 1, 1, 3
+LDA 2, 2, 2
+MOV 7, 0, 4
+MOV 5, 1, 6
+MOV 7, 3, 1
+MOV 6, 4, 2
+MOV 0, 1, 0
+MOV 4, 7, 5
+MOV 3, 5, 1
+MOV 2, 0, 4
+OUT 1
+LDI 3, 0x2c8aa8
+MOV 6, 1, 5
+LDA 0, 2, 0
+OUT 6
+OUT 7
+MOV 4, 6, 3
+OUT 0
+LDA 2, 3, 2
+LDA 2, 7, 0
+LDA 3, 6, 4
+MOV 6, 4, 3
+NEW 6, 0
+MOV 6, 7, 5
+MOV 5, 1, 6
+OUT 0
+MOV 5, 4, 3
+OUT 0
+LDA 0, 3, 1
+MOV 6, 6, 7
+MOV 4, 5, 5
+OUT 5
+MOV 6, 4, 4
+MOV 4, 7, 7
+MOV 0, 6, 6
+DEL 6
+LDA 6, 1, 1
+NEW 2, 1
+MOV 6, 2, 1
+MOV 7, 7, 5
+LDA 2, 5, 0
+OUT 1
+OUT 7
+OUT 7
+ADD 3, 2, 4
+LDA 2, 2, 7
+MOV 1, 2, 2
+MOV 3, 0, 6
+OUT 2
+MOV 7, 2, 5
+LDI 3, 0x14eb882
+OUT 6
+OUT 0
+OUT 7
+MOV 6, 4, 3
+OUT 4
+LDA 7, 2, 4
+OUT 7
+MUL 1, 4, 0
+OUT 1
+OUT 0
+STA 3, 5, 7
+INP 5
+NEW 6, 6
+STA 1, 7, 4
+LDA 4, 2, 0
+OUT 5
+OUT 5
+STA 3, 3, 7
+MOV 6, 5, 1
+MOV 7, 5, 2
+INP 6
+ADD 0, 1, 6
+STA 5, 1, 3
+NEW 7, 7
+STA 0, 5, 3
+DIV 6, 6, 4
+MUL 2, 1, 5
+DEL 1
+INP 6
+INP 6
+STA 0, 6, 5
+INP 2
+STA 0, 3, 4
+OUT 7
+LDA 5, 1, 1
+INP 5
+NEW 3, 1
+MOV 0, 3, 6
+LDI 4, 0x62c634
+INP 4
+LDA 0, 6, 6
+INP 4
+INP 3
+OUT 5
+OUT 2
+OUT 4
+OUT 5
+OUT 1
+STA 5, 6, 3
+MOV 3, 7, 2
+LDA 1, 0, 3
+DIV 1, 4, 4
+LDA 1, 7, 3
+MOV 6, 7, 0
+MOV 2, 6, 1
+LDA 6, 0, 6
+MOV 0, 1, 5
+MOV 2, 0, 7
+OUT 3
+ADD 0, 3, 0
+INP 7
+OUT 0
+STA 7, 2, 5
+OUT 6
+LDI 3, 0x184e44
+STA 6, 3, 3
+NEW 2, 5
+OUT 4
+INP 7
+INP 4
+OUT 7
+MOV 0, 1, 2
+MOV 0, 0, 2
+LDA 4, 5, 6
+OUT 4
+MOV 2, 4, 7
+OUT 0
+DIV 7, 6, 1
+MOV 4, 1, 1
+LDA 0, 0, 6
+DIV 6, 7, 1
+OUT 2
+INP 0
+OUT 2
+INP 4
+MOV 2, 6, 2
+MOV 4, 7, 2
+OUT 7
+OUT 0
+OUT 4
+LDI 3, 0xfeda9e
+OUT 6
+OUT 4
+INP 1
+MOV 4, 6, 7
+OUT 7
+INP 6
+OUT 0
+OUT 2
+INP 4
+INP 1
+MOV 3, 6, 4
+MOV 3, 4, 3
+DIV 2, 0, 1
+MUL 5, 4, 5
+STA 1, 4, 5
+OUT 4
+INP 1
+INP 3
+INP 4
+INP 2
+INP 1
+INP 0
+LDA 3, 7, 3
+OUT 5
+INP 0
+LDI 4, 0xd6c6fc
+INP 0
+OUT 4
+OUT 6
+NAND 1, 4, 1
+INP 0
+INP 5
+INP 5
+ADD 1, 1, 3
+INP 6
+INP 5
+NEW 3, 0
+ADD 3, 2, 3
+DIV 4, 1, 7
+INP 7
+STA 4, 1, 0
+INP 0
+INP 3
+INP 3
+INP 6
+ADD 1, 6, 0
+INP 7
+INP 2
+INP 2
+OUT 2
+INP 1
+LDI 6, 0x166c9f6
+INP 1
+INP 1
+INP 7
+INP 3
+INP 2
+INP 5
+INP 7
+DIV 0, 7, 5
+OUT 3
+OUT 4
+NEW 1, 2
+LDA 1, 6, 0
+DEL 2
+INP 7
+INP 1
+INP 5
+MOV 7, 7, 7
+INP 6
+MOV 6, 0, 7
+LDA 0, 5, 4
+STA 2, 5, 5
+INP 3
+INP 2
+OUT 2
+INP 7
+DIV 6, 7, 4
+INP 1
+MOV 2, 5, 2
+MOV 3, 7, 6
+INP 0
+INP 2
+MOV 5, 4, 6
+STA 3, 3, 5
+INP 1
+DEL 3
+INP 4
+MOV 1, 3, 2
+MOV 7, 3, 6
+LDA 5, 4, 1
+STA 6, 5, 5
+STA 4, 7, 7
+STA 3, 4, 4
+MOV 4, 2, 7
+STA 4, 4, 3
+INP 6
+INP 1
+INP 3
+ADD 0, 4, 3
+INP 3
+OUT 0
+MOV 4, 4, 2
+LDI 6, 0x1cecd50
+LDA 4, 6, 7
+OUT 2
+INP 3
+INP 3
+STA 0, 6, 4
+DEL 3
+INP 6
+LDA 4, 1, 1
+ADD 2, 2, 4
+INP 6
+OUT 5
+INP 7
+INP 1
+INP 0
+INP 5
+INP 0
+STA 0, 0, 4
+INP 5
+INP 3
+INP 7
+MOV 4, 4, 1
+INP 1
+MOV 5, 6, 2
+OUT 1
+STA 1, 5, 6
+LDI 2, 0x106ce46
+INP 6
+MOV 5, 1, 0
+INP 0
+NEW 5, 3
+NAND 1, 0, 3
+STA 3, 4, 0
+INP 3
+LDA 5, 3, 0
+INP 6
+INP 4
+STA 6, 6, 7
+INP 5
+LDI 5, 0x8abb49
+MOV 3, 1, 5
+LDA 2, 6, 0
+LDA 0, 6, 0
+OUT 2
+INP 5
+MOV 6, 5, 5
+MOV 1, 7, 4
+INP 6
+INP 3
+INP 2
+NEW 5, 4
+INP 2
+LDI 5, 0x10c0041
+PRG 6, 5
+MOV 0, 1, 4
+OUT 7
+INP 5
+INP 0
+LDA 7, 1, 4
+MOV 4, 6, 3
+MOV 1, 7, 0
+INP 0
+PRG 4, 5
+MOV 1, 1, 3
+OUT 3
+LDI 3, 0x1a6d6c5
+PRG 4, 7
+OUT 0
+OUT 7
+PRG 6, 3
+MOV 4, 7, 6
+OUT 4
+INP 1
+PRG 0, 3
+PRG 7, 5
+INP 0
+OUT 2
+LDA 4, 4, 6
+LDI 7, 0x1daf364
+INP 6
+INP 1
+INP 1
+MOV 0, 2, 3
+INP 2
+INP 5
+INP 4
+INP 1
+INP 3
+INP 2
+OUT 7
+INP 3
+LDI 6, 0x8f0218
+DEL 0
+INP 2
+PRG 0, 6
+INP 5
+INP 2
+PRG 5, 7
+PRG 7, 2
+INP 7
+LDI 3, 0x2ab19f
+INP 5
+INVALID PRG 6, 4
+INVALID MOV 0, 1, 7
+MUL 1, 0, 1
+INP 6
+INP 6
+MOV 3, 3, 6
+OUT 7
+PRG 6, 0
+INP 7
+LDI 3, 0x7c1392
+LDA 0, 4, 2
+NEW 3, 0
+INP 0
+MOV 0, 5, 2
+PRG 1, 4
+LDA 6, 1, 1
+STA 1, 7, 3
+MOV 0, 5, 5
+MOV 4, 3, 4
+INP 5
+PRG 4, 7
+MOV 0, 6, 3
+PRG 0, 6
+PRG 6, 7
+OUT 3
+MOV 7, 1, 5
+MOV 6, 7, 4
+OUT 7
+OUT 1
+MOV 4, 3, 1
+PRG 0, 7
+OUT 0
+OUT 0
+PRG 3, 7
+PRG 3, 1
+LDA 0, 5, 5
+MOV 2, 0, 1
+INP 1
+INP 1
+NAND 2, 4, 1
+MOV 0, 6, 1
+INP 1
+PRG 6, 1
+INP 3
+PRG 1, 6
+PRG 3, 4
+PRG 0, 6
+PRG 2, 3
+INP 3
+LDA 2, 7, 5
+NEW 6, 1
+OUT 1
+NAND 7, 2, 7
+INP 6
+PRG 1, 2
+PRG 1, 3
+PRG 3, 4
+INP 3
+DIV 5, 1, 1
+STA 4, 7, 0
+INP 7
+INP 7
+PRG 5, 1
+OUT 2
+INP 4
+PRG 6, 1
+MOV 0, 0, 3
+PRG 5, 4
+INP 3
+ADD 3, 2, 7
+INP 7
+DEL 6
+PRG 3, 5
+PRG 5, 2
+INP 4
+ADD 5, 2, 1
+STA 0, 1, 2
+INP 1
+LDI 4, 0xccce96
+ADD 5, 7, 1
+PRG 1, 0
+ADD 5, 7, 6
+INP 1
+PRG 7, 3
+ADD 6, 5, 6
+LDA 1, 3, 5
+PRG 5, 5
+PRG 0, 5
+PRG 3, 5
+INP 6
+INP 0
+INVALID PRG 2, 3
+INP 0
+INP 6
+PRG 2, 6
+LDA 0, 5, 4
+INP 2
+INP 2
+INP 1
+LDI 3, 0x15dbb53
+INP 3
+INVALID MOV 3, 3, 6
+INVALID PRG 6, 4
+PRG 5, 0
+PRG 3, 4
+PRG 5, 5
+NEW 7, 1
+PRG 0, 0
+MOV 0, 2, 4
+INP 2
+MOV 1, 2, 3
+MOV 1, 0, 4
+OUT 4
+PRG 0, 3
+MOV 0, 6, 0
+MOV 2, 1, 6
+LDA 3, 0, 2
+INP 2
+INP 6
+INP 7
+INP 6
+INP 5
+PRG 7, 0
+INP 2
+LDA 0, 6, 4
+INVALID STA 3, 3, 6
+DEL 0
+MOV 4, 0, 4
+ADD 1, 6, 2
+OUT 4
+INP 0
+STA 5, 4, 6
+INP 4
+OUT 0
+INP 5
+LDI 3, 0x198c64e
+INP 7
+INVALID PRG 1, 5
+INVALID LDA 2, 7, 3
+INP 2
+PRG 2, 5
+OUT 7
+INP 7
+STA 3, 0, 1
+INP 3
+INP 2
+LDI 4, 0x9ec125
+PRG 0, 4
+STA 3, 2, 2
+PRG 0, 4
+INVALID PRG 7, 1
+PRG 2, 0
+LDI 0, 0x1bc032
+PRG 0, 2
+LDI 3, 0x3aefc5
+NEW 0, 4
+PRG 2, 5
+STA 0, 4, 4
+PRG 2, 5
+NAND 0, 5, 7
+LDI 1, 0x1e2c023
+PRG 4, 3
+LDI 4, 0x13ab00f
+PRG 2, 4
+LDA 1, 1, 0
+LDA 7, 1, 5
+INP 6
+INP 5
+INP 1
+MOV 7, 2, 4
+LDA 0, 6, 3
+PRG 3, 5
+LDI 2, 0x614927
+INVALID PRG 0, 2
+DIV 5, 4, 0
+PRG 4, 4
+MOV 1, 3, 2
+OUT 0
+OUT 3
+PRG 6, 2
+PRG 7, 3
+STA 1, 6, 3
+PRG 3, 4
+MOV 1, 4, 7
+LDI 2, 0x651487
+MOV 1, 6, 1
+MOV 6, 6, 0
+NEW 2, 4
+PRG 4, 2
+LDI 2, 0xc64a8f
+LDI 3, 0x10ad92f
+INP 2
+LDI 3, 0xab710c
+LDI 2, 0x123f7a3
+LDI 6, 0xb0e196
+LDI 2, 0x72c6aa
+MOV 5, 6, 6
+LDI 2, 0x16ac7e0
+INVALID NAND 6, 7, 0
+INVALID LDA 7, 6, 6
+INP 6
+LDI 0, 0xde1a53
+LDI 1, 0xacbd5f
+MOV 3, 7, 3
+LDI 0, 0xa0c133
+PRG 4, 6
+INP 4
+INP 7
+PRG 1, 0
+INP 0
+LDI 0, 0x1c00753
+INVALID INP 1
+PRG 1, 7
+LDI 3, 0x138d797
+PRG 4, 2
+DIV 4, 7, 7
+LDI 3, 0x15aa39b
+OUT 7
+INP 7
+INP 1
+PRG 3, 5
+INVALID LDI 3, 0x11568ba
+NAND 7, 7, 0
+LDI 1, 0xcb59c
+PRG 4, 5
+OUT 7
+PRG 5, 4
+PRG 1, 7
+PRG 5, 0
+LDA 3, 6, 2
+PRG 7, 0
+STA 0, 6, 0
+MOV 4, 0, 0
+PRG 6, 4
+MOV 4, 0, 1
+DEL 3
+PRG 0, 7
+LDI 0, 0x58bf89
+PRG 5, 3
+MOV 4, 6, 5
+PRG 7, 5
+LDI 2, 0x79203a
+MOV 1, 4, 0
+LDI 2, 0x803a34
+INP 1
+PRG 2, 7
+MOV 3, 4, 2
+LDI 2, 0xd5db6d
+INVALID MOV 6, 6, 2
+PRG 0, 1
+LDI 3, 0x153d5b8
+MOV 1, 1, 0
+MOV 5, 6, 0
+PRG 2, 2
+LDI 6, 0x9e5b26
+LDI 5, 0xf6ccac
+LDA 3, 3, 1
+LDI 2, 0x1821034
+INVALID LDI 5, 0x4234e
+INVALID INP 6
+LDI 5, 0x10ed76b
+LDI 5, 0x15336c1
+PRG 4, 0
+LDI 4, 0x7265
+PRG 4, 6
+LDI 6, 0x466b32
+LDI 2, 0x176dace
+LDI 5, 0x170aef3
+LDI 3, 0xe49b89
+INVALID PRG 3, 0
+INVALID LDI 4, 0x5f38c2
+LDI 4, 0x3e5dc2
+INP 7
+PRG 7, 1
+INP 3
+LDI 4, 0x599916
+MOV 1, 3, 5
+PRG 6, 5
+INP 6
+LDI 3, 0x1ebc880
+INVALID PRG 2, 6
+LDI 6, 0x176f068
+LDI 4, 0x19eb9ac
+LDI 3, 0xce25dd
+ADD 6, 2, 1
+MOV 1, 6, 7
+LDI 2, 0x1d77340
+PRG 6, 2
+LDI 1, 0x168d8e6
+ADD 6, 4, 7
+ADD 6, 3, 2
+PRG 5, 2
+INVALID PRG 5, 7
+DIV 4, 2, 3
+INP 5
+INP 0
+LDI 3, 0x5bf708
+ADD 3, 6, 6
+PRG 7, 1
+LDI 6, 0xdbc1bc
+LDI 5, 0x3266e6
+LDI 1, 0x16f899e
+LDI 3, 0x15cb1ca
+PRG 0, 0
+INVALID INP 4
+LDI 4, 0xe7753a
+PRG 1, 0
+STA 5, 1, 4
+PRG 6, 0
+LDI 4, 0x8ce883
+INP 0
+LDI 6, 0x1d9d75d
+LDI 6, 0x1895d75
+INP 5
+LDA 7, 2, 6
+PRG 6, 5
+INVALID LDI 4, 0x1c0d245
+INVALID INP 7
+PRG 7, 0
+INP 1
+MOV 2, 0, 5
+MOV 1, 4, 3
+LDA 4, 6, 5
+INP 5
+LDI 1, 0x18b9ff9
+LDI 5, 0x80832
+STA 0, 4, 4
+INVALID ADD 5, 1, 0
+INVALID INVALID NAND 7, 6, 1
+LDI 7, 0xe5da32
+INP 4
+LDI 2, 0x1e93421
+ADD 7, 5, 4
+INP 6
+INP 0
+HLT 
+MOV 1, 4, 3
+INVALID NAND 2, 3, 0
+DEL 3
+OUT 5
+INP 2
+PRG 5, 6
+PRG 0, 6
+LDI 3, 0xf54a68
+LDI 0, 0x1b6fb35
+MOV 3, 6, 3
+INP 1
+INP 7
+LDI 0, 0x1efa742
+PRG 3, 7
+INP 0
+NAND 5, 7, 7
+LDI 1, 0x18eb572
+LDI 1, 0x61670a
+STA 4, 5, 2
+LDI 1, 0x8e2072
+INVALID LDA 1, 0, 5
+PRG 7, 1
+LDI 4, 0x700808
+INVALID INVALID ADD 1, 1, 1
+INP 4
+NAND 6, 4, 5
+INP 5
+PRG 1, 3
+PRG 3, 7
+LDI 5, 0x2ba330
+INVALID LDA 0, 7, 1
+MOV 0, 5, 1
+OUT 5
+MOV 0, 1, 4
+MOV 0, 2, 5
+MOV 0, 0, 5
+LDI 6, 0x126e048
+DEL 7
+OUT 7
+MUL 4, 6, 6
+STA 1, 1, 4
+INP 6
+STA 3, 0, 6
+INP 1
+LDI 5, 0x2c15a6
+LDA 4, 3, 3
+ADD 4, 3, 5
+LDI 1, 0xdf3aca
+INVALID INVALID INVALID INVALID INP 5
+MOV 2, 4, 5
+MOV 6, 2, 7
+INVALID LDA 6, 5, 2
+PRG 6, 2
+MOV 4, 1, 0
+LDI 5, 0x1f917f3
+LDI 1, 0x1737f27
+INVALID LDI 7, 0x1b0b252
+LDA 1, 7, 6
+INVALID INVALID INVALID INP 2
+INVALID INP 6
+PRG 4, 5
+LDI 1, 0x703e25
+LDI 6, 0x87b92f
+PRG 3, 6
+INVALID LDI 3, 0x1e2ccbd
+DIV 2, 3, 6
+INVALID STA 2, 3, 7
+INP 1
+LDA 7, 2, 0
+INVALID DEL 3
+INVALID OUT 4
+INP 5
+INP 4
+ADD 5, 5, 7
+MOV 1, 5, 6
+INVALID OUT 7
+INVALID INP 2
+PRG 7, 0
+LDI 3, 0x30fa48
+PRG 1, 5
+MOV 6, 4, 1
+PRG 6, 5
+INP 0
+PRG 5, 3
+INVALID MOV 0, 7, 7
+INVALID MOV 1, 7, 4
+INVALID INP 6
+INVALID STA 7, 5, 4
+INVALID MUL 5, 2, 3
+INP 7
+LDI 5, 0x143c11d
+INP 2
+MOV 2, 5, 4
+MOV 2, 0, 2
+LDA 7, 0, 6
+LDI 4, 0x1cf15ca
+PRG 5, 5
+INP 4
+LDA 5, 3, 2
+OUT 2
+LDI 6, 0x5d7ac6
+INVALID LDI 6, 0x138df7f
+INP 4
+INVALID PRG 2, 1
+DEL 2
+INVALID INVALID MOV 1, 3, 5
+INVALID LDI 1, 0x3e4c18
+INVALID PRG 1, 7
+LDI 4, 0x1fcecee
+STA 4, 7, 5
+INVALID PRG 1, 2
+INVALID INP 0
+INVALID LDI 7, 0x1d4cccd
+MOV 3, 2, 6
+INVALID LDI 3, 0x17dfe03
+INP 5
+INVALID LDA 2, 0, 1
+INVALID INVALID PRG 1, 4
+INVALID LDI 2, 0xe554e8
+INVALID MOV 2, 5, 4
+MOV 5, 6, 1
+PRG 1, 4
+OUT 4
+INVALID LDI 5, 0xc095e1
+LDI 5, 0x17464a7
+PRG 0, 4
+LDI 4, 0x5cd4e2
+INVALID MOV 6, 1, 0
+LDI 2, 0x1db58a6
+INVALID INVALID INP 1
+STA 0, 6, 7
+PRG 7, 7
+MOV 3, 6, 1
+MOV 7, 6, 5
+LDI 6, 0xa76df6
+LDI 3, 0x32a096
+LDI 3, 0xedca9a
+NEW 2, 7
+INVALID INVALID INVALID INVALID DEL 0
+INVALID INP 3
+INVALID PRG 2, 0
+LDI 7, 0x7ce718
+INVALID INVALID INVALID INVALID INVALID NEW 1, 2
+MOV 0, 0, 0
+INVALID INVALID PRG 2, 7
+INVALID INVALID INVALID LDI 3, 0x12ebabb
+INP 3
+LDI 7, 0x1e6fe16
+INVALID INVALID INVALID PRG 3, 5
+INVALID PRG 3, 1
+MOV 1, 2, 5
+INVALID INVALID INVALID INVALID INVALID INP 1
+INVALID OUT 2
+MUL 7, 0, 5
+INVALID LDA 1, 6, 7
+ADD 0, 7, 5
+INVALID OUT 2
+MUL 4, 0, 4
+OUT 7
+INVALID INVALID DIV 1, 3, 1
+INP 4
+INVALID INVALID LDA 7, 7, 1
+MOV 0, 7, 0
+LDI 3, 0x14bde5c
+STA 7, 6, 7
+LDI 7, 0x102347a
+MOV 3, 4, 2
+INVALID STA 1, 5, 5
+INVALID OUT 2
+INP 4
+STA 7, 6, 2
+INVALID LDA 6, 6, 6
+INVALID INVALID DIV 1, 4, 7
+INVALID INVALID LDI 5, 0x1d666ec
+INVALID INVALID INVALID INVALID INP 6
+INVALID INP 5
+INVALID HLT 
+INVALID INVALID INVALID INVALID INVALID ADD 1, 0, 0
+LDI 1, 0x17100fa
+INVALID INVALID DEL 0
+LDI 1, 0x61ca77
+INVALID PRG 7, 5
+INVALID MOV 5, 4, 0
+MOV 4, 0, 1
+PRG 7, 1
+INVALID INVALID MUL 2, 1, 0
+PRG 0, 2
+MOV 3, 6, 0
+NEW 6, 5
+MOV 6, 2, 6
+LDA 7, 5, 3
+INVALID INP 6
+NAND 6, 4, 0
+PRG 4, 0
+INVALID INVALID LDI 7, 0x5df1a9
+MOV 4, 2, 1
+ADD 5, 0, 5
+OUT 6
+HLT 
+MOV 1, 2, 6
+LDA 3, 7, 6
+NAND 5, 0, 2
+LDA 0, 7, 7
+LDA 1, 5, 5
+PRG 7, 6
+INVALID LDA 4, 1, 5
+MOV 1, 6, 1
+MOV 1, 6, 2
+MOV 4, 2, 4
+MOV 3, 6, 4
+MOV 4, 2, 2
+INVALID INVALID MOV 2, 6, 7
+PRG 6, 6
+LDA 1, 5, 6
+LDA 1, 7, 3
+OUT 1
+DEL 5
+MOV 5, 4, 0
+INVALID PRG 2, 4
+INP 3
+HLT 
+OUT 1
+INVALID LDI 5, 0x1afc089
+MOV 2, 1, 0
+DEL 0
+INVALID DIV 4, 7, 4
+OUT 1
+INP 3
+OUT 3
+ADD 7, 3, 6
+STA 7, 3, 0
+INVALID LDI 6, 0x1f88a24
+INVALID PRG 5, 0
+LDI 3, 0x12ea430
+LDI 3, 0x836e54
+INVALID INVALID INVALID INVALID LDI 4, 0xd8e8db
+LDI 0, 0x1f403ad
+INVALID INVALID INVALID INVALID INP 7
+PRG 7, 3
+INVALID STA 7, 1, 0
+MUL 7, 2, 6
+INP 7
+DEL 5
+INVALID INVALID INVALID INVALID INVALID MOV 0, 4, 4
+NAND 6, 3, 7
+INVALID INVALID LDA 6, 1, 5
+STA 0, 7, 0
+LDA 7, 3, 6
+INVALID OUT 3
+INVALID MOV 6, 3, 0
+OUT 2
+LDI 3, 0x1d19cf8
+MOV 1, 3, 1
+NAND 1, 6, 6
+HLT 
+NAND 1, 4, 4
+LDA 0, 0, 0
+HLT 
+NAND 5, 2, 0
+HLT 
+DIV 7, 1, 6
+MOV 0, 7, 5
+HLT 
+DIV 7, 0, 1
+HLT 
+HLT 
+ADD 5, 3, 4
+HLT 
+HLT 
+HLT 
+DEL 6
+HLT 
+NEW 0, 0
+DIV 7, 4, 2
+HLT 
+HLT 
+HLT 
+DIV 2, 0, 0
+HLT 
+LDA 3, 6, 4
+NAND 7, 5, 6
+HLT 
+MOV 7, 7, 1
+STA 1, 7, 3
+DIV 2, 6, 4
+HLT 
+NAND 3, 1, 4
+HLT 
+NAND 6, 5, 0
+HLT 
+HLT 
+DIV 0, 5, 2
+HLT 
+HLT 
+HLT 
+HLT 
+NEW 4, 2
+MOV 2, 2, 3
+DIV 6, 4, 7
+HLT 
+HLT 
+HLT 
+HLT 
+NEW 2, 5
+HLT 
+DEL 1
+HLT 
+NEW 7, 2
+STA 0, 7, 2
+NAND 0, 6, 2
+DIV 0, 5, 0
+HLT 
+DEL 7
+LDA 1, 0, 0
+NAND 6, 5, 5
+HLT 
+HLT 
+DIV 7, 5, 2
+DIV 5, 3, 6
+DIV 1, 1, 1
+NEW 6, 7
+MOV 5, 7, 7
+LDA 4, 3, 3
+NEW 7, 6
+MUL 2, 0, 4
+LDA 3, 4, 5
+MUL 3, 4, 4
+NEW 2, 6
+MOV 0, 1, 0
+MOV 5, 5, 0
+HLT 
+NAND 2, 4, 6
+MOV 5, 6, 2
+NAND 5, 5, 7
+HLT 
+NEW 7, 6
+ADD 3, 7, 6
+HLT 
+NEW 5, 6
+NEW 7, 7
+NAND 2, 5, 0
+MOV 0, 4, 3
+DIV 0, 2, 4
+HLT 
+MOV 4, 3, 2
+HLT 
+MOV 6, 7, 4
+MOV 3, 6, 0
+MOV 2, 7, 3
+ADD 0, 3, 5
+NEW 3, 7
+DIV 7, 5, 7
+DIV 0, 6, 3
+STA 5, 5, 1
+DEL 1
+HLT 
+NEW 4, 6
+HLT 
+NEW 0, 6
+LDA 2, 1, 0
+NEW 3, 6
+MOV 5, 1, 6
+LDA 0, 7, 4
+NEW 3, 7
+NEW 4, 3
+NEW 6, 6
+NEW 1, 7
+NEW 1, 5
+NAND 4, 6, 4
+NAND 0, 7, 7
+HLT 
+HLT 
+ADD 6, 6, 2
+HLT 
+HLT 
+MOV 0, 0, 4
+MOV 0, 1, 1
+LDA 5, 6, 5
+ADD 1, 0, 0
+HLT 
+HLT 
+HLT 
+MUL 1, 4, 6
+HLT 
+HLT 
+HLT 
+HLT 
+DIV 5, 4, 0
+NAND 5, 4, 0
+MUL 7, 7, 1
+HLT 
+MUL 1, 5, 3
+HLT 
+NEW 1, 0
+HLT 
+MOV 1, 6, 7
+NAND 2, 1, 0
+NEW 5, 0
+HLT 
+HLT 
+HLT 
+HLT 
+HLT 
+LDA 2, 3, 6
+STA 0, 6, 7
+ADD 6, 7, 6
+ADD 1, 3, 3
+STA 5, 3, 6
+MOV 5, 4, 0
+NAND 0, 7, 7
+MOV 1, 2, 0
+NAND 3, 5, 7
+MOV 1, 7, 1
+MOV 2, 6, 4
+HLT 
+NEW 2, 3
+MOV 0, 6, 1
+MOV 1, 1, 0
+MOV 6, 3, 1
+ADD 7, 7, 6
+NEW 2, 6
+MOV 0, 0, 2
+MOV 3, 6, 1
+DIV 1, 6, 1
+DIV 2, 4, 3
+DIV 3, 3, 7
+MOV 5, 4, 1
+MOV 4, 5, 6
+MOV 0, 7, 5
+HLT 
+HLT 
+MUL 3, 4, 3
+MOV 7, 7, 7
+NEW 6, 0
+NEW 4, 4
+MOV 6, 1, 7
+MOV 2, 4, 2
+MOV 5, 7, 5
+MUL 5, 5, 2
+MOV 5, 5, 2
+MUL 2, 4, 4
+DIV 7, 1, 6
+MOV 0, 4, 4
+NAND 3, 5, 2
+NEW 6, 4
+STA 3, 6, 1
+MOV 0, 0, 1
+NEW 7, 3
+MOV 6, 6, 5
+MOV 6, 3, 0
+NAND 0, 4, 0
+MOV 2, 2, 3
+DEL 7
+NEW 3, 1
+MOV 6, 4, 3
+NEW 7, 3
+MUL 6, 5, 3
+LDA 5, 3, 7
+LDA 5, 5, 3
+MOV 3, 1, 3
+DIV 0, 1, 1
+NEW 7, 7
+HLT 
+HLT 
+NAND 4, 6, 0
+HLT 
+STA 1, 1, 6
+MOV 4, 3, 5
+ADD 7, 1, 0
+DIV 1, 7, 1
+DIV 4, 3, 5
+DIV 3, 1, 0
+NEW 5, 2
+MOV 2, 1, 2
+NAND 4, 1, 3
+LDA 5, 4, 6
+NEW 3, 0
+HLT 
+NEW 0, 4
+NEW 0, 4
+DIV 7, 1, 3
+HLT 
+NEW 6, 6
+ADD 5, 0, 3
+HLT 
+NEW 3, 4
+NEW 4, 1
+LDA 6, 3, 0
+NEW 7, 5
+DIV 1, 1, 2
+HLT 
+NEW 5, 7
+HLT 
+NEW 1, 5
+DIV 7, 0, 5
+HLT 
+DIV 1, 1, 7
+HLT 
+NEW 7, 5
+NEW 2, 5
+NEW 1, 2
+LDA 0, 4, 5
+NEW 7, 5
+NEW 3, 5
+NEW 2, 0
+NEW 2, 6
+HLT 
+HLT 
+DIV 5, 1, 7
+NEW 4, 5
+NEW 3, 2
+NAND 0, 4, 3
+HLT 
+NAND 6, 6, 0
+LDA 6, 7, 7
+DIV 6, 5, 1
+HLT 
+DIV 5, 6, 2
+NEW 6, 2
+NEW 4, 7
+NEW 5, 1
+NEW 3, 0
+DIV 7, 2, 0
+NEW 4, 3
+NEW 1, 2
+HLT 
+NEW 2, 2
+NAND 7, 4, 6
+MOV 1, 7, 3
+NAND 4, 3, 6
+HLT 
+LDA 7, 6, 5
+NEW 4, 2
+NEW 5, 7
+LDA 5, 2, 6
+NAND 2, 3, 6
+MOV 5, 5, 0
+MOV 2, 7, 0
+MOV 4, 4, 0
+DIV 4, 0, 2
+MOV 6, 0, 5
+HLT 
+HLT 
+DIV 7, 5, 3
+DIV 5, 7, 6
+MOV 0, 7, 2
+MOV 0, 2, 2
+DIV 2, 1, 2
+NEW 0, 7
+MOV 7, 4, 3
+DIV 1, 2, 7
+DIV 6, 1, 6
+NEW 6, 3
+NEW 5, 4
+HLT 
+MOV 1, 5, 7
+NEW 6, 6
+DIV 7, 6, 5
+NAND 5, 1, 1
+MOV 7, 3, 2
+MUL 7, 4, 6
+MOV 2, 4, 1
+DIV 1, 6, 2
+HLT 
+STA 7, 5, 7
+NAND 4, 0, 6
+NEW 0, 7
+HLT 
+NEW 7, 0
+NEW 1, 4
+DIV 0, 2, 0
+OUT 1
+NEW 1, 0
+HLT 
+NEW 1, 7
+MOV 4, 0, 4
+NEW 3, 0
+NEW 4, 0
+OUT 2
+NEW 0, 3
+NEW 7, 0
+DIV 2, 7, 2
+NEW 3, 6
+HLT 
+NEW 1, 7
+OUT 0
+NAND 0, 4, 3
+DIV 2, 4, 2
+NEW 2, 3
+NAND 5, 0, 6
+HLT 
+NAND 7, 5, 6
+MOV 6, 1, 4
+HLT 
+MOV 6, 5, 7
+MOV 3, 5, 5
+HLT 
+NEW 3, 3
+HLT 
+DIV 4, 3, 4
+HLT 
+HLT 
+HLT 
+LDA 7, 6, 6
+DIV 5, 4, 4
+MOV 5, 3, 6
+LDA 3, 2, 5
+DIV 5, 4, 4
+MOV 4, 3, 6
+NEW 2, 5
+DIV 4, 4, 0
+NEW 3, 6
+MOV 1, 6, 1
+MUL 1, 7, 3
+NEW 6, 3
+NEW 4, 4
+NAND 3, 2, 6
+NEW 5, 0
+NAND 1, 2, 0
+HLT 
+DEL 7
+NEW 5, 0
+HLT 
+HLT 
+HLT 
+MOV 4, 6, 5
+HLT 
+DEL 0
+NEW 3, 0
+NEW 7, 5
+NEW 0, 1
+NEW 2, 6
+NEW 2, 5
+DIV 4, 4, 1
+NAND 0, 6, 5
+NEW 4, 1
+HLT 
+NEW 4, 0
+NEW 1, 4
+DIV 5, 5, 5
+NEW 4, 5
+DEL 2
+MUL 2, 4, 2
+NEW 5, 0
+DIV 4, 1, 5
+NEW 7, 5
+NEW 1, 3
+DIV 4, 7, 7
+DIV 4, 2, 1
+STA 7, 2, 3
+NEW 6, 0
+MOV 1, 1, 2
+NEW 6, 4
+NAND 6, 2, 1
+HLT 
+DIV 4, 5, 3
+HLT 
+NEW 7, 0
+NEW 4, 2
+NEW 3, 6
+LDA 4, 3, 3
+LDA 4, 7, 0
+LDA 1, 7, 2
+DIV 0, 1, 7
+HLT 
+HLT 
+NAND 2, 2, 4
+DIV 3, 3, 4
+NEW 4, 5
+OUT 6
+HLT 
+LDA 4, 4, 0
+LDA 2, 7, 5
+NEW 3, 6
+NEW 5, 7
+NEW 0, 1
+MUL 2, 0, 7
+NAND 1, 0, 5
+NEW 5, 3
+MOV 3, 5, 1
+NAND 5, 6, 0
+NEW 3, 4
+NEW 6, 2
+NEW 6, 6
+HLT 
+NEW 4, 6
+NAND 0, 1, 6
+MOV 0, 7, 6
+HLT 
+NAND 1, 3, 7
+LDA 1, 0, 7
+NEW 0, 0
+NEW 7, 2
+DIV 0, 1, 5
+NEW 2, 0
+HLT 
+NEW 5, 6
+OUT 0
+HLT 
+NEW 5, 7
+HLT 
+ADD 0, 6, 0
+NEW 4, 4
+NEW 6, 2
+STA 2, 5, 0
+DEL 5
+MUL 4, 0, 0
+DEL 0
+HLT 
+HLT 
+MOV 0, 3, 7
+NAND 3, 5, 5
+NEW 5, 7
+NEW 0, 1
+NEW 1, 0
+NEW 6, 4
+NEW 1, 0
+STA 4, 1, 7
+STA 0, 7, 1
+LDA 1, 5, 6
+NAND 1, 3, 7
+NEW 0, 4
+NEW 4, 7
+NEW 3, 4
+HLT 
+NAND 4, 2, 0
+DIV 1, 5, 5
+HLT 
+DIV 2, 0, 1
+NAND 6, 5, 3
+DIV 0, 5, 0
+NEW 5, 6
+NAND 3, 4, 3
+NEW 7, 1
+HLT 
+NEW 0, 2
+NEW 5, 3
+NEW 7, 3
+NEW 7, 5
+NEW 1, 3
+NEW 6, 0
+NEW 0, 6
+NEW 1, 0
+DEL 6
+MOV 0, 5, 2
+NEW 2, 6
+OUT 0
+NEW 6, 4
+LDA 7, 3, 2
+NEW 2, 0
+NEW 0, 1
+NEW 4, 4
+NEW 5, 0
+NEW 0, 6
+NEW 5, 5
+NEW 3, 2
+HLT 
+HLT 
+NEW 0, 2
+HLT 
+NAND 7, 2, 4
+NEW 3, 7
+DEL 1
+NEW 0, 2
+NEW 5, 2
+STA 2, 7, 3
+NAND 2, 6, 7
+MUL 0, 5, 1
+HLT 
+HLT 
+DEL 0
+NEW 0, 0
+DEL 6
+DEL 4
+OUT 6
+DEL 0
+DEL 4
+MOV 0, 2, 6
+STA 0, 5, 1
+LDA 1, 4, 5
+DEL 4
+NEW 2, 5
+DEL 0
+DEL 2
+NEW 6, 4
+HLT 
+HLT 
+DIV 5, 0, 0
+DEL 3
+NEW 0, 2
+DEL 6
+DEL 5
+NEW 2, 5
+HLT 
+NEW 2, 0
+OUT 2
+LDA 4, 4, 4
+DIV 1, 4, 4
+DIV 6, 0, 3
+NEW 0, 3
+DEL 5
+HLT 
+NEW 5, 4
+LDA 1, 4, 3
+MOV 1, 3, 1
+HLT 
+NEW 1, 4
+HLT 
+HLT 
+OUT 7
+NAND 7, 4, 1
+NEW 0, 7
+MOV 0, 2, 4
+NEW 4, 1
+NEW 1, 4
+DEL 7
+DEL 4
+NEW 2, 5
+NEW 4, 4
+HLT 
+LDA 2, 1, 4
+DEL 7
+HLT 
+DEL 4
+DEL 7
+MOV 4, 1, 0
+STA 7, 0, 5
+DEL 6
+HLT 
+LDA 3, 6, 2
+OUT 1
+HLT 
+DEL 1
+DEL 6
+STA 7, 4, 0
+DEL 0
+MOV 6, 6, 1
+OUT 4
+HLT 
+DEL 5
+HLT 
+DEL 5
+DIV 0, 7, 5
+MOV 1, 4, 5
+OUT 5
+DEL 5
+DEL 7
+HLT 
+HLT 
+NEW 5, 7
+NEW 4, 6
+DEL 6
+HLT 
+LDA 0, 4, 0
+LDA 0, 5, 5
+LDA 3, 4, 4
+DIV 7, 4, 2
+NEW 4, 5
+MUL 6, 5, 1
+DEL 0
+NEW 5, 0
+NEW 6, 0
+DEL 5
+NEW 5, 2
+NEW 1, 0
+NAND 7, 1, 6
+NEW 5, 6
+MOV 3, 5, 1
+NEW 2, 3
+NEW 2, 7
+HLT 
+NAND 0, 5, 1
+DEL 4
+NEW 2, 6
+MOV 0, 1, 6
+DEL 5
+NEW 7, 0
+NEW 1, 1
+DEL 5
+DEL 6
+DEL 7
+HLT 
+HLT 
+MOV 0, 4, 4
+NAND 4, 0, 6
+STA 2, 5, 3
+LDA 1, 7, 3
+LDA 3, 4, 0
+NAND 1, 7, 6
+HLT 
+LDA 4, 4, 5
+DEL 2
+DEL 6
+DIV 7, 6, 7
+DEL 1
+DIV 2, 1, 6
+HLT 
+MOV 0, 4, 6
+MOV 0, 2, 2
+MUL 5, 0, 6
+DEL 2
+NEW 3, 0
+HLT 
+NEW 3, 7
+NEW 7, 6
+DEL 4
+DEL 1
+NEW 2, 7
+DEL 7
+DIV 7, 1, 1
+NEW 7, 7
+LDA 6, 0, 4
+MOV 4, 3, 7
+NEW 0, 1
+OUT 7
+DEL 2
+LDA 7, 4, 1
+MOV 1, 2, 1
+DEL 3
+NEW 5, 2
+NEW 0, 3
+DEL 1
+DEL 3
+LDA 7, 4, 2
+MOV 1, 3, 1
+MOV 7, 2, 6
+STA 2, 5, 3
+DEL 3
+MOV 6, 3, 3
+DEL 2
+NEW 1, 6
+MOV 2, 7, 1
+MOV 5, 2, 5
+DEL 4
+DEL 4
+DEL 2
+NEW 5, 4
+HLT 
+DEL 7
+DEL 3
+DEL 6
+NEW 7, 1
+OUT 3
+MOV 7, 2, 0
+DEL 6
+DEL 5
+NEW 6, 2
+DIV 3, 2, 4
+DIV 1, 3, 5
+OUT 4
+STA 0, 2, 0
+STA 4, 4, 0
+MOV 4, 2, 1
+NEW 6, 3
+NEW 2, 5
+DEL 7
+OUT 0
+STA 3, 3, 6
+MOV 4, 6, 3
+MOV 4, 7, 7
+DEL 4
+MOV 0, 7, 2
+DIV 2, 0, 6
+OUT 7
+NEW 3, 2
+HLT 
+HLT 
+DIV 4, 7, 1
+NEW 3, 6
+MOV 3, 3, 7
+MOV 2, 3, 3
+NEW 3, 6
+STA 7, 2, 6
+STA 0, 6, 3
+HLT 
+DEL 6
+HLT 
+OUT 2
+MOV 1, 3, 3
+STA 5, 1, 7
+STA 5, 3, 6
+NEW 0, 7
+HLT 
+DIV 1, 4, 5
+DIV 3, 1, 5
+NAND 6, 7, 0
+DIV 6, 4, 7
+NEW 5, 0
+HLT 
+NEW 2, 1
+DIV 0, 4, 5
+DIV 5, 7, 1
+HLT 
+MOV 7, 4, 3
+MOV 0, 7, 1
+DEL 7
+DEL 1
+DEL 0
+OUT 1
+DEL 2
+DEL 2
+DEL 1
+DEL 5
+NEW 2, 7
+NEW 0, 4
+OUT 2
+HLT 
+DEL 0
+DEL 7
+NEW 4, 5
+LDA 2, 5, 5
+NEW 0, 5
+OUT 4
+LDA 1, 5, 5
+HLT 
+DEL 5
+DIV 5, 0, 5
+HLT 
+NEW 2, 3
+DEL 6
+NEW 3, 3
+DEL 4
+NEW 0, 0
+NEW 7, 5
+HLT 
+NEW 5, 3
+NAND 5, 6, 2
+NEW 3, 5
+DEL 5
+DEL 7
+NEW 7, 5
+NEW 5, 5
+DEL 1
+OUT 5
+DEL 7
+HLT 
+DEL 6
+DEL 7
+DEL 1
+DEL 1
+OUT 6
+NEW 6, 2
+DEL 2
+NEW 5, 5
+DEL 5
+NEW 6, 2
+STA 7, 1, 3
+NAND 2, 7, 0
+LDA 2, 2, 6
+HLT 
+HLT 
+MOV 5, 2, 2
+MOV 0, 0, 1
+MOV 6, 7, 5
+DEL 2
+DEL 0
+DEL 4
+DEL 2
+DEL 6
+LDA 4, 5, 3
+MOV 0, 4, 0
+OUT 2
+LDA 4, 1, 1
+LDA 7, 3, 3
+DEL 6
+DEL 1
+HLT 
+HLT 
+NAND 5, 2, 0
+DIV 7, 0, 7
+HLT 
+DIV 6, 4, 0
+NEW 6, 4
+DEL 1
+DEL 5
+OUT 3
+DEL 2
+DEL 4
+DIV 0, 5, 6
+DEL 1
+DEL 2
+DEL 6
+STA 5, 7, 0
+DEL 1
+DIV 3, 0, 2
+DEL 5
+NAND 1, 2, 1
+DIV 6, 6, 3
+NAND 6, 2, 5
+STA 2, 3, 3
+HLT 
+NAND 2, 7, 0
+DEL 6
+NAND 5, 6, 1
+LDA 7, 4, 1
+DEL 5
+DEL 3
+DEL 4
+MOV 6, 5, 6
+DEL 5
+DEL 4
+DEL 4
+HLT 
+NEW 3, 4
+NEW 4, 5
+DEL 2
+HLT 
+NEW 0, 2
+NEW 4, 2
+NEW 1, 0
+OUT 3
+NEW 5, 3
+DEL 6
+STA 4, 1, 3
+DEL 5
+DEL 3
+NEW 0, 4
+OUT 2
+DEL 1
+NEW 1, 6
+DEL 2
+MUL 1, 7, 2
+DEL 2
+MUL 2, 3, 0
+OUT 7
+MUL 3, 7, 7
+DEL 2
+MOV 7, 4, 1
+HLT 
+NEW 0, 4
+DEL 7
+STA 1, 4, 6
+DEL 0
+DEL 2
+MOV 1, 2, 6
+DEL 1
+STA 0, 1, 2
+NEW 4, 6
+OUT 6
+DEL 6
+DEL 3
+DEL 0
+MOV 4, 3, 1
+DEL 1
+DEL 6
+NAND 1, 7, 3
+DEL 5
+DEL 2
+NEW 2, 3
+NEW 3, 7
+HLT 
+DEL 5
+OUT 0
+MOV 5, 0, 4
+DEL 4
+DIV 0, 7, 6
+LDA 5, 5, 1
+DEL 5
+DEL 3
+DEL 6
+LDA 5, 6, 2
+DEL 5
+MUL 1, 0, 2
+DEL 5
+MOV 1, 6, 6
+DEL 0
+OUT 6
+NEW 4, 6
+DEL 3
+HLT 
+MOV 6, 1, 0
+LDA 0, 6, 0
+NEW 5, 1
+LDA 4, 4, 4
+DEL 0
+DEL 0
+DEL 6
+DEL 2
+DEL 1
+DEL 5
+OUT 2
+DEL 5
+DEL 5
+HLT 
+DEL 6
+NEW 0, 1
+DEL 2
+OUT 5
+MOV 6, 7, 3
+NEW 0, 6
+MOV 0, 1, 5
+DEL 7
+NEW 0, 4
+LDA 0, 5, 5
+STA 6, 6, 5
+HLT 
+MUL 5, 2, 6
+DEL 0
+DEL 6
+NEW 2, 2
+NEW 5, 1
+OUT 5
+DEL 1
+DIV 0, 3, 6
+DEL 3
+MOV 3, 4, 2
+DEL 1
+DIV 4, 3, 2
+OUT 7
+DEL 4
+DEL 4
+DEL 5
+OUT 4
+DEL 2
+DEL 5
+OUT 3
+DEL 7
+OUT 7
+DEL 0
+DEL 6
+DEL 2
+DEL 0
+OUT 6
+HLT 
+NEW 6, 3
+NEW 1, 1
+DEL 4
+DEL 3
+OUT 3
+NAND 6, 2, 2
+DEL 6
+OUT 1
+LDA 3, 0, 5
+NEW 7, 6
+OUT 0
+DEL 3
+NEW 6, 3
+LDA 7, 6, 1
+DEL 6
+MOV 3, 5, 2
+OUT 1
+DEL 1
+NEW 3, 3
+NAND 4, 4, 7
+DEL 7
+DEL 3
+OUT 0
+DEL 5
+NEW 3, 7
+OUT 0
+NEW 1, 1
+NEW 3, 4
+OUT 5
+DEL 6
+NEW 4, 0
+NEW 0, 3
+DEL 7
+OUT 5
+OUT 4
+STA 1, 1, 7
+DEL 3
+DEL 1
+OUT 0
+OUT 6
+NAND 0, 5, 4
+STA 1, 0, 0
+DEL 7
+OUT 0
+OUT 1
+OUT 7
+LDA 2, 1, 0
+STA 6, 6, 5
+LDA 1, 6, 5
+DEL 2
+NEW 2, 4
+DEL 7
+DEL 1
+DEL 3
+NEW 2, 4
+DEL 7
+OUT 1
+NEW 6, 5
+DEL 5
+DEL 7
+DEL 1
+DIV 4, 4, 2
+HLT 
+STA 7, 2, 0
+DEL 6
+DEL 0
+OUT 3
+DEL 7
+OUT 3
+DIV 3, 2, 2
+OUT 0
+LDA 5, 5, 2
+OUT 6
+OUT 0
+NEW 5, 2
+OUT 0
+DEL 2
+DEL 2
+DIV 2, 0, 3
+OUT 2
+OUT 7
+OUT 1
+DEL 2
+HLT 
+OUT 0
+OUT 1
+LDA 4, 4, 0
+OUT 5
+OUT 1
+MOV 5, 7, 6
+STA 1, 1, 2
+DEL 5
+NEW 4, 0
+DEL 6
+HLT 
+OUT 7
+STA 4, 3, 0
+OUT 2
+HLT 
+HLT 
+NEW 1, 2
+NEW 7, 4
+HLT 
+DEL 6
+OUT 5
+OUT 6
+OUT 0
+DEL 0
+OUT 2
+OUT 6
+OUT 2
+DEL 6
+DIV 2, 4, 2
+STA 3, 1, 1
+OUT 6
+OUT 6
+OUT 3
+NAND 1, 6, 5
+NEW 0, 0
+LDA 5, 7, 0
+HLT 
+OUT 4
+DEL 6
+DEL 5
+OUT 5
+DEL 4
+LDA 2, 5, 2
+MOV 4, 2, 6
+MOV 4, 5, 7
+MOV 0, 4, 5
+OUT 0
+OUT 0
+OUT 1
+MOV 2, 2, 0
+OUT 6
+OUT 5
+NEW 4, 7
+OUT 1
+OUT 4
+OUT 6
+OUT 1
+DEL 7
+DEL 1
+HLT 
+DEL 3
+OUT 4
+NEW 5, 5
+OUT 1
+DEL 5
+OUT 4
+OUT 1
+OUT 4
+OUT 7
+OUT 6
+OUT 2
+OUT 2
+MOV 5, 6, 6
+STA 1, 1, 4
+DEL 1
+NAND 2, 2, 1
+DEL 6
+NEW 1, 0
+OUT 1
+DEL 5
+OUT 3
+DIV 5, 7, 0
+OUT 1
+OUT 4
+DEL 6
+NAND 7, 7, 7
+DEL 2
+DEL 4
+DEL 2
+OUT 2
+OUT 4
+OUT 5
+OUT 7
+OUT 0
+OUT 6
+OUT 6
+OUT 2
+NEW 6, 4
+DEL 2
+OUT 6
+HLT 
+OUT 0
+DIV 2, 5, 4
+OUT 5
+DEL 2
+OUT 5
+DEL 2
+DEL 2
+OUT 4
+MOV 6, 6, 2
+OUT 4
+OUT 7
+MOV 5, 6, 2
+DEL 5
+OUT 0
+OUT 2
+OUT 3
+STA 7, 3, 7
+MOV 2, 4, 3
+MOV 2, 7, 3
+DEL 6
+HLT 
+DEL 2
+DEL 5
+OUT 7
+NEW 3, 1
+HLT 
+HLT 
+DEL 0
+DEL 2
+OUT 5
+OUT 3
+OUT 3
+OUT 5
+DEL 5
+LDA 0, 0, 6
+MOV 5, 4, 4
+OUT 4
+NEW 5, 3
+MOV 5, 1, 2
+HLT 
+MOV 3, 2, 3
+OUT 3
+HLT 
+DEL 5
+STA 3, 3, 0
+HLT 
+NAND 7, 5, 7
+ADD 1, 1, 0
+NEW 5, 1
+NAND 4, 0, 3
+DIV 3, 2, 3
+OUT 4
+DIV 1, 2, 2
+NAND 4, 4, 2
+OUT 5
+OUT 6
+LDA 0, 7, 7
+NEW 6, 3
+OUT 6
+NAND 0, 6, 3
+NEW 5, 0
+OUT 4
+OUT 5
+DEL 0
+OUT 4
+OUT 1
+OUT 3
+OUT 0
+NEW 7, 3
+DIV 1, 1, 6
+NEW 1, 1
+OUT 2
+NAND 4, 7, 5
+DEL 6
+OUT 6
+DEL 2
+OUT 6
+DEL 6
+OUT 7
+MOV 4, 2, 5
+NEW 6, 5
+OUT 6
+OUT 7
+NEW 4, 6
+DEL 5
+LDA 0, 5, 2
+DEL 7
+NAND 2, 1, 2
+OUT 0
+OUT 7
+OUT 4
+DEL 2
+OUT 3
+OUT 1
+NEW 7, 7
+OUT 4
+OUT 4
+NEW 4, 5
+DEL 4
+OUT 1
+OUT 5
+OUT 3
+OUT 1
+OUT 0
+NEW 7, 3
+DEL 4
+OUT 7
+DEL 0
+OUT 6
+OUT 1
+OUT 1
+DEL 1
+OUT 4
+DIV 7, 4, 7
+OUT 2
+OUT 0
+OUT 2
+HLT 
+OUT 2
+OUT 0
+OUT 3
+OUT 2
+DEL 4
+OUT 0
+OUT 4
+OUT 2
+OUT 3
+OUT 2
+OUT 7
+OUT 7
+OUT 1
+OUT 3
+MOV 6, 6, 7
+OUT 6
+OUT 2
+OUT 4
+OUT 1
+OUT 5
+MOV 7, 4, 7
+OUT 0
+DEL 4
+OUT 3
+OUT 4
+OUT 5
+OUT 4
+OUT 4
+DEL 1
+STA 0, 1, 3
+OUT 3
+NAND 1, 1, 2
+HLT 
+HLT 
+OUT 7
+OUT 3
+OUT 6
+OUT 0
+OUT 7
+OUT 2
+OUT 5
+OUT 2
+OUT 2
+HLT 
+OUT 6
+OUT 5
+OUT 4
+NEW 7, 2
+LDA 1, 4, 4
+OUT 7
+MOV 7, 5, 5
+MOV 7, 0, 1
+OUT 6
+NEW 0, 7
+OUT 3
+OUT 6
+OUT 3
+NEW 1, 0
+NAND 1, 1, 7
+NEW 2, 3
+HLT 
+MOV 7, 4, 3
+OUT 0
+OUT 0
+OUT 1
+OUT 5
+OUT 2
+OUT 0
+OUT 1
+OUT 3
+OUT 1
+OUT 3
+OUT 5
+OUT 4
+OUT 6
+OUT 0
+OUT 6
+DEL 2
+OUT 7
+OUT 6
+OUT 1
+OUT 4
+HLT 
+LDA 4, 1, 7
+OUT 5
+OUT 5
+DEL 3
+OUT 1
+LDA 7, 5, 1
+OUT 7
+OUT 5
+OUT 3
+DEL 5
+HLT 
+OUT 4
+NEW 1, 0
+LDA 0, 3, 1
+STA 5, 1, 2
+OUT 4
+OUT 4
+OUT 7
+OUT 4
+OUT 4
+OUT 6
+DEL 0
+DEL 0
+OUT 4
+LDA 2, 0, 6
+NAND 2, 1, 1
+DEL 0
+OUT 3
+OUT 1
+DEL 4
+HLT 
+ADD 1, 0, 4
+OUT 1
+INP 6
+OUT 0
+OUT 7
+OUT 2
+OUT 1
+NAND 0, 5, 0
+DIV 6, 5, 5
+MUL 0, 7, 5
+DEL 0
+OUT 7
+OUT 4
+OUT 2
+OUT 4
+OUT 2
+OUT 3
+OUT 0
+INP 7
+OUT 1
+OUT 3
+DEL 5
+OUT 5
+DIV 5, 1, 1
+DEL 1
+OUT 3
+DIV 6, 7, 3
+INP 1
+OUT 5
+OUT 0
+DEL 2
+OUT 1
+OUT 7
+OUT 4
+OUT 1
+OUT 5
+OUT 7
+OUT 1
+MOV 5, 7, 6
+OUT 2
+OUT 6
+INP 0
+DEL 5
+OUT 4
+INP 3
+INP 4
+INP 6
+DEL 5
+HLT 
+OUT 6
+OUT 1
+OUT 4
+INP 7
+OUT 0
+OUT 7
+OUT 7
+OUT 7
+OUT 1
+OUT 4
+OUT 6
+MUL 3, 6, 3
+OUT 2
+NEW 3, 1
+OUT 3
+DEL 1
+INP 1
+NEW 6, 3
+NAND 5, 3, 6
+OUT 1
+HLT 
+MOV 2, 4, 0
+NAND 7, 0, 0
+DEL 4
+NAND 6, 1, 1
+OUT 6
+NEW 2, 0
+DEL 2
+DEL 4
+OUT 0
+DEL 4
+DEL 0
+INP 1
+DEL 7
+DEL 5
+INP 2
+DEL 1
+DEL 0
+OUT 3
+OUT 6
+INP 0
+OUT 5
+INP 0
+DEL 4
+DEL 5
+OUT 7
+OUT 0
+INP 6
+OUT 4
+INP 2
+NAND 0, 0, 6
+OUT 5
+HLT 
+OUT 5
+LDA 2, 6, 7
+MOV 6, 4, 0
+OUT 6
+MOV 5, 1, 6
+DEL 5
+OUT 2
+NAND 0, 3, 2
+LDA 6, 4, 4
+DEL 4
+NEW 4, 0
+MOV 7, 6, 2
+LDA 5, 4, 0
+HLT 
+OUT 2
+DEL 6
+DIV 2, 1, 3
+NAND 6, 1, 0
+NAND 2, 5, 6
+HLT 
+NAND 6, 2, 0
+NAND 6, 0, 1
+NAND 3, 1, 1
+NEW 4, 3
+MOV 3, 6, 6
+OUT 7
+OUT 1
+OUT 3
+INP 3
+NEW 7, 0
+DIV 7, 2, 7
+OUT 6
+NAND 1, 0, 3
+HLT 
+NAND 2, 2, 3
+OUT 3
+DEL 3
+HLT 
+HLT 
+NAND 1, 0, 2
+MOV 3, 4, 3
+DEL 0
+OUT 5
+DEL 6
+OUT 1
+INP 7
+OUT 7
+OUT 6
+NEW 2, 7
+NAND 6, 0, 6
+INP 5
+DEL 4
+ADD 4, 2, 4
+MOV 5, 2, 3
+OUT 0
+DEL 4
+HLT 
+INP 1
+DEL 4
+NEW 3, 0
+DEL 1
+INP 6
+OUT 7
+INP 5
+STA 4, 4, 2
+NEW 7, 1
+INP 3
+OUT 6
+DEL 4
+NEW 7, 0
+HLT 
+DEL 4
+OUT 0
+OUT 1
+OUT 7
+HLT 
+NEW 7, 3
+MOV 6, 7, 3
+NEW 6, 5
+INP 2
+NEW 7, 3
+DEL 7
+OUT 6
+NAND 1, 7, 4
+OUT 3
+OUT 3
+OUT 7
+OUT 1
+NAND 7, 6, 5
+DEL 1
+MOV 0, 0, 4
+NAND 2, 0, 7
+STA 2, 2, 2
+DEL 4
+DIV 0, 7, 3
+OUT 3
+INP 2
+NEW 5, 7
+HLT 
+INP 3
+DEL 1
+INP 5
+NAND 6, 5, 1
+INP 6
+OUT 4
+DEL 0
+INP 5
+NAND 0, 5, 2
+OUT 2
+OUT 2
+INP 4
+NAND 4, 7, 1
+NEW 2, 1
+INP 4
+HLT 
+DEL 4
+NEW 1, 7
+DEL 5
+OUT 0
+OUT 4
+HLT 
+DEL 7
+DEL 2
+OUT 4
+INP 3
+NAND 1, 4, 1
+DEL 6
+MOV 3, 6, 0
+DEL 5
+OUT 0
+DEL 6
+OUT 3
+DEL 0
+DEL 3
+DIV 0, 0, 1
+DEL 7
+MOV 5, 7, 7
+OUT 0
+NAND 1, 0, 0
+HLT 
+HLT 
+INP 6
+DEL 0
+STA 1, 7, 2
+DEL 5
+DEL 5
+INP 0
+INP 5
+DEL 7
+INP 1
+DEL 6
+OUT 7
+INP 6
+INP 0
+INP 7
+NEW 3, 7
+NEW 7, 1
+OUT 7
+OUT 1
+OUT 0
+INP 3
+INP 1
+HLT 
+MOV 1, 4, 3
+INP 6
+OUT 1
+HLT 
+NEW 0, 2
+DEL 7
+MOV 2, 1, 0
+INP 2
+DEL 1
+OUT 4
+OUT 5
+HLT 
+INP 6
+NEW 6, 7
+INP 2
+NEW 4, 1
+DEL 2
+MOV 2, 6, 1
+INP 6
+NEW 2, 5
+NEW 6, 7
+OUT 6
+DEL 7
+OUT 2
+DEL 4
+DEL 7
+MOV 7, 2, 7
+INP 3
+INP 7
+OUT 7
+OUT 4
+OUT 6
+NEW 7, 6
+INP 6
+NEW 1, 7
+INP 4
+NEW 2, 6
+OUT 5
+INP 6
+INP 0
+INP 6
+OUT 1
+DEL 7
+NEW 7, 0
+NAND 3, 6, 6
+INP 7
+INP 1
+MOV 4, 7, 3
+INP 5
+INP 0
+INP 7
+OUT 1
+NEW 4, 5
+INP 7
+HLT 
+MOV 5, 2, 5
+INP 7
+INP 0
+OUT 3
+INP 5
+HLT 
+INP 3
+OUT 0
+INP 1
+HLT 
+OUT 1
+NEW 4, 0
+NEW 4, 2
+NAND 1, 1, 5
+NAND 3, 3, 7
+MOV 4, 3, 5
+NEW 3, 1
+MUL 1, 5, 3
+DEL 6
+INP 0
+MUL 5, 6, 1
+NEW 7, 7
+MUL 5, 3, 5
+NEW 5, 0
+MUL 2, 7, 1
+MOV 4, 6, 0
+HLT 
+INP 6
+INP 0
+INP 2
+DEL 2
+NAND 1, 7, 4
+NEW 5, 3
+ADD 2, 2, 3
+INP 3
+MUL 3, 6, 1
+INP 3
+INP 1
+OUT 2
+NEW 3, 3
+NAND 0, 5, 0
+HLT 
+DEL 7
+HLT 
+INP 2
+OUT 7
+INP 6
+MOV 0, 5, 7
+STA 0, 5, 0
+INP 0
+OUT 7
+HLT 
+OUT 3
+DEL 1
+HLT 
+LDA 7, 7, 6
+MOV 1, 2, 7
+MOV 5, 5, 5
+DIV 1, 3, 0
+DIV 0, 1, 6
+INP 1
+MOV 5, 7, 5
+INP 0
+INP 4
+INP 4
+INP 6
+OUT 4
+DEL 6
+INP 0
+INP 4
+NAND 7, 5, 3
+DEL 0
+INP 5
+OUT 1
+DEL 6
+STA 1, 4, 4
+HLT 
+ADD 5, 2, 5
+DEL 0
+INP 3
+OUT 1
+INP 4
+INP 2
+OUT 5
+MOV 5, 0, 6
+MUL 0, 1, 2
+INP 3
+OUT 2
+INP 3
+OUT 7
+OUT 6
+MOV 6, 5, 5
+STA 1, 3, 1
+INP 1
+NAND 3, 5, 3
+INP 7
+NAND 1, 4, 6
+DEL 1
+DEL 0
+OUT 7
+INP 7
+OUT 0
+DEL 1
+HLT 
+NEW 2, 2
+HLT 
+NEW 3, 0
+PRG 7, 6
+INVALID NEW 5, 5
+DIV 5, 6, 7
+INP 1
+INP 1
+MOV 0, 7, 4
+INP 1
+OUT 7
+INP 3
+MOV 4, 1, 7
+DIV 4, 3, 3
+INP 7
+NEW 0, 3
+LDA 0, 5, 7
+NAND 0, 2, 5
+OUT 6
+INP 5
+DEL 1
+OUT 2
+OUT 2
+DEL 7
+OUT 4
+STA 0, 2, 4
+MUL 1, 4, 5
+INP 6
+DIV 5, 3, 7
+OUT 6
+DEL 7
+OUT 2
+NAND 5, 1, 6
+INP 4
+OUT 6
+OUT 4
+DIV 5, 2, 6
+MOV 2, 7, 5
+OUT 0
+INP 2
+DEL 7
+NEW 2, 2
+PRG 2, 1
+OUT 5
+INP 5
+OUT 0
+DEL 4
+DEL 4
+PRG 4, 6
+DEL 2
+PRG 6, 1
+INP 7
+OUT 2
+DEL 5
+LDA 3, 3, 6
+PRG 7, 7
+PRG 7, 1
+DEL 4
+LDA 7, 7, 3
+INVALID INP 3
+INP 4
+MOV 3, 2, 6
+INP 5
+INP 6
+INP 1
+OUT 1
+DEL 3
+DEL 7
+INP 7
+INP 6
+PRG 4, 3
+MOV 1, 5, 4
+OUT 3
+PRG 6, 4
+OUT 1
+DEL 5
+HLT 
+MOV 6, 5, 1
+INP 5
+OUT 6
+INP 0
+DIV 0, 0, 4
+MUL 6, 6, 2
+INP 1
+INP 2
+PRG 1, 7
+INVALID INP 1
+DEL 4
+PRG 3, 3
+ADD 7, 4, 3
+PRG 4, 0
+NEW 3, 3
+INP 0
+PRG 0, 4
+NEW 5, 5
+DEL 5
+OUT 3
+PRG 2, 6
+PRG 4, 7
+INVALID PRG 6, 6
+INP 7
+INP 2
+PRG 1, 0
+ADD 1, 0, 4
+OUT 1
+INP 1
+OUT 7
+OUT 7
+INP 1
+PRG 7, 3
+NEW 6, 5
+PRG 2, 6
+INVALID PRG 0, 3
+INP 5
+OUT 7
+INP 4
+INP 2
+OUT 2
+OUT 0
+PRG 0, 5
+MOV 3, 2, 6
+STA 5, 3, 4
+DEL 6
+NEW 5, 6
+OUT 3
+DEL 7
+HLT 
+LDA 7, 3, 2
+INP 7
+INP 3
+HLT 
+MOV 6, 1, 4
+INP 0
+INP 5
+PRG 6, 4
+PRG 1, 1
+NEW 1, 0
+PRG 1, 1
+PRG 3, 4
+INVALID PRG 6, 6
+PRG 7, 6
+PRG 1, 1
+INP 4
+OUT 0
+PRG 4, 1
+OUT 3
+NAND 0, 0, 6
+INP 0
+INP 1
+INP 5
+PRG 0, 7
+PRG 1, 0
+INP 5
+PRG 7, 1
+DIV 4, 5, 6
+INP 1
+PRG 6, 6
+PRG 0, 2
+OUT 4
+INVALID LDA 5, 0, 0
+LDA 6, 2, 7
+PRG 1, 4
+OUT 0
+MOV 7, 1, 2
+HLT 
+PRG 6, 4
+INP 1
+DIV 2, 7, 1
+OUT 6
+NEW 4, 6
+OUT 1
+PRG 3, 0
+DIV 1, 3, 5
+HLT 
+NAND 6, 4, 0
+INP 4
+PRG 3, 6
+PRG 1, 3
+PRG 6, 0
+INVALID PRG 6, 3
+PRG 6, 6
+PRG 7, 1
+PRG 0, 2
+PRG 7, 7
+PRG 1, 3
+INP 2
+INP 7
+INP 0
+INP 3
+PRG 2, 7
+MOV 2, 5, 7
+PRG 0, 6
+STA 2, 1, 1
+OUT 5
+PRG 4, 1
+OUT 3
+PRG 7, 3
+PRG 4, 4
+OUT 6
+INP 7
+HLT 
+STA 3, 6, 5
+DEL 3
+DEL 2
+DEL 0
+LDA 5, 7, 5
+MOV 5, 7, 1
+INP 5
+PRG 7, 0
+PRG 5, 5
+DEL 0
+PRG 7, 2
+DEL 4
+NAND 2, 1, 0
+PRG 4, 6
+HLT 
+MOV 0, 7, 2
+INP 7
+PRG 0, 0
+INP 6
+INP 4
+PRG 2, 0
+PRG 3, 2
+PRG 2, 7
+PRG 2, 7
+PRG 4, 0
+NEW 5, 5
+NAND 0, 5, 3
+INP 4
+MOV 6, 3, 1
+MOV 4, 3, 6
+PRG 2, 3
+PRG 2, 5
+PRG 1, 2
+INVALID DEL 2
+PRG 3, 4
+INP 0
+MOV 6, 4, 1
+MOV 2, 3, 2
+OUT 6
+INP 0
+OUT 7
+PRG 5, 5
+OUT 0
+PRG 4, 2
+PRG 0, 4
+HLT 
+INVALID INP 2
+PRG 3, 3
+PRG 7, 7
+OUT 2
+DEL 6
+MOV 7, 0, 6
+LDI 0, 0x8b017e
+INP 3
+HLT 
+DEL 6
+INP 1
+NAND 3, 7, 6
+INP 4
+LDI 3, 0x33c722
+NAND 0, 5, 4
+MOV 3, 6, 3
+PRG 1, 7
+OUT 5
+OUT 1
+PRG 0, 4
+INP 3
+PRG 4, 7
+OUT 2
+PRG 5, 4
+ADD 4, 0, 7
+PRG 4, 4
+PRG 7, 7
+INVALID MOV 1, 1, 6
+DIV 4, 0, 7
+PRG 5, 7
+OUT 3
+DEL 7
+NAND 7, 3, 3
+INVALID PRG 4, 1
+MOV 5, 4, 3
+OUT 6
+DEL 1
+MUL 7, 7, 5
+PRG 5, 7
+LDI 3, 0x108c686
+MUL 4, 7, 0
+NEW 7, 2
+PRG 2, 3
+PRG 7, 7
+PRG 0, 2
+INP 5
+INVALID PRG 0, 4
+DEL 6
+OUT 6
+PRG 1, 3
+NAND 2, 1, 5
+DIV 0, 5, 6
+INVALID NAND 2, 2, 3
+PRG 1, 5
+PRG 6, 7
+NAND 2, 5, 0
+ADD 4, 3, 5
+PRG 2, 5
+INP 6
+PRG 3, 3
+PRG 7, 0
+PRG 3, 2
+PRG 3, 4
+PRG 5, 5
+PRG 6, 4
+INVALID PRG 2, 7
+PRG 4, 5
+NEW 4, 1
+PRG 4, 3
+PRG 2, 0
+OUT 4
+HLT 
+PRG 6, 4
+INP 7
+PRG 5, 2
+OUT 5
+PRG 4, 1
+PRG 2, 0
+INP 2
+PRG 4, 0
+MUL 3, 7, 5
+DEL 7
+PRG 6, 2
+PRG 0, 5
+PRG 0, 4
+INP 2
+INP 4
+DEL 2
+OUT 0
+NEW 2, 1
+MUL 2, 3, 5
+OUT 2
+INVALID PRG 7, 7
+PRG 7, 1
+NAND 1, 5, 3
+PRG 0, 7
+HLT 
+MUL 1, 4, 0
+INVALID PRG 6, 5
+PRG 1, 4
+PRG 5, 1
+PRG 6, 0
+PRG 2, 3
+PRG 7, 7
+INVALID PRG 6, 3
+PRG 7, 6
+OUT 3
+PRG 7, 6
+PRG 2, 5
+INP 7
+STA 3, 2, 3
+PRG 3, 2
+MOV 3, 0, 1
+OUT 7
+LDA 3, 2, 2
+NAND 7, 6, 3
+PRG 5, 2
+ADD 4, 4, 1
+PRG 3, 0
+PRG 0, 2
+PRG 3, 0
+PRG 3, 2
+PRG 7, 2
+PRG 6, 1
+PRG 6, 6
+PRG 0, 4
+DEL 0
+PRG 5, 0
+INP 0
+PRG 3, 5
+PRG 2, 0
+NEW 7, 3
+PRG 7, 5
+PRG 3, 4
+PRG 3, 4
+INP 7
+DEL 1
+MOV 3, 1, 6
+LDI 6, 0x6eb5e5
+PRG 4, 1
+PRG 0, 2
+MOV 0, 4, 5
+PRG 4, 6
+INP 1
+PRG 1, 0
+INVALID DEL 3
+DEL 3
+PRG 1, 3
+PRG 2, 7
+DEL 2
+PRG 2, 6
+PRG 7, 1
+LDA 4, 4, 4
+OUT 2
+LDA 2, 1, 1
+PRG 6, 1
+LDA 4, 6, 6
+PRG 1, 2
+INVALID PRG 6, 0
+PRG 7, 0
+PRG 4, 7
+PRG 5, 4
+NEW 7, 6
+PRG 5, 2
+HLT 
+INP 3
+NEW 4, 5
+STA 7, 1, 4
+INP 2
+PRG 3, 2
+HLT 
+NAND 7, 2, 6
+PRG 2, 1
+OUT 4
+DEL 4
+HLT 
+HLT 
+HLT 
+OUT 5
+INP 6
+HLT 
+INP 3
+PRG 3, 3
+INP 4
+LDI 0, 0xdcdde0
+INVALID PRG 0, 4
+PRG 5, 5
+PRG 1, 5
+PRG 1, 7
+INP 2
+INP 7
+INP 1
+PRG 7, 5
+MOV 4, 6, 3
+PRG 1, 7
+DEL 6
+PRG 6, 1
+PRG 6, 4
+OUT 5
+PRG 3, 7
+PRG 7, 4
+PRG 6, 0
+HLT 
+PRG 2, 5
+PRG 3, 7
+INVALID PRG 0, 1
+PRG 1, 5
+OUT 4
+OUT 3
+MOV 3, 0, 1
+MOV 3, 0, 1
+INVALID NEW 3, 0
+OUT 7
+DEL 7
+LDI 4, 0x667287
+PRG 3, 6
+INP 2
+HLT 
+MOV 0, 7, 5
+INP 7
+LDI 0, 0xbb1d48
+PRG 2, 2
+INP 2
+PRG 3, 3
+INVALID OUT 3
+LDI 1, 0x743cff
+LDI 1, 0x7343ec
+LDI 3, 0x138f440
+PRG 0, 2
+PRG 0, 7
+INVALID PRG 3, 1
+NEW 7, 0
+PRG 6, 3
+PRG 7, 6
+DEL 2
+OUT 5
+INVALID PRG 1, 2
+LDI 0, 0x173a492
+LDI 0, 0x17f3a6d
+MOV 1, 6, 2
+PRG 1, 4
+HLT 
+INVALID INP 3
+LDI 0, 0x3065a9
+OUT 2
+LDI 6, 0x34b472
+DIV 1, 6, 4
+MOV 4, 6, 3
+INP 6
+NAND 6, 2, 4
+INP 6
+PRG 5, 7
+LDI 0, 0xf61e2
+INP 4
+PRG 4, 6
+LDI 7, 0x1b4d221
+MOV 3, 5, 6
+LDI 1, 0xf864
+LDI 1, 0x42d0be
+PRG 3, 4
+PRG 3, 1
+PRG 6, 2
+INVALID PRG 7, 1
+LDI 1, 0xb3117b
+LDI 1, 0x8b4970
+PRG 4, 4
+LDI 2, 0xc7b2c7
+INP 3
+INVALID LDI 1, 0x9ce04d
+PRG 6, 7
+LDI 0, 0x11b2521
+LDI 6, 0x9a3048
+LDI 0, 0x1d144bb
+INP 1
+INVALID HLT 
+LDI 0, 0x1b0bf8f
+HLT 
+PRG 4, 5
+PRG 6, 6
+PRG 5, 6
+INVALID PRG 5, 5
+LDI 0, 0x1f0cf10
+LDI 1, 0x14e3c91
+MOV 2, 4, 6
+PRG 4, 5
+INP 2
+INVALID DEL 7
+PRG 6, 2
+NEW 4, 7
+INP 5
+NAND 7, 3, 6
+OUT 4
+INVALID PRG 6, 0
+PRG 2, 7
+PRG 1, 5
+PRG 3, 3
+NAND 5, 7, 0
+DEL 0
+HLT 
+PRG 5, 0
+PRG 0, 0
+LDI 2, 0xf4a42
+PRG 1, 2
+LDI 2, 0xd15feb
+INP 5
+HLT 
+LDI 3, 0x1450b41
+LDI 0, 0x1719a1b
+MOV 0, 2, 3
+OUT 2
+PRG 1, 6
+LDI 1, 0xdc9bfa
+INVALID LDA 0, 0, 0
+HLT 
+PRG 7, 4
+PRG 4, 2
+LDI 2, 0x9d83b2
+OUT 5
+HLT 
+OUT 6
+HLT 
+LDI 0, 0x1e8831b
+LDI 4, 0x40f005
+OUT 6
+INP 5
+INVALID INP 0
+HLT 
+PRG 6, 2
+HLT 
+DEL 3
+LDI 0, 0xacda9d
+INVALID INP 6
+PRG 3, 2
+LDI 1, 0x735526
+PRG 2, 5
+LDI 1, 0xd56318
+LDI 1, 0x1fd25de
+HLT 
+LDI 3, 0x12bc62c
+LDI 2, 0x1b51464
+LDI 0, 0x1332c2d
+PRG 5, 7
+INP 6
+LDI 2, 0x18d436c
+PRG 2, 5
+LDI 1, 0x150a572
+PRG 3, 2
+LDI 3, 0x11351a5
+LDI 6, 0x15eb38e
+STA 3, 0, 4
+INP 3
+INP 5
+INP 2
+LDI 2, 0xa43f4b
+PRG 1, 2
+DEL 0
+OUT 2
+ADD 5, 2, 2
+PRG 3, 7
+PRG 3, 1
+HLT 
+LDI 3, 0x2f5948
+DEL 1
+OUT 3
+LDI 2, 0x10d2191
+HLT 
+MOV 4, 3, 5
+PRG 1, 5
+PRG 0, 5
+LDI 6, 0x127354e
+LDI 3, 0xd27150
+LDI 3, 0xcd25f0
+INVALID PRG 2, 7
+PRG 6, 6
+PRG 4, 6
+LDI 6, 0x7db3e9
+PRG 4, 7
+LDI 2, 0x19972d6
+INVALID LDI 1, 0xb865c1
+LDI 2, 0x332eb0
+LDI 3, 0x1325ec8
+OUT 7
+PRG 4, 2
+LDI 4, 0x6ce7c3
+INVALID LDI 2, 0x6f0193
+LDI 4, 0x6ba5cf
+LDI 2, 0x1eb4599
+HLT 
+PRG 7, 5
+LDI 2, 0x9d19fc
+INVALID OUT 3
+PRG 5, 0
+PRG 0, 5
+INP 5
+LDI 1, 0x1d64288
+INP 2
+INP 7
+LDI 3, 0x159696f
+LDI 3, 0x1f5993e
+LDI 1, 0x19f59b6
+PRG 3, 2
+MOV 2, 3, 5
+LDI 3, 0x1f02fa8
+INVALID NEW 4, 7
+NEW 2, 6
+INP 6
+PRG 4, 4
+ADD 4, 2, 2
+NEW 4, 0
+INP 2
+LDI 5, 0x37759b
+HLT 
+LDI 3, 0x1233e88
+INP 5
+MOV 5, 1, 0
+LDI 3, 0x10ce299
+INP 7
+PRG 2, 7
+LDI 2, 0x199fb2a
+INP 2
+LDI 6, 0xe5d950
+DEL 6
+INP 6
+DEL 3
+PRG 4, 1
+INP 4
+LDI 0, 0x1aeb338
+MOV 0, 1, 7
+PRG 7, 2
+LDI 2, 0xecbcf0
+LDI 7, 0x78d1f0
+LDI 3, 0x114a419
+INP 6
+INP 4
+LDI 0, 0x1a6f3c
+INP 4
+NEW 0, 5
+NAND 0, 4, 1
+NAND 6, 1, 3
+MOV 2, 1, 6
+PRG 1, 1
+NAND 6, 4, 6
+LDI 5, 0xba29e2
+DIV 5, 1, 0
+OUT 4
+HLT 
+NEW 6, 0
+DEL 5
+MOV 0, 2, 0
+INP 1
+DEL 5
+LDI 4, 0x16ebbcc
+NEW 1, 4
+PRG 7, 4
+NEW 4, 6
+DIV 6, 4, 0
+NEW 1, 7
+INP 7
+NAND 2, 4, 6
+MOV 0, 7, 7
+HLT 
+DEL 2
+LDI 6, 0x5db16e
+LDI 4, 0xd25e02
+LDI 4, 0x1d25c4
+INVALID OUT 1
+NEW 2, 2
+NEW 4, 7
+LDI 4, 0x1d130a2
+DEL 2
+DEL 6
+MOV 0, 0, 6
+NEW 5, 6
+HLT 
+NAND 2, 4, 1
+NAND 0, 5, 0
+NAND 0, 5, 0
+OUT 3
+OUT 6
+DEL 7
+LDI 4, 0xf343ff
+PRG 6, 3
+OUT 6
+PRG 2, 7
+OUT 5
+INVALID INP 7
+INP 2
+MOV 1, 1, 1
+LDI 6, 0x10500c5
+PRG 5, 4
+HLT 
+INVALID DIV 4, 7, 6
+NAND 1, 1, 5
+LDI 1, 0x1a1e5fe
+LDI 6, 0x1683083
+MOV 5, 0, 5
+LDI 3, 0x988f2a
+INVALID LDI 1, 0x154c08a
+LDI 5, 0x1afde91
+PRG 2, 5
+LDI 6, 0x1ba73dd
+LDI 3, 0xa13954
+LDI 3, 0xdadbb4
+INP 2
+DEL 0
+LDI 3, 0x13673d4
+LDI 2, 0x7dcfbc
+LDI 3, 0x9db2f4
+LDI 6, 0x89c1d7
+LDI 3, 0xdc593
+INVALID LDI 1, 0x10cb5de
+LDI 3, 0x33b3cd
+PRG 0, 6
+LDI 6, 0x84f282
+STA 4, 1, 3
+MOV 3, 4, 5
+INVALID HLT 
+LDI 6, 0x5ed1a4
+LDI 6, 0xb3294f
+NEW 7, 5
+LDI 5, 0xc20634
+LDI 6, 0xdbd068
+NEW 0, 4
+INP 2
+LDI 6, 0xebf1e6
+LDI 3, 0xab42cb
+LDI 6, 0x16b2056
+PRG 3, 2
+PRG 0, 7
+INVALID LDI 5, 0x131160a
+LDI 4, 0x31070c
+LDI 1, 0x8b107e
+OUT 5
+MOV 6, 0, 7
+HLT 
+INVALID NAND 7, 0, 7
+LDI 2, 0x361d12
+LDI 5, 0x175cb6
+PRG 6, 2
+PRG 1, 7
+LDI 0, 0x16d5cef
+INVALID PRG 2, 4
+LDI 5, 0x27d596
+PRG 6, 4
+LDI 6, 0xea9708
+LDI 0, 0x7fd70f
+PRG 0, 2
+INVALID PRG 5, 2
+OUT 4
+DEL 5
+INP 4
+MOV 5, 4, 7
+LDI 5, 0x801e2c
+INVALID LDI 4, 0x8e75ee
+LDI 3, 0x1ea0c4a
+LDI 6, 0xb772b2
+INP 5
+PRG 5, 6
+NAND 2, 5, 5
+LDI 3, 0x17101b1
+LDI 1, 0x10281d0
+LDI 1, 0x1f2a32a
+LDI 5, 0x1934971
+PRG 2, 1
+PRG 2, 1
+DEL 7
+INVALID LDI 7, 0x51a559
+LDI 6, 0x133f14a
+LDI 6, 0x13a9c5c
+LDI 5, 0xc177a1
+LDI 2, 0xd5ef50
+LDI 6, 0x1540960
+INVALID LDI 7, 0x958404
+LDI 3, 0x314119
+LDI 6, 0x17e1044
+LDI 6, 0x6c7146
+LDA 5, 4, 2
+MOV 5, 4, 2
+PRG 5, 1
+DIV 5, 5, 2
+INP 4
+OUT 6
+DEL 7
+PRG 7, 0
+LDI 6, 0xcb69a9
+INVALID MOV 7, 2, 7
+LDI 7, 0x16de46d
+LDI 7, 0x1776b2b
+OUT 5
+OUT 4
+OUT 5
+INP 7
+OUT 0
+OUT 6
+OUT 6
+INP 2
+LDI 7, 0x609004
+LDI 2, 0x1b05d3
+DIV 7, 6, 6
+INP 6
+OUT 4
+LDI 6, 0x13738b6
+INP 4
+PRG 4, 7
+LDI 4, 0x7d9dae
+INVALID DEL 0
+PRG 4, 5
+STA 2, 5, 6
+LDI 0, 0x111b395
+LDI 7, 0x1d30283
+DIV 5, 6, 2
+INVALID LDI 3, 0x748506
+LDI 7, 0x733acc
+DEL 3
+LDI 7, 0x10b672
+PRG 0, 7
+LDI 4, 0x1e15db5
+OUT 6
+PRG 2, 6
+LDI 2, 0x1e60646
+DEL 7
+INVALID MOV 1, 3, 7
+OUT 5
+INVALID LDI 3, 0x1679628
+INP 4
+LDI 4, 0x1c6b08c
+INVALID LDI 0, 0x1e1bc51
+DEL 2
+ADD 2, 3, 1
+PRG 5, 7
+INP 6
+DEL 4
+INVALID OUT 0
+DEL 0
+ADD 2, 2, 2
+INVALID DEL 5
+OUT 6
+INVALID INVALID INVALID PRG 0, 4
+DEL 3
+OUT 3
+OUT 7
+INP 1
+LDI 3, 0x1ce6221
+OUT 4
+STA 2, 3, 3
+NAND 2, 5, 0
+DEL 5
+INVALID LDI 7, 0x18f5bc
+INVALID INVALID OUT 6
+HLT 
+HLT 
+INVALID OUT 1
+NEW 3, 7
+INVALID HLT 
+INVALID PRG 0, 1
+LDI 4, 0x5b8c33
+LDI 6, 0x16fb448
+INP 1
+MOV 7, 4, 6
+PRG 0, 5
+NEW 0, 5
+OUT 7
+OUT 6
+PRG 5, 6
+DEL 7
+LDI 1, 0x9e377d
+INP 1
+OUT 7
+DEL 6
+INVALID DEL 6
+DEL 7
+MOV 6, 1, 7
+ADD 7, 1, 5
+INVALID LDA 7, 6, 7
+INVALID OUT 3
+DEL 6
+INVALID STA 2, 7, 5
+MOV 6, 7, 2
+MOV 6, 6, 2
+INVALID LDI 1, 0x1feb05
+INVALID DEL 0
+STA 1, 0, 3
+LDA 2, 6, 6
+INVALID STA 3, 6, 4
+INVALID INVALID HLT 
+INP 7
+INVALID DEL 1
+DEL 6
+MOV 1, 3, 1
+INVALID STA 2, 7, 4
+NEW 2, 7
+INVALID STA 0, 6, 6
+PRG 5, 7
+PRG 4, 6
+INVALID HLT 
+OUT 3
+MOV 7, 3, 6
+INVALID MOV 5, 6, 7
+LDI 4, 0x17949b4
+MOV 2, 6, 3
+PRG 7, 5
+INVALID LDI 3, 0x190e575
+PRG 1, 7
+PRG 1, 6
+STA 4, 3, 1
+HLT 
+INVALID INVALID DEL 2
+NEW 4, 5
+INVALID INVALID LDI 2, 0xe3096a
+PRG 2, 0
+INVALID STA 5, 4, 0
+MOV 4, 1, 7
+INVALID DEL 6
+DEL 3
+LDI 0, 0x136c325
+INVALID INVALID INVALID OUT 5
+LDI 4, 0x1794a43
+LDA 2, 0, 4
+INVALID NEW 5, 6
+NEW 5, 4
+INVALID STA 6, 3, 2
+INVALID LDI 4, 0xe54c92
+INVALID NEW 7, 2
+DEL 5
+INVALID PRG 2, 7
+MOV 1, 6, 6
+MOV 3, 0, 7
+DEL 1
+INVALID INVALID INVALID DEL 6
+MOV 3, 1, 2
+NEW 1, 3
+INVALID LDI 7, 0xc0de72
+OUT 7
+DEL 1
+DEL 5
+INVALID MOV 3, 3, 1
+DEL 6
+STA 4, 6, 1
+DEL 6
+INVALID LDI 2, 0x18b8608
+INVALID INVALID STA 1, 4, 4
+NEW 2, 6
+INVALID OUT 3
+DEL 5
+MOV 3, 1, 7
+OUT 1
+INVALID PRG 2, 7
+DEL 3
+DEL 3
+OUT 5
+MOV 7, 7, 5
+OUT 6
+NEW 1, 6
+INP 3
+INVALID OUT 0
+INVALID DEL 1
+OUT 5
+INVALID NEW 3, 1
+NEW 4, 5
+INVALID STA 5, 7, 2
+OUT 5
+INVALID INVALID LDA 7, 7, 1
+MOV 3, 3, 1
+INVALID DIV 2, 2, 7
+NEW 3, 7
+INVALID ADD 5, 5, 7
+LDA 3, 1, 0
+INVALID ADD 6, 7, 0
+DIV 1, 3, 6
+INVALID DEL 6
+NEW 4, 5
+HLT 
+DEL 7
+DEL 0
+INP 5
+DIV 4, 7, 4
+LDA 0, 6, 7
+DIV 3, 5, 5
+INP 6
+INP 0
+OUT 5
+INP 1
+NEW 4, 4
+OUT 3
+LDI 3, 0x2c6d2a
+PRG 6, 4
+MOV 7, 0, 4
+STA 5, 6, 3
+LDI 6, 0x90cf00
+MOV 7, 7, 0
+NEW 4, 4
+HLT 
+INP 2
+MOV 1, 1, 6
+ADD 7, 2, 4
+ADD 7, 7, 4
+OUT 4
+MOV 6, 2, 0
+LDI 4, 0x1601833
+INVALID INVALID INVALID OUT 0
+NEW 7, 3
+NEW 5, 7
+NEW 6, 1
+MUL 3, 1, 2
+INVALID NAND 1, 3, 4
+INVALID LDI 5, 0x151f4a5
+PRG 1, 7
+INVALID INVALID PRG 3, 4
+LDI 2, 0x1ba5394
+OUT 6
+PRG 2, 5
+INVALID LDI 4, 0xacb080
+ADD 6, 5, 7
+INVALID INVALID PRG 5, 7
+MOV 1, 1, 6
+DEL 6
+PRG 2, 0
+INVALID INVALID INVALID INVALID INVALID INVALID DEL 6
+LDI 7, 0x10c8acc
+LDI 3, 0x13307a5
+HLT 
+MOV 4, 2, 4
+OUT 7
+OUT 0
+LDA 6, 3, 5
+INVALID INP 2
+MOV 0, 5, 5
+INP 4
+PRG 1, 6
+INVALID PRG 7, 0
+INVALID INVALID INVALID INVALID OUT 6
+LDI 0, 0x17eadce
+INVALID INP 7
+INVALID INVALID INVALID PRG 0, 5
+MOV 6, 3, 2
+NEW 7, 6
+INVALID DEL 6
+INVALID INVALID INVALID OUT 3
+INVALID ADD 4, 4, 2
+PRG 7, 6
+INVALID OUT 1
+DEL 6
+MOV 0, 0, 1
+STA 0, 5, 5
+ADD 1, 6, 2
+INVALID INVALID INVALID INVALID INVALID DEL 3
+INVALID INP 7
+OUT 0
+INVALID INVALID INVALID INVALID STA 0, 5, 4
+LDI 1, 0x1b2a490
+OUT 1
+OUT 7
+PRG 5, 3
+INVALID INVALID INVALID INVALID INVALID OUT 6
+INVALID INVALID INVALID NEW 7, 1
+INVALID INVALID INVALID INVALID INVALID INVALID INVALID INVALID MOV 0, 7, 7
+MOV 4, 6, 7
+INVALID INVALID PRG 1, 4
+INP 2
+INVALID DEL 3
+OUT 6
+MOV 0, 0, 3
+INVALID INVALID INVALID INVALID INVALID INVALID OUT 5
+OUT 5
+NEW 1, 6
+INVALID OUT 4
+INVALID LDI 1, 0xa7879f
+MOV 0, 7, 0
+INVALID INVALID INP 4
+NEW 1, 6
+INVALID INVALID INVALID INVALID INVALID MOV 5, 7, 0
+NEW 1, 1
+OUT 7
+OUT 6
+STA 3, 0, 5
+PRG 2, 0
+INVALID INVALID INVALID INVALID INVALID DEL 2
+OUT 3
+NEW 1, 6
+INVALID LDI 5, 0x1be19c2
+INVALID PRG 6, 2
+MOV 7, 1, 1
+MOV 3, 1, 1
+INVALID INVALID INVALID INVALID PRG 6, 5
+INVALID INVALID INVALID INP 0
+NEW 1, 6
+INVALID INVALID INVALID LDI 0, 0x1ed9be3
+OUT 1
+INVALID INVALID INVALID MOV 3, 5, 0
+INVALID INVALID PRG 6, 1
+INVALID INP 0
+INVALID INVALID NEW 5, 4
+INVALID INVALID INVALID INVALID INVALID INVALID PRG 1, 6
+INVALID INVALID PRG 3, 1
+INVALID MOV 1, 0, 6
+INVALID INVALID INVALID INVALID INP 1
+NEW 4, 5
+INVALID HLT 
+INVALID NEW 4, 1
+PRG 3, 1
+INVALID HLT 
+OUT 1
+INP 5
+LDI 6, 0x149f759
+LDI 2, 0xd777bc
+LDI 0, 0x1bdd72b
+ADD 0, 2, 7
+INVALID MOV 1, 7, 3
+MUL 6, 2, 1
+LDI 7, 0x954a30
+INP 7
+ADD 6, 6, 4
+MUL 1, 7, 6
+INVALID INVALID ADD 3, 3, 4
+INVALID NEW 2, 2
+STA 1, 6, 6
+INVALID LDA 2, 1, 7
+HLT 
+OUT 3
+NEW 3, 0
+LDI 4, 0x180c8ca
+LDI 4, 0x1acac67
+INVALID DEL 6
+NEW 3, 3
+INVALID INVALID LDA 2, 0, 1
+NEW 6, 2
+INVALID PRG 5, 1
+LDA 5, 3, 1
+LDI 2, 0xd40799
+LDI 6, 0x5c9f1
+INP 3
+DEL 0
+ADD 3, 7, 1
+INP 5
+LDI 3, 0x6063a6
+PRG 5, 5
+INP 1
+HLT 
+INVALID INVALID INP 6
+INVALID INVALID INVALID NEW 5, 6
+HLT 
+NAND 3, 4, 1
+NEW 1, 3
+LDI 5, 0x16da332
+NAND 7, 0, 5
+INP 4
+NAND 6, 5, 1
+STA 2, 7, 4
+INVALID INVALID INP 2
+NEW 5, 7
+INP 2
+LDI 5, 0xf4008c
+NEW 1, 1
+INP 7
+PRG 1, 3
+LDI 1, 0x17c8cbe
+INVALID NEW 3, 0
+MOV 3, 7, 0
+INP 2
+INVALID INP 5
+INP 5
+PRG 5, 0
+INVALID DEL 3
+INP 5
+OUT 3
+PRG 6, 3
+MOV 5, 4, 4
+LDI 5, 0xc758fa
+LDI 6, 0x169f739
+INP 6
+DEL 6
+OUT 0
+INP 1
+HLT 
+MOV 7, 7, 5
+NEW 1, 5
+NEW 7, 3
+INVALID INP 3
+INVALID MOV 6, 5, 5
+NEW 5, 3
+PRG 0, 7
+INP 5
+INP 6
+DEL 0
+DIV 1, 1, 3
+LDI 2, 0x1dd9e59
+PRG 5, 2
+NEW 2, 3
+LDI 6, 0xa97a38
+HLT 
+INVALID OUT 3
+NAND 1, 0, 2
+HLT 
+NAND 0, 7, 7
+INVALID PRG 1, 4
+HLT 
+NAND 6, 1, 3
+HLT 
+INP 1
+HLT 
+DIV 1, 2, 5
+OUT 3
+DEL 6
+HLT 
+MOV 7, 4, 3
+HLT 
+INP 1
+INP 5
+PRG 6, 3
+OUT 5
+OUT 3
+DIV 2, 1, 7
+INVALID INP 7
+NEW 4, 6
+INVALID MOV 3, 7, 5
+INP 6
+INVALID DIV 2, 5, 1
+NEW 5, 5
+INVALID OUT 2
+NEW 7, 6
+DEL 1
+HLT 
+MOV 0, 2, 6
+HLT 
+INP 1
+NAND 5, 6, 1
+HLT 
+OUT 3
+DEL 2
+INP 6
+HLT 
+MOV 2, 4, 6
+HLT 
+INVALID INVALID DEL 3
+NEW 7, 2
+INVALID NEW 7, 4
+LDA 1, 6, 7
+INVALID MOV 2, 1, 2
+LDI 5, 0x1c0a57c
+LDI 5, 0xdfd391
+DEL 5
+NEW 4, 0
+DIV 6, 0, 7
+HLT 
+DIV 4, 6, 2
+HLT 
+PRG 7, 5
+INP 3
+DEL 3
+PRG 3, 2
+INVALID INP 3
+INP 0
+INVALID DEL 7
+INP 6
+HLT 
+PRG 6, 0
+OUT 4
+OUT 6
+NEW 6, 6
+INVALID INVALID LDI 2, 0x15d6d65
+DEL 6
+INP 5
+INP 5
+OUT 7
+OUT 3
+DIV 5, 7, 4
+HLT 
+NAND 1, 0, 2
+PRG 5, 0
+INVALID INVALID INVALID INVALID DIV 5, 5, 4
+INVALID INVALID INVALID LDI 2, 0x1825e5f
+INVALID LDI 3, 0x17e0260
+MOV 4, 1, 4
+NEW 4, 0
+INP 0
+LDA 7, 5, 5
+INVALID INVALID INVALID INP 5
+DEL 3
+MOV 2, 7, 4
+ADD 4, 2, 6
+INVALID DEL 5
+LDI 7, 0xdff353
+PRG 7, 0
+INP 6
+INP 4
+DEL 2
+DEL 0
+OUT 6
+OUT 5
+DIV 4, 1, 3
+PRG 1, 0
+PRG 3, 7
+OUT 1
+MUL 1, 1, 2
+MUL 0, 4, 5
+OUT 3
+LDA 6, 0, 0
+MOV 7, 7, 0
+INVALID INVALID LDA 6, 0, 5
+HLT 
+INVALID NEW 6, 7
+OUT 1
+INP 7
+NAND 5, 4, 1
+PRG 5, 4
+INVALID NEW 3, 2
+PRG 3, 7
+INP 0
+LDI 5, 0x1664fd9
+LDI 0, 0xfe265b
+DEL 6
+INVALID DEL 7
+OUT 7
+OUT 2
+DEL 0
+HLT 
+DEL 4
+DEL 4
+OUT 4
+HLT 
+NAND 3, 4, 0
+DEL 4
+OUT 0
+HLT 
+DEL 2
+OUT 0
+MUL 7, 6, 0
+INVALID STA 2, 0, 1
+PRG 5, 5
+INVALID LDI 5, 0x133604e
+INP 4
+PRG 1, 7
+OUT 1
+NEW 6, 0
+NEW 1, 0
+OUT 4
+PRG 5, 0
+INP 5
+LDI 3, 0x19baf11
+OUT 1
+DEL 0
+OUT 1
+DEL 7
+INP 3
+OUT 0
+NEW 2, 2
+INVALID DIV 2, 6, 0
+DIV 0, 5, 3
+MUL 2, 7, 6
+MOV 2, 6, 2
+INP 7
+LDI 0, 0x5f8434
+PRG 4, 2
+HLT 
+INVALID INVALID DEL 2
+LDI 5, 0x1fcff
+INVALID MUL 6, 0, 2
+LDA 3, 6, 5
+LDI 4, 0x1bf5bf2
+INVALID ADD 3, 3, 4
+NEW 4, 4
+INVALID INVALID DEL 1
+DEL 3
+INVALID INVALID OUT 1
+DEL 2
+INP 2
+INVALID PRG 4, 1
+OUT 5
+INP 2
+INVALID OUT 2
+ADD 0, 7, 2
+INVALID INVALID INP 5
+MOV 6, 1, 2
+INVALID DIV 3, 4, 1
+INVALID INVALID INP 3
+OUT 4
+INVALID INP 5
+INVALID INP 0
+MOV 5, 1, 0
+NEW 0, 6
+INVALID INP 4
+INVALID NEW 6, 1
+INP 5
+OUT 3
+DEL 7
+LDI 0, 0x1cf71ea
+INVALID PRG 6, 7
+LDI 4, 0x13af278
+OUT 3
+INP 5
+INVALID LDA 0, 5, 0
+MOV 5, 3, 5
+MOV 5, 2, 2
+INVALID OUT 0
+INP 0
+INVALID MOV 4, 7, 6
+PRG 5, 2
+STA 6, 2, 6
+INP 5
+MOV 4, 3, 2
+DEL 4
+INVALID DIV 5, 4, 2
+DIV 6, 5, 3
+DEL 1
+DIV 0, 1, 1
+LDA 1, 1, 1
+INVALID INP 0
+LDI 5, 0x7e35da
+STA 0, 0, 0
+NAND 1, 5, 6
+NAND 1, 1, 6
+HLT 
+MUL 2, 3, 3
+MOV 0, 2, 3
+MOV 7, 0, 2
+MUL 4, 5, 2
+HLT 
+ADD 0, 0, 4
+DIV 4, 3, 6
+HLT 
+DIV 3, 3, 6
+HLT 
+ADD 7, 1, 2
+MUL 4, 7, 6
+NAND 6, 4, 6
+HLT 
+NAND 2, 1, 2
+ADD 6, 3, 7
+ADD 7, 2, 7
+ADD 0, 0, 4
+MOV 2, 7, 6
+STA 7, 4, 4
+MOV 7, 1, 5
+MOV 2, 5, 1
+ADD 0, 0, 1
+ADD 0, 1, 4
+ADD 5, 4, 6
+LDA 7, 4, 2
+STA 2, 3, 5
+NEW 3, 7
+STA 0, 6, 7
+ADD 7, 0, 6
+ADD 7, 3, 3
+STA 2, 4, 2
+NEW 2, 6
+MOV 2, 0, 2
+ADD 2, 0, 2
+ADD 5, 6, 6
+NEW 2, 6
+MOV 7, 2, 2
+ADD 6, 5, 5
+ADD 3, 4, 1
+LDA 7, 2, 2
+STA 2, 0, 3
+STA 3, 1, 0
+NEW 0, 6
+MOV 5, 1, 1
+NEW 6, 2
+MOV 5, 4, 4
+NEW 3, 6
+MOV 1, 2, 3
+MOV 5, 7, 4
+ADD 2, 3, 3
+ADD 5, 1, 3
+MOV 4, 0, 2
+NEW 4, 1
+ADD 1, 4, 7
+LDA 0, 1, 4
+MOV 0, 1, 0
+NEW 0, 2
+NEW 6, 7
+ADD 4, 7, 2
+STA 6, 0, 1
+ADD 7, 6, 0
+ADD 7, 2, 0
+MOV 1, 6, 6
+ADD 2, 0, 1
+NEW 4, 7
+NEW 1, 2
+NEW 1, 4
+MOV 3, 4, 3
+ADD 1, 0, 6
+NEW 0, 5
+STA 1, 2, 4
+NEW 6, 7
+NEW 6, 7
+NEW 3, 3
+NEW 1, 0
+ADD 3, 7, 4
+NEW 3, 6
+MOV 2, 0, 3
+ADD 2, 3, 5
+NEW 5, 0
+NEW 5, 1
+MOV 0, 3, 1
+ADD 3, 2, 6
+NEW 0, 3
+MUL 6, 4, 1
+NAND 1, 1, 6
+HLT 
+DIV 6, 2, 2
+NEW 5, 1
+DIV 2, 0, 0
+NAND 3, 2, 3
+DIV 6, 7, 3
+DIV 0, 5, 4
+HLT 
+HLT 
+STA 6, 2, 4
+HLT 
+HLT 
+HLT 
+MOV 3, 5, 3
+NAND 2, 1, 7
+DIV 5, 0, 7
+DIV 5, 0, 6
+DIV 7, 4, 1
+DIV 2, 1, 2
+HLT 
+MUL 5, 3, 2
+MUL 7, 0, 4
+HLT 
+HLT 
+MOV 0, 6, 2
+NAND 2, 5, 5
+HLT 
+NAND 6, 6, 2
+ADD 7, 0, 4
+STA 1, 3, 1
+DIV 0, 1, 7
+LDA 5, 5, 5
+NEW 2, 0
+ADD 4, 2, 3
+NAND 2, 5, 6
+ADD 4, 6, 6
+DIV 1, 1, 1
+HLT 
+MOV 6, 0, 3
+HLT 
+DIV 5, 5, 4
+STA 5, 4, 2
+HLT 
+STA 3, 0, 3
+MOV 0, 2, 6
+ADD 4, 0, 6
+DIV 1, 1, 3
+MUL 1, 5, 7
+MOV 2, 2, 0
+ADD 2, 5, 3
+ADD 1, 3, 2
+MUL 2, 0, 3
+NAND 3, 2, 2
+HLT 
+HLT 
+HLT 
+HLT 
+HLT 
+STA 0, 2, 0
+NAND 1, 3, 0
+NAND 5, 3, 1
+HLT 
+ADD 4, 6, 4
+MOV 5, 2, 0
+HLT 
+MOV 3, 2, 0
+MOV 5, 2, 4
+MOV 4, 5, 0
+MUL 1, 2, 1
+DIV 1, 2, 6
+DIV 4, 0, 1
+HLT 
+DIV 3, 2, 6
+INP 5
+HLT 
+MOV 3, 6, 7
+MOV 4, 0, 1
+MOV 3, 4, 5
+NEW 0, 3
+DIV 7, 0, 0
+ADD 1, 4, 1
+DIV 6, 4, 0
+NEW 6, 5
+MUL 5, 1, 4
+HLT 
+MUL 4, 7, 2
+ADD 4, 6, 1
+HLT 
+STA 4, 3, 2
+MOV 1, 1, 6
+DIV 1, 3, 6
+STA 7, 5, 1
+HLT 
+MOV 0, 2, 4
+ADD 1, 2, 6
+NAND 4, 6, 0
+NAND 4, 5, 5
+HLT 
+NAND 3, 4, 6
+NAND 0, 3, 5
+ADD 5, 1, 7
+ADD 0, 1, 0
+DIV 5, 6, 6
+ADD 6, 1, 3
+ADD 3, 7, 6
+ADD 6, 5, 3
+HLT 
+NEW 5, 1
+MUL 5, 6, 7
+MUL 7, 5, 7
+NEW 5, 1
+DIV 4, 5, 4
+DIV 7, 5, 3
+HLT 
+NEW 1, 7
+NAND 1, 7, 2
+MOV 0, 7, 2
+HLT 
+ADD 2, 5, 3
+NAND 0, 6, 2
+HLT 
+MUL 2, 0, 3
+MUL 5, 1, 0
+DIV 1, 7, 3
+NEW 4, 7
+NEW 1, 5
+DIV 5, 2, 5
+MOV 3, 7, 7
+HLT 
+NAND 0, 4, 3
+HLT 
+DIV 0, 4, 0
+HLT 
+ADD 5, 4, 6
+MUL 6, 6, 3
+MUL 6, 6, 3
+DIV 5, 7, 0
+DIV 2, 2, 5
+DIV 4, 6, 3
+HLT 
+DIV 1, 6, 7
+DIV 1, 2, 6
+MUL 7, 1, 1
+MOV 7, 1, 6
+DIV 0, 2, 2
+NAND 5, 2, 3
+HLT 
+NAND 1, 2, 5
+ADD 0, 2, 1
+NAND 0, 1, 7
+DIV 3, 5, 0
+DIV 0, 2, 0
+DIV 3, 4, 7
+HLT 
+NAND 5, 5, 1
+NAND 4, 6, 5
+DIV 3, 5, 6
+DIV 1, 6, 5
+HLT 
+DIV 4, 1, 2
+DIV 5, 7, 0
+MUL 6, 3, 3
+DIV 7, 6, 0
+OUT 7
+DIV 6, 0, 2
+HLT 
+HLT 
+MOV 7, 1, 6
+HLT 
+NAND 4, 5, 7
+NEW 2, 4
+DIV 7, 0, 0
+MUL 5, 1, 2
+MUL 4, 4, 7
+MUL 4, 4, 7
+MUL 4, 1, 0
+MUL 3, 4, 7
+HLT 
+ADD 1, 1, 7
+MUL 4, 4, 7
+MUL 4, 4, 7
+MUL 4, 4, 7
+MUL 0, 4, 7
+MUL 1, 4, 7
+HLT 
+DIV 7, 5, 1
+DIV 4, 3, 1
+MOV 7, 2, 4
+STA 3, 3, 4
+HLT 
+DIV 0, 3, 2
+NEW 6, 0
+ADD 1, 6, 0
+ADD 4, 4, 7
+MUL 2, 2, 2
+NEW 3, 3
+NAND 7, 7, 5
+NAND 7, 0, 2
+DIV 0, 2, 0
+NEW 6, 7
+HLT 
+DIV 2, 4, 7
+DIV 4, 6, 5
+MOV 3, 0, 7
+DIV 2, 0, 7
+HLT 
+ADD 4, 4, 1
+DIV 3, 2, 0
+STA 1, 1, 5
+NAND 7, 4, 2
+DIV 4, 1, 5
+ADD 6, 4, 6
+DIV 0, 3, 5
+HLT 
+NEW 0, 1
+DIV 4, 5, 2
+DIV 6, 5, 0
+ADD 6, 5, 2
+NAND 2, 6, 2
+HLT 
+NAND 0, 7, 4
+NEW 5, 6
+MOV 6, 2, 5
+MUL 1, 5, 1
+MUL 1, 3, 1
+NEW 7, 6
+HLT 
+MUL 6, 0, 6
+HLT 
+HLT 
+DIV 4, 1, 3
+NAND 3, 1, 7
+ADD 1, 7, 0
+HLT 
+HLT 
+DIV 7, 2, 0
+NAND 3, 4, 5
+MUL 1, 0, 6
+STA 7, 2, 0
+HLT 
+DIV 6, 7, 3
+NAND 4, 5, 6
+DIV 4, 7, 0
+STA 4, 0, 5
+DIV 7, 4, 7
+DIV 2, 3, 1
+MOV 6, 7, 2
+NEW 0, 7
+NEW 2, 5
+MUL 4, 6, 6
+DIV 4, 1, 0
+HLT 
+NAND 3, 2, 6
+PRG 2, 4
+NAND 0, 7, 1
+NAND 4, 0, 0
+NAND 2, 6, 1
+NAND 4, 0, 6
+NEW 3, 6
+MUL 0, 5, 0
+NEW 0, 0
+NAND 4, 0, 6
+MUL 4, 1, 0
+DIV 4, 1, 0
+NEW 1, 4
+DIV 1, 2, 0
+HLT 
+DIV 6, 5, 4
+STA 6, 7, 6
+NAND 7, 5, 1
+HLT 
+MUL 1, 7, 6
+NEW 6, 1
+DIV 4, 3, 4
+NEW 7, 5
+NEW 0, 5
+LDA 3, 1, 6
+DIV 4, 4, 6
+MUL 4, 5, 3
+HLT 
+HLT 
+HLT 
+NEW 0, 0
+MUL 0, 3, 7
+MOV 6, 1, 7
+DIV 3, 7, 6
+NEW 4, 1
+HLT 
+DIV 1, 5, 6
+DIV 5, 6, 6
+NEW 0, 5
+MUL 4, 3, 3
+MUL 5, 0, 1
+NAND 6, 7, 7
+MOV 7, 5, 1
+HLT 
+NAND 6, 7, 2
+DIV 5, 4, 4
+PRG 7, 5
+NAND 4, 2, 0
+ADD 6, 3, 7
+NEW 5, 2
+NEW 0, 1
+MUL 2, 2, 2
+ADD 1, 5, 6
+NEW 4, 3
+MUL 3, 7, 4
+HLT 
+HLT 
+HLT 
+NEW 6, 2
+HLT 
+DIV 3, 7, 0
+ADD 2, 7, 6
+MUL 3, 4, 3
+NEW 0, 5
+NEW 2, 5
+HLT 
+NEW 3, 6
+NAND 6, 6, 6
+NEW 7, 3
+DEL 7
+NAND 1, 4, 2
+NEW 7, 6
+NAND 0, 0, 1
+NAND 5, 4, 1
+HLT 
+DIV 4, 0, 3
+INP 3
+DEL 0
+NEW 1, 6
+HLT 
+MOV 1, 5, 5
+LDA 0, 1, 1
+NEW 1, 5
+MUL 6, 3, 4
+LDA 1, 5, 6
+MUL 7, 3, 7
+MUL 4, 0, 1
+LDA 1, 7, 6
+STA 4, 7, 1
+MOV 4, 7, 5
+NEW 4, 1
+STA 0, 2, 1
+DEL 7
+MUL 3, 5, 7
+NEW 2, 0
+NEW 0, 3
+NEW 4, 1
+NEW 5, 3
+MUL 5, 6, 5
+NAND 4, 1, 0
+HLT 
+HLT 
+NEW 3, 3
+NEW 3, 5
+NEW 7, 5
+MUL 3, 6, 4
+LDA 0, 5, 2
+NEW 3, 7
+NEW 4, 4
+HLT 
+HLT 
+MUL 4, 6, 4
+DIV 3, 3, 6
+HLT 
+DEL 7
+NAND 0, 3, 0
+NAND 3, 1, 1
+NAND 6, 7, 5
+NAND 2, 5, 4
+NAND 4, 3, 7
+NEW 4, 1
+ADD 0, 3, 0
+HLT 
+HLT 
+HLT 
+MOV 0, 1, 3
+MOV 5, 1, 2
+NEW 5, 0
+MUL 7, 5, 2
+STA 4, 3, 1
+HLT 
+NEW 4, 5
+MOV 2, 0, 6
+NEW 1, 2
+NEW 3, 5
+HLT 
+MUL 1, 0, 1
+HLT 
+NEW 6, 4
+NEW 4, 0
+NAND 7, 4, 2
+NAND 3, 0, 6
+NEW 1, 6
+NEW 5, 3
+DIV 6, 6, 3
+DIV 6, 6, 3
+DIV 1, 1, 0
+DIV 0, 1, 7
+NAND 7, 7, 6
+LDA 0, 2, 2
+NEW 6, 0
+STA 3, 5, 5
+NAND 1, 0, 3
+NAND 4, 4, 6
+NAND 0, 0, 7
+NAND 3, 7, 7
+NEW 1, 5
+NAND 0, 4, 4
+NEW 2, 0
+OUT 0
+NEW 5, 6
+NEW 0, 2
+NAND 6, 0, 4
+HLT 
+DIV 5, 1, 5
+MOV 6, 5, 2
+NEW 1, 3
+LDA 6, 1, 4
+HLT 
+DIV 7, 1, 2
+MOV 7, 1, 7
+NEW 5, 5
+NAND 1, 4, 4
+MUL 4, 3, 0
+MOV 4, 0, 1
+HLT 
+DIV 4, 3, 4
+NAND 5, 1, 7
+HLT 
+HLT 
+HLT 
+ADD 5, 1, 5
+MUL 7, 4, 6
+DIV 6, 6, 3
+MUL 6, 6, 3
+DIV 1, 7, 0
+MUL 1, 6, 6
+DIV 4, 7, 0
+DIV 1, 2, 7
+NAND 3, 6, 4
+STA 1, 5, 3
+HLT 
+STA 4, 1, 0
+STA 1, 7, 6
+STA 2, 0, 0
+MUL 6, 6, 2
+STA 5, 6, 0
+MOV 6, 7, 2
+LDA 2, 1, 4
+MUL 7, 2, 0
+MUL 7, 3, 6
+MOV 1, 3, 7
+NAND 5, 2, 1
+HLT 
+DIV 6, 3, 7
+DIV 4, 4, 5
+NAND 6, 4, 7
+NAND 2, 1, 5
+NAND 1, 0, 2
+NEW 0, 5
+NAND 0, 5, 0
+STA 7, 2, 1
+DEL 6
+LDA 0, 6, 5
+MOV 1, 7, 1
+NEW 0, 6
+DIV 5, 7, 3
+MUL 4, 3, 3
+MOV 7, 2, 7
+MUL 1, 4, 5
+HLT 
+MOV 2, 4, 5
+HLT 
+DIV 2, 5, 7
+NEW 1, 6
+DIV 7, 0, 1
+STA 7, 6, 1
+MOV 3, 5, 5
+MOV 3, 1, 1
+DIV 2, 1, 4
+STA 7, 0, 7
+MOV 5, 5, 0
+STA 1, 0, 4
+MOV 0, 6, 2
+DIV 1, 2, 3
+HLT 
+NAND 6, 6, 6
+HLT 
+NAND 1, 0, 3
+HLT 
+NAND 4, 0, 7
+STA 5, 3, 6
+NEW 1, 4
+NEW 1, 5
+NEW 5, 0
+HLT 
+DIV 4, 2, 4
+HLT 
+DIV 1, 4, 1
+NEW 6, 3
+HLT 
+NAND 6, 1, 7
+STA 2, 2, 6
+MOV 5, 7, 0
+STA 3, 1, 7
+NEW 2, 1
+MUL 6, 5, 2
+MUL 7, 6, 2
+NAND 3, 4, 0
+NEW 3, 0
+NEW 2, 1
+NAND 5, 2, 3
+HLT 
+DIV 6, 0, 3
+OUT 4
+NEW 1, 1
+NAND 7, 4, 4
+MUL 7, 1, 6
+NEW 7, 7
+HLT 
+NEW 4, 1
+ADD 5, 2, 5
+NEW 1, 5
+HLT 
+LDA 4, 7, 2
+DIV 7, 4, 7
+NEW 4, 2
+NEW 1, 2
+NEW 0, 0
+DEL 7
+MOV 6, 1, 1
+HLT 
+NEW 2, 7
+HLT 
+NEW 6, 5
+NAND 3, 4, 5
+INP 0
+NAND 7, 3, 7
+DIV 5, 0, 7
+NEW 4, 5
+NAND 7, 4, 5
+DIV 6, 1, 4
+MUL 3, 6, 6
+MUL 6, 5, 0
+OUT 1
+NEW 5, 3
+NEW 5, 5
+HLT 
+DIV 4, 0, 2
+DIV 2, 3, 3
+ADD 4, 0, 2
+MUL 2, 2, 2
+NAND 2, 0, 2
+NEW 7, 0
+NEW 1, 2
+NEW 6, 4
+MUL 2, 4, 0
+NEW 5, 0
+HLT 
+DIV 7, 7, 3
+NAND 1, 6, 5
+DIV 4, 5, 6
+DIV 0, 1, 5
+MUL 0, 3, 7
+DIV 3, 1, 2
+MUL 4, 4, 5
+STA 2, 7, 1
+NAND 4, 6, 2
+DIV 7, 1, 6
+HLT 
+NEW 7, 0
+MOV 7, 4, 7
+DIV 3, 5, 6
+NAND 4, 0, 5
+NEW 4, 7
+NEW 5, 1
+NEW 1, 1
+MUL 4, 5, 5
+NAND 7, 3, 7
+ADD 0, 1, 4
+STA 1, 6, 7
+ADD 1, 2, 7
+NEW 3, 0
+NEW 7, 1
+DIV 4, 7, 3
+NEW 6, 3
+NAND 1, 7, 7
+NEW 3, 0
+HLT 
+NAND 0, 1, 1
+HLT 
+NEW 1, 6
+NEW 1, 4
+NEW 4, 7
+NEW 2, 0
+NEW 4, 6
+OUT 3
+MOV 3, 6, 0
+NEW 4, 0
+STA 5, 3, 7
+ADD 7, 2, 1
+NEW 2, 3
+MUL 6, 6, 6
+NEW 6, 7
+DIV 2, 2, 1
+NEW 3, 4
+DIV 3, 0, 4
+NEW 5, 0
+NAND 6, 2, 7
+NEW 0, 7
+MUL 5, 4, 3
+NEW 0, 1
+DEL 4
+NEW 4, 2
+HLT 
+NEW 7, 2
+NEW 3, 5
+HLT 
+NAND 2, 5, 4
+DIV 0, 6, 1
+NAND 4, 1, 7
+DIV 1, 1, 0
+DIV 5, 1, 2
+NEW 5, 4
+DIV 1, 2, 6
+NEW 4, 6
+MOV 4, 6, 6
+MUL 2, 1, 7
+HLT 
+DIV 5, 2, 3
+DIV 6, 1, 3
+HLT 
+NEW 7, 3
+NAND 2, 3, 0
+STA 0, 0, 4
+HLT 
+NAND 2, 5, 0
+HLT 
+MUL 7, 5, 4
+DIV 3, 2, 1
+DIV 7, 0, 1
+OUT 5
+DEL 4
+NEW 7, 6
+NEW 3, 1
+NEW 3, 0
+STA 7, 0, 4
+DIV 6, 5, 1
+NAND 4, 5, 1
+NAND 5, 5, 1
+MUL 2, 7, 0
+NAND 1, 6, 4
+NAND 1, 4, 2
+DIV 4, 3, 3
+NEW 6, 1
+DIV 4, 4, 4
+ADD 5, 0, 3
+DEL 3
+NEW 4, 3
+NEW 1, 5
+DIV 6, 4, 6
+DIV 3, 7, 5
+MOV 5, 2, 2
+NEW 4, 4
+DIV 6, 1, 6
+NEW 1, 1
+MUL 7, 7, 0
+MUL 5, 1, 6
+HLT 
+MOV 6, 4, 7
+NEW 3, 0
+INP 2
+NEW 7, 2
+NAND 4, 7, 4
+NEW 3, 1
+NEW 0, 3
+NEW 3, 3
+NEW 1, 5
+NEW 5, 2
+NAND 7, 4, 7
+NEW 6, 6
+NEW 1, 5
+DIV 0, 2, 2
+DIV 5, 4, 3
+NEW 2, 3
+DIV 2, 6, 4
+NEW 1, 6
+MOV 0, 5, 1
+NEW 2, 5
+NEW 4, 2
+NEW 5, 6
+MUL 2, 6, 0
+HLT 
+DIV 2, 5, 1
+OUT 7
+NEW 7, 1
+NEW 7, 4
+HLT 
+MOV 5, 6, 7
+NEW 1, 5
+NEW 6, 5
+PRG 1, 3
+NEW 0, 7
+MOV 2, 0, 0
+LDA 2, 2, 1
+HLT 
+HLT 
+NEW 4, 2
+NEW 6, 2
+DEL 1
+NEW 2, 7
+NEW 7, 5
+MOV 0, 4, 7
+NEW 2, 1
+DIV 0, 7, 6
+DIV 4, 1, 5
+PRG 7, 7
+NEW 4, 5
+NEW 3, 6
+NEW 0, 5
+NEW 5, 6
+NEW 2, 5
+NEW 4, 7
+NEW 4, 5
+NAND 0, 5, 2
+DIV 4, 1, 5
+MUL 1, 1, 5
+DIV 5, 7, 0
+DIV 3, 6, 6
+NEW 6, 6
+STA 6, 7, 3
+MUL 4, 6, 4
+MUL 4, 1, 1
+ADD 4, 3, 3
+NAND 6, 4, 1
+NEW 7, 1
+NAND 5, 5, 4
+NAND 4, 3, 0
+NEW 4, 4
+OUT 4
+NEW 6, 6
+NEW 0, 5
+NEW 3, 6
+NEW 3, 0
+NEW 7, 5
+HLT 
+MUL 0, 5, 6
+MOV 7, 1, 4
+LDA 2, 2, 2
+NEW 4, 5
+NEW 6, 3
+DIV 2, 1, 7
+MUL 3, 3, 6
+HLT 
+DEL 2
+NEW 6, 4
+NEW 1, 7
+NAND 6, 3, 6
+NAND 5, 3, 4
+NAND 3, 7, 7
+HLT 
+INP 2
+NAND 0, 0, 0
+HLT 
+HLT 
+HLT 
+HLT 
+NEW 2, 1
+NEW 2, 4
+NAND 5, 6, 7
+MUL 5, 7, 2
+NEW 2, 5
+HLT 
+HLT 
+ADD 0, 0, 4
+DIV 0, 6, 0
+MOV 1, 1, 6
+ADD 7, 3, 3
+STA 5, 6, 2
+MOV 0, 3, 0
+MOV 5, 5, 1
+LDA 7, 5, 7
+ADD 1, 4, 3
+STA 2, 7, 3
+MOV 2, 4, 0
+NEW 2, 4
+NAND 2, 6, 2
+DIV 3, 1, 1
+STA 5, 7, 2
+HLT 
+NEW 5, 2
+ADD 3, 6, 0
+MUL 4, 3, 1
+DIV 7, 7, 7
+DIV 5, 3, 3
+NAND 4, 5, 0
+NAND 7, 0, 5
+DIV 2, 6, 3
+MUL 6, 2, 1
+DIV 5, 4, 6
+DIV 2, 4, 4
+HLT 
+HLT 
+ADD 5, 1, 6
+DIV 1, 6, 3
+DIV 5, 5, 1
+ADD 7, 4, 5
+STA 3, 5, 1
+MOV 3, 1, 7
+MUL 7, 3, 6
+HLT 
+ADD 3, 0, 1
+MUL 6, 3, 6
+NEW 0, 3
+DEL 2
+HLT 
+MOV 7, 7, 0
+NEW 2, 3
+NEW 7, 2
+ADD 3, 6, 7
+MUL 4, 1, 0
+PRG 0, 1
+DEL 4
+NEW 1, 2
+NEW 3, 5
+NEW 4, 2
+NAND 1, 5, 0
+NEW 2, 4
+NEW 1, 2
+OUT 7
+NEW 4, 4
+NEW 3, 4
+HLT 
+ADD 1, 7, 6
+NEW 5, 7
+DIV 3, 7, 1
+LDA 0, 2, 5
+MOV 3, 5, 6
+MOV 2, 4, 0
+NEW 7, 6
+MOV 6, 1, 2
+LDA 5, 3, 0
+MOV 7, 4, 0
+NEW 5, 6
+OUT 2
+STA 6, 2, 1
+HLT 
+NEW 5, 6
+NEW 3, 6
+DIV 3, 0, 0
+MUL 7, 4, 3
+INP 0
+HLT 
+NEW 0, 2
+HLT 
+NAND 7, 0, 2
+NEW 3, 7
+NEW 4, 7
+NEW 0, 4
+NEW 6, 0
+MOV 4, 5, 3
+LDA 2, 2, 4
+NEW 6, 1
+NEW 5, 1
+DIV 7, 2, 4
+DIV 2, 7, 7
+ADD 1, 6, 5
+DEL 1
+HLT 
+NAND 7, 6, 2
+ADD 3, 1, 5
+HLT 
+ADD 1, 5, 5
+MOV 6, 1, 4
+DIV 7, 7, 5
+NAND 0, 6, 4
+ADD 7, 4, 3
+DIV 3, 2, 5
+NEW 1, 3
+NEW 7, 5
+NEW 3, 2
+MUL 1, 1, 2
+NEW 1, 2
+NEW 2, 7
+MUL 3, 5, 6
+DEL 1
+ADD 4, 3, 4
+NEW 5, 0
+NEW 0, 2
+OUT 5
+NEW 5, 7
+DIV 7, 0, 0
+DEL 5
+NEW 5, 1
+LDA 6, 7, 4
+MOV 0, 7, 3
+MOV 5, 0, 1
+DEL 5
+MOV 0, 7, 3
+LDA 3, 2, 3
+MUL 6, 4, 0
+NEW 5, 2
+HLT 
+NEW 7, 1
+DEL 1
+NEW 1, 6
+NEW 4, 4
+MUL 7, 3, 0
+NAND 3, 5, 6
+DIV 7, 1, 5
+NEW 6, 7
+PRG 7, 5
+DEL 3
+NEW 0, 6
+NEW 5, 7
+NEW 7, 1
+NEW 6, 4
+DIV 4, 1, 2
+MOV 7, 2, 7
+DEL 2
+NEW 4, 4
+NEW 2, 5
+HLT 
+DEL 2
+DEL 2
+NEW 6, 4
+MUL 5, 6, 4
+DEL 2
+STA 0, 1, 4
+MOV 4, 4, 2
+NEW 5, 4
+NEW 0, 1
+HLT 
+HLT 
+NAND 4, 4, 2
+NAND 6, 1, 1
+DEL 2
+DEL 6
+NEW 2, 3
+DEL 3
+DEL 7
+MUL 3, 5, 3
+HLT 
+NEW 7, 3
+NEW 7, 0
+NEW 7, 3
+LDA 3, 7, 6
+MOV 4, 7, 1
+MOV 2, 0, 3
+OUT 2
+ADD 5, 0, 0
+MOV 6, 6, 7
+HLT 
+STA 7, 0, 0
+ADD 4, 6, 1
+MUL 7, 5, 5
+LDA 7, 2, 4
+MOV 2, 4, 1
+MOV 2, 4, 0
+DEL 3
+MOV 6, 5, 2
+LDA 2, 2, 2
+MOV 4, 0, 0
+HLT 
+STA 1, 1, 4
+DIV 7, 5, 6
+NEW 6, 7
+HLT 
+DIV 3, 2, 7
+NAND 6, 5, 5
+NAND 4, 5, 6
+PRG 2, 1
+NEW 3, 7
+NEW 5, 5
+NEW 6, 0
+NEW 6, 3
+DEL 7
+MOV 1, 0, 0
+LDA 7, 0, 7
+DEL 0
+MOV 2, 7, 5
+MUL 3, 4, 4
+ADD 1, 1, 0
+HLT 
+DEL 3
+ADD 1, 1, 2
+MUL 7, 7, 2
+HLT 
+ADD 6, 4, 1
+HLT 
+MOV 2, 3, 7
+NEW 2, 7
+HLT 
+MUL 2, 6, 0
+OUT 1
+DEL 3
+DEL 6
+HLT 
+HLT 
+NEW 1, 1
+MUL 3, 6, 1
+INP 7
+DEL 6
+DEL 3
+DEL 3
+DEL 3
+DEL 4
+DEL 7
+MOV 7, 3, 1
+NEW 7, 0
+LDA 1, 7, 2
+NEW 7, 5
+MUL 1, 7, 7
+MOV 5, 4, 3
+ADD 6, 3, 0
+MUL 2, 7, 5
+MOV 6, 4, 6
+MOV 4, 1, 1
+HLT 
+MOV 7, 4, 7
+LDA 0, 2, 7
+MOV 0, 4, 0
+NEW 5, 7
+HLT 
+NAND 3, 4, 7
+STA 5, 1, 4
+NEW 3, 0
+NEW 4, 7
+NEW 4, 6
+DEL 5
+NEW 0, 3
+MUL 4, 0, 0
+HLT 
+NAND 2, 0, 1
+NEW 1, 6
+NEW 2, 4
+NEW 0, 5
+DIV 6, 3, 6
+HLT 
+MUL 1, 5, 4
+NEW 1, 5
+MOV 5, 7, 1
+LDA 2, 3, 0
+NEW 6, 1
+NEW 7, 0
+DEL 3
+MUL 3, 3, 5
+DEL 5
+ADD 6, 1, 1
+NAND 1, 5, 6
+DEL 1
+DEL 0
+MUL 0, 2, 5
+MOV 7, 2, 6
+MOV 2, 2, 7
+NEW 5, 5
+STA 3, 0, 6
+STA 3, 2, 5
+STA 2, 2, 0
+MOV 5, 6, 2
+ADD 7, 3, 6
+PRG 6, 1
+NEW 2, 1
+DEL 6
+DEL 7
+DEL 6
+DEL 3
+DEL 6
+DEL 2
+NAND 2, 2, 7
+DEL 7
+NEW 4, 0
+DEL 1
+DEL 6
+DEL 6
+STA 1, 2, 0
+INP 7
+HLT 
+NEW 1, 0
+DIV 5, 0, 1
+MOV 3, 4, 7
+DEL 2
+MOV 7, 1, 0
+DEL 7
+MOV 6, 7, 4
+LDA 1, 0, 6
+MOV 2, 4, 0
+DEL 2
+DEL 2
+DEL 4
+NEW 3, 1
+INP 5
+NEW 3, 0
+DEL 1
+DEL 3
+NEW 3, 5
+NEW 5, 7
+DEL 5
+DIV 0, 6, 5
+OUT 5
+NEW 6, 1
+NEW 5, 4
+DEL 4
+DEL 0
+NAND 6, 2, 2
+MUL 3, 1, 5
+PRG 6, 0
+DEL 3
+STA 4, 7, 6
+NAND 0, 3, 6
+NEW 2, 4
+DEL 2
+NAND 5, 6, 6
+NAND 1, 7, 3
+STA 1, 3, 1
+HLT 
+MOV 7, 7, 1
+DEL 1
+HLT 
+DEL 3
+DEL 6
+PRG 2, 1
+DEL 2
+NEW 5, 4
+MUL 4, 4, 6
+DEL 0
+NEW 6, 2
+DEL 4
+DEL 6
+NAND 6, 7, 1
+DEL 2
+DEL 6
+DEL 1
+NEW 7, 5
+DEL 7
+NEW 2, 5
+MOV 7, 3, 1
+MOV 2, 1, 2
+MOV 2, 4, 0
+HLT 
+MOV 7, 5, 0
+LDA 0, 3, 2
+MOV 5, 7, 1
+DEL 5
+OUT 4
+DIV 5, 2, 7
+DEL 3
+MUL 5, 2, 4
+NEW 1, 6
+HLT 
+DEL 2
+PRG 7, 5
+HLT 
+NEW 4, 3
+DEL 6
+NEW 5, 0
+NEW 7, 7
+HLT 
+NEW 5, 7
+NEW 7, 2
+MOV 5, 6, 4
+MOV 2, 3, 2
+NEW 3, 7
+NEW 0, 7
+MUL 1, 1, 1
+MOV 0, 4, 7
+INP 5
+DEL 0
+DEL 5
+HLT 
+DEL 6
+NAND 3, 1, 5
+NEW 0, 4
+NAND 1, 0, 2
+DIV 6, 3, 5
+DEL 1
+DEL 1
+DEL 1
+DEL 1
+DEL 0
+DEL 1
+PRG 0, 5
+DEL 7
+DEL 2
+DEL 3
+DEL 5
+DEL 7
+MOV 4, 4, 3
+MOV 6, 0, 0
+MUL 5, 4, 6
+MOV 0, 7, 2
+DEL 4
+MOV 1, 0, 6
+LDA 3, 4, 0
+MOV 7, 4, 0
+NEW 6, 4
+PRG 6, 3
+DEL 0
+DEL 7
+DEL 1
+NEW 4, 3
+NEW 2, 2
+NEW 3, 2
+NEW 1, 4
+OUT 1
+NEW 5, 5
+NEW 5, 3
+NEW 4, 0
+NEW 0, 1
+DEL 5
+MOV 6, 6, 7
+STA 3, 4, 4
+NEW 3, 3
+NEW 7, 7
+MUL 7, 7, 1
+MUL 0, 6, 7
+DEL 0
+MOV 0, 4, 4
+HLT 
+DEL 7
+DEL 6
+DEL 5
+MUL 2, 0, 7
+MOV 4, 1, 4
+NEW 7, 4
+NAND 1, 5, 6
+PRG 7, 1
+HLT 
+DEL 1
+MUL 0, 3, 6
+DEL 7
+DEL 4
+DEL 2
+MUL 4, 4, 7
+OUT 6
+DEL 6
+NEW 4, 6
+NEW 5, 5
+DEL 4
+DEL 1
+NEW 3, 3
+MOV 3, 5, 1
+MOV 1, 2, 3
+DEL 1
+DEL 5
+MOV 7, 0, 7
+LDA 6, 2, 5
+MOV 4, 3, 1
+DEL 7
+DEL 0
+DEL 4
+DEL 4
+MOV 3, 0, 3
+DEL 1
+DEL 1
+DEL 4
+ADD 7, 3, 3
+DEL 1
+NEW 6, 2
+DIV 4, 2, 2
+HLT 
+DEL 3
+HLT 
+NEW 3, 0
+DIV 7, 7, 0
+NAND 0, 3, 6
+NAND 1, 6, 5
+DEL 0
+DEL 7
+DEL 6
+DEL 0
+MUL 1, 4, 6
+DEL 2
+DEL 5
+HLT 
+DEL 0
+ADD 7, 2, 2
+NAND 7, 2, 3
+NEW 5, 5
+OUT 5
+DEL 7
+DEL 0
+DEL 6
+DEL 0
+DEL 0
+DEL 0
+PRG 6, 6
+DEL 5
+DEL 7
+DEL 1
+NEW 2, 3
+DEL 6
+DEL 7
+DEL 2
+OUT 4
+STA 2, 5, 6
+MOV 5, 4, 6
+MOV 1, 4, 7
+DIV 4, 0, 6
+MOV 0, 2, 5
+MOV 1, 1, 1
+PRG 2, 6
+DEL 0
+DEL 2
+DIV 3, 0, 1
+NEW 7, 0
+DEL 0
+DEL 5
+DIV 5, 3, 3
+OUT 5
+NEW 5, 0
+DEL 1
+DEL 3
+NEW 4, 4
+DEL 7
+NEW 0, 4
+MUL 4, 2, 1
+HLT 
+MOV 4, 2, 3
+DEL 6
+DEL 6
+NEW 4, 3
+DEL 3
+DEL 7
+OUT 6
+DEL 0
+DEL 4
+DEL 5
+ADD 0, 0, 6
+MOV 7, 0, 0
+NAND 1, 4, 4
+PRG 3, 5
+DEL 1
+HLT 
+DEL 4
+MUL 4, 4, 5
+DEL 6
+DEL 7
+DEL 1
+OUT 0
+DEL 0
+NEW 2, 6
+DEL 0
+DEL 0
+NEW 7, 3
+MOV 0, 2, 3
+MUL 7, 7, 1
+MOV 6, 3, 7
+MOV 1, 0, 4
+DEL 2
+MOV 6, 3, 1
+LDA 6, 4, 0
+MOV 6, 6, 1
+DEL 2
+OUT 7
+MOV 4, 7, 6
+DEL 5
+DEL 7
+DEL 1
+NAND 1, 3, 3
+NEW 4, 6
+MUL 3, 5, 0
+NEW 1, 7
+DEL 1
+NAND 5, 0, 4
+DEL 5
+DEL 0
+DEL 2
+NEW 2, 4
+OUT 3
+DIV 7, 7, 1
+MOV 7, 4, 7
+DEL 7
+DEL 7
+DEL 3
+DEL 3
+PRG 3, 0
+NEW 4, 3
+DEL 2
+DEL 1
+ADD 6, 0, 2
+MOV 7, 3, 5
+DEL 5
+NEW 7, 5
+OUT 1
+NEW 4, 3
+DEL 7
+DEL 0
+DEL 5
+DEL 3
+DEL 5
+PRG 2, 5
+DEL 6
+DEL 4
+HLT 
+HLT 
+DEL 7
+MOV 7, 4, 0
+DEL 7
+MOV 1, 4, 3
+MOV 5, 6, 6
+DEL 3
+MOV 0, 0, 7
+LDA 6, 5, 2
+MOV 1, 0, 0
+NEW 6, 2
+PRG 7, 5
+DIV 2, 6, 6
+DEL 6
+DEL 1
+ADD 1, 3, 0
+NEW 4, 6
+NAND 5, 1, 1
+NAND 0, 3, 4
+OUT 1
+DEL 4
+DEL 7
+NEW 2, 5
+DEL 3
+DEL 5
+MOV 5, 0, 4
+ADD 6, 7, 7
+NEW 4, 0
+DEL 0
+DEL 0
+DIV 5, 7, 5
+MUL 5, 1, 5
+NAND 0, 4, 2
+HLT 
+OUT 5
+DEL 1
+MOV 5, 5, 2
+DEL 0
+NEW 1, 4
+DEL 7
+DEL 7
+PRG 1, 5
+DEL 6
+DEL 6
+DEL 6
+DEL 6
+DEL 6
+NEW 0, 6
+DEL 6
+OUT 4
+DEL 7
+DEL 1
+DEL 2
+LDA 1, 0, 6
+DEL 0
+MOV 4, 0, 5
+MUL 2, 6, 1
+MUL 3, 0, 4
+MOV 3, 6, 3
+STA 0, 7, 2
+DEL 6
+NEW 1, 7
+DIV 0, 0, 1
+DEL 1
+NEW 2, 6
+DEL 0
+DEL 3
+DEL 4
+DEL 1
+MOV 2, 0, 1
+NEW 1, 4
+PRG 5, 0
+NEW 5, 2
+DEL 0
+DEL 2
+DEL 4
+MOV 5, 3, 6
+DEL 1
+DEL 3
+NAND 4, 0, 3
+NEW 2, 1
+DEL 5
+DEL 4
+DEL 6
+DEL 0
+DEL 6
+STA 0, 3, 2
+NEW 4, 1
+NEW 3, 0
+DEL 6
+DEL 5
+DEL 7
+DIV 1, 1, 1
+NEW 7, 5
+OUT 2
+MUL 6, 5, 7
+NEW 0, 0
+DEL 1
+DIV 2, 0, 2
+DEL 1
+HLT 
+PRG 4, 1
+DEL 1
+DEL 4
+DEL 3
+ADD 7, 7, 5
+LDA 7, 4, 2
+MUL 7, 0, 3
+MOV 2, 0, 1
+NAND 3, 5, 2
+ADD 2, 3, 5
+MOV 1, 0, 1
+DEL 1
+ADD 5, 7, 5
+MOV 6, 1, 5
+STA 5, 6, 5
+MUL 4, 1, 0
+DEL 5
+DEL 2
+DEL 5
+DEL 7
+HLT 
+DEL 5
+NEW 1, 7
+OUT 5
+DEL 4
+DEL 1
+DEL 6
+DEL 1
+LDA 2, 2, 3
+NAND 4, 3, 1
+PRG 5, 7
+DEL 2
+DEL 0
+DEL 2
+DEL 6
+DEL 4
+DEL 6
+DEL 2
+MUL 0, 7, 5
+NAND 7, 2, 2
+DIV 5, 5, 3
+DEL 1
+DEL 2
+DEL 4
+DEL 6
+PRG 2, 4
+HLT 
+DEL 5
+NEW 0, 0
+DEL 0
+DEL 3
+DEL 0
+DIV 3, 7, 4
+OUT 7
+DEL 3
+DEL 6
+DEL 0
+MOV 5, 1, 2
+LDA 0, 5, 3
+MOV 4, 7, 0
+STA 2, 4, 3
+MOV 3, 3, 7
+MOV 2, 4, 0
+DEL 7
+MUL 0, 6, 7
+DEL 7
+DEL 3
+DEL 2
+OUT 3
+NEW 4, 5
+DEL 4
+DEL 0
+DEL 0
+DEL 6
+DEL 0
+PRG 2, 6
+DEL 4
+DEL 5
+DEL 1
+MOV 6, 3, 7
+DEL 4
+DEL 5
+NEW 5, 5
+STA 3, 3, 6
+DEL 6
+DEL 4
+DEL 1
+DEL 3
+DEL 4
+MOV 4, 0, 0
+PRG 7, 6
+NEW 5, 5
+DEL 6
+DEL 5
+DEL 2
+DEL 4
+DEL 6
+DEL 4
+DEL 1
+DEL 2
+DIV 7, 5, 6
+DEL 2
+NEW 2, 2
+DEL 2
+DEL 1
+PRG 4, 4
+NEW 6, 4
+MUL 1, 5, 4
+LDA 6, 5, 6
+MOV 7, 7, 1
+MOV 0, 1, 1
+DEL 3
+MOV 1, 7, 3
+MOV 4, 3, 7
+DEL 7
+NEW 0, 6
+DEL 2
+DEL 2
+ADD 0, 3, 6
+NEW 2, 6
+MUL 1, 4, 6
+DEL 1
+DEL 6
+DEL 3
+DEL 1
+DEL 6
+DIV 5, 7, 5
+DEL 3
+OUT 5
+MOV 7, 4, 6
+DEL 5
+DEL 3
+DEL 2
+DEL 1
+DEL 1
+MUL 5, 1, 4
+DEL 2
+DEL 1
+MUL 7, 3, 0
+ADD 5, 6, 6
+HLT 
+DEL 1
+DEL 0
+OUT 6
+DIV 5, 6, 6
+DEL 2
+NEW 2, 6
+DEL 0
+NEW 4, 5
+DEL 5
+STA 0, 5, 2
+NEW 5, 0
+DEL 4
+ADD 4, 4, 7
+DEL 2
+DEL 4
+DEL 6
+LDA 0, 0, 5
+MOV 3, 0, 4
+MOV 0, 4, 1
+DEL 0
+MOV 0, 5, 5
+LDA 7, 4, 4
+ADD 7, 5, 1
+NEW 6, 7
+PRG 7, 4
+NEW 4, 5
+ADD 7, 1, 5
+DEL 5
+DEL 6
+DEL 4
+DEL 7
+DEL 0
+OUT 5
+NEW 2, 2
+DEL 7
+DEL 2
+DEL 0
+DEL 6
+DEL 0
+ADD 6, 7, 5
+NEW 4, 6
+NEW 2, 6
+DEL 5
+DEL 3
+DEL 0
+DEL 7
+DEL 4
+STA 4, 0, 2
+DEL 0
+MOV 7, 3, 1
+DEL 6
+DEL 0
+DEL 0
+DEL 2
+MUL 1, 3, 6
+NEW 4, 5
+DEL 6
+NEW 5, 2
+DEL 2
+DIV 7, 3, 5
+DEL 7
+NEW 4, 6
+OUT 6
+HLT 
+DEL 5
+DEL 5
+STA 4, 5, 5
+MOV 7, 2, 7
+LDA 5, 4, 3
+DEL 0
+ADD 4, 4, 6
+DEL 6
+MOV 0, 6, 0
+DEL 5
+NEW 6, 4
+MUL 5, 7, 0
+HLT 
+OUT 6
+DEL 0
+DEL 0
+DEL 3
+DEL 6
+NEW 5, 7
+DEL 5
+PRG 0, 5
+DEL 2
+DEL 6
+DEL 0
+NEW 6, 5
+DEL 3
+DEL 0
+MOV 0, 4, 7
+OUT 0
+DEL 4
+DEL 2
+MOV 3, 1, 0
+DEL 1
+NAND 6, 6, 1
+DEL 1
+PRG 7, 3
+DIV 2, 6, 3
+DEL 6
+NEW 0, 7
+DEL 1
+DEL 6
+NEW 2, 2
+DEL 5
+OUT 4
+NEW 4, 7
+DEL 1
+DEL 3
+DEL 2
+MUL 5, 3, 7
+ADD 5, 6, 5
+PRG 5, 3
+DEL 1
+DEL 4
+DIV 2, 1, 4
+MOV 0, 6, 7
+LDA 4, 0, 3
+HLT 
+MOV 6, 5, 3
+MOV 4, 4, 7
+LDA 1, 1, 7
+MOV 2, 4, 0
+DEL 3
+DEL 6
+DEL 1
+DEL 1
+PRG 7, 6
+HLT 
+NEW 1, 0
+DEL 0
+DEL 2
+NEW 2, 7
+DEL 2
+DEL 4
+OUT 6
+DEL 7
+DEL 6
+DEL 4
+MUL 6, 7, 6
+NEW 4, 4
+DEL 1
+DEL 1
+DEL 2
+DEL 6
+DEL 7
+NAND 1, 0, 2
+DEL 6
+DEL 7
+MOV 3, 6, 7
+OUT 1
+DEL 3
+DEL 1
+NEW 6, 0
+DEL 0
+DEL 4
+DEL 4
+PRG 4, 7
+DEL 1
+DEL 0
+DEL 2
+DEL 3
+DEL 5
+DEL 0
+DEL 3
+OUT 4
+LDA 5, 4, 6
+HLT 
+MOV 2, 7, 2
+DEL 1
+MOV 5, 6, 6
+LDA 3, 3, 1
+NEW 2, 0
+DEL 7
+DEL 1
+DEL 1
+DIV 6, 4, 3
+MUL 3, 0, 1
+NEW 3, 0
+DEL 0
+OUT 1
+DEL 0
+DEL 4
+NEW 7, 6
+DEL 1
+DEL 6
+DEL 7
+OUT 3
+DEL 0
+LDA 4, 5, 7
+STA 3, 4, 7
+DEL 6
+DEL 5
+DEL 1
+DEL 6
+OUT 1
+ADD 0, 1, 3
+DIV 3, 4, 3
+HLT 
+DEL 2
+DEL 3
+DEL 0
+PRG 7, 2
+DEL 5
+DEL 1
+NAND 6, 7, 7
+DEL 3
+DEL 3
+DEL 0
+DEL 7
+OUT 7
+HLT 
+NEW 3, 0
+DEL 6
+DEL 4
+DEL 2
+MOV 4, 3, 7
+MUL 6, 5, 5
+ADD 2, 5, 5
+MOV 5, 6, 6
+MOV 7, 1, 3
+DEL 1
+DEL 7
+DEL 6
+DEL 2
+MOV 5, 1, 6
+STA 0, 2, 0
+DEL 7
+DEL 0
+DEL 1
+DEL 3
+DEL 2
+PRG 0, 0
+DEL 5
+DEL 7
+LDA 4, 1, 1
+NEW 4, 5
+OUT 7
+OUT 3
+DEL 2
+OUT 7
+DEL 1
+DEL 4
+DEL 6
+DEL 0
+MOV 6, 4, 2
+DEL 3
+OUT 5
+MUL 4, 7, 0
+MUL 4, 1, 6
+MUL 4, 2, 1
+DIV 2, 1, 6
+NEW 4, 6
+NEW 2, 4
+NEW 3, 2
+OUT 6
+DEL 1
+NEW 2, 5
+MUL 6, 6, 7
+MUL 6, 0, 7
+MOV 7, 5, 4
+MOV 4, 1, 6
+STA 1, 6, 6
+MOV 4, 0, 6
+MOV 5, 3, 4
+MOV 1, 6, 2
+MOV 1, 2, 5
+MOV 3, 3, 3
+MOV 7, 5, 0
+MOV 7, 3, 5
+MOV 3, 5, 7
+MOV 3, 7, 2
+MOV 3, 6, 5
+MOV 3, 7, 1
+MOV 4, 2, 2
+MOV 5, 4, 3
+MOV 0, 0, 7
+MOV 0, 3, 0
+MOV 3, 7, 2
+MOV 3, 7, 4
+MOV 3, 7, 7
+MOV 1, 2, 4
+MOV 3, 5, 6
+MOV 6, 2, 4
+MOV 5, 2, 6
+MOV 3, 6, 2
+MOV 2, 5, 5
+OUT 6
+MOV 3, 0, 0
+MOV 4, 0, 6
+LDA 0, 6, 3
+NEW 1, 2
+INP 5
+NAND 1, 2, 4
+NEW 1, 0
+NEW 4, 1
+HLT 
+HLT 
+HLT 
+HLT 
+DIV 5, 5, 2
+DIV 1, 6, 5
+DEL 5
+ADD 6, 0, 0
+DEL 6
+NAND 4, 4, 7
+MOV 6, 4, 3
+MUL 6, 2, 1
+NAND 7, 5, 1
+MOV 3, 3, 2
+ADD 0, 7, 3
+MOV 0, 7, 3
+MOV 2, 5, 3
+MOV 3, 1, 5
+MOV 1, 7, 0
+MUL 4, 4, 0
+MUL 4, 4, 2
+MUL 4, 4, 4
+MUL 4, 4, 6
+MOV 6, 5, 0
+MOV 5, 7, 3
+MOV 2, 4, 6
+MOV 1, 3, 5
+MOV 5, 3, 2
+MOV 3, 4, 1
+OUT 6
+MUL 2, 4, 3
+MUL 4, 6, 7
+MOV 6, 7, 1
+MOV 3, 6, 6
+MOV 4, 7, 7
+ADD 5, 6, 0
+MUL 5, 6, 2
+OUT 3
+MOV 4, 5, 1
+MOV 6, 0, 1
+DEL 6
+PRG 7, 4
+NEW 2, 1
+NEW 2, 6
+NEW 0, 0
+NEW 5, 4
+DEL 0
+OUT 3
+OUT 0
+NEW 6, 6
+NEW 4, 3
+MUL 3, 3, 5
+MUL 4, 1, 0
+NEW 1, 0
+DIV 7, 4, 2
+ADD 7, 7, 2
+MUL 4, 2, 1
+HLT 
+ADD 6, 5, 0
+ADD 1, 4, 0
+LDA 1, 7, 3
+LDA 5, 7, 7
+NEW 5, 1
+DEL 2
+OUT 4
+DEL 3
+HLT 
+NEW 1, 3
+NEW 5, 0
+HLT 
+DIV 3, 7, 3
+INP 5
+MOV 3, 1, 1
+LDA 2, 6, 3
+DEL 1
+NAND 1, 3, 1
+DIV 1, 1, 5
+NAND 4, 7, 3
+MOV 2, 7, 6
+DIV 6, 5, 2
+MOV 3, 7, 7
+MUL 1, 6, 6
+ADD 1, 3, 4
+MOV 6, 1, 2
+MOV 2, 3, 5
+MUL 7, 0, 6
+LDA 4, 7, 2
+DIV 2, 0, 4
+ADD 0, 6, 0
+DEL 0
+MOV 2, 7, 3
+OUT 2
+MOV 0, 5, 1
+NAND 5, 4, 1
+MOV 4, 1, 2
+NAND 0, 0, 0
+MOV 6, 2, 3
+NAND 5, 5, 1
+NEW 6, 0
+STA 6, 2, 7
+MOV 5, 5, 6
+MOV 3, 3, 2
+INP 4
+STA 6, 7, 1
+OUT 5
+NEW 7, 7
+NEW 0, 7
+ADD 3, 1, 6
+ADD 4, 0, 3
+NEW 0, 2
+NEW 1, 1
+NEW 1, 6
+MOV 2, 2, 5
+ADD 4, 0, 2
+MOV 3, 3, 6
+MOV 5, 5, 1
+MOV 7, 6, 4
+DEL 3
+OUT 0
+MOV 7, 4, 0
+ADD 7, 4, 5
+ADD 0, 7, 7
+ADD 3, 2, 1
+NEW 7, 7
+NEW 0, 7
+MOV 7, 2, 2
+NEW 6, 6
+MUL 1, 1, 3
+MOV 2, 3, 3
+OUT 7
+ADD 6, 6, 1
+MOV 7, 3, 3
+HLT 
+NEW 5, 4
+DEL 1
+MUL 7, 4, 4
+DIV 3, 3, 1
+MOV 3, 4, 5
+MUL 2, 4, 6
+NEW 4, 4
+ADD 4, 0, 1
+NAND 6, 1, 3
+NEW 5, 5
+ADD 3, 5, 5
+HLT 
+NEW 3, 5
+ADD 5, 7, 3
+NAND 7, 1, 1
+NEW 0, 2
+OUT 1
+NAND 0, 1, 4
+ADD 2, 3, 3
+DIV 2, 0, 5
+MUL 0, 5, 4
+MOV 0, 2, 6
+DIV 2, 5, 6
+DIV 7, 6, 0
+ADD 0, 7, 7
+STA 2, 5, 1
+NAND 6, 1, 6
+MOV 0, 5, 7
+LDA 4, 2, 0
+MOV 4, 6, 3
+HLT 
+MUL 6, 5, 6
+ADD 2, 3, 2
+ADD 7, 5, 4
+MOV 0, 2, 5
+ADD 5, 3, 6
+STA 3, 3, 7
+HLT 
+NEW 1, 0
+OUT 2
+MOV 6, 4, 5
+MUL 4, 4, 6
+MUL 1, 0, 6
+DIV 4, 5, 1
+STA 6, 5, 1
+HLT 
+HLT 
+NEW 1, 2
+MOV 6, 2, 4
+DIV 3, 2, 5
+LDA 0, 0, 6
+OUT 2
+NAND 6, 0, 1
+MUL 2, 7, 5
+HLT 
+ADD 4, 5, 6
+ADD 3, 4, 0
+HLT 
+DIV 7, 4, 1
+MOV 2, 6, 5
+OUT 7
+OUT 5
+ADD 0, 3, 0
+NEW 3, 5
+NAND 5, 7, 4
+OUT 5
+OUT 1
+DIV 2, 3, 7
+MUL 4, 5, 5
+NAND 0, 5, 2
+OUT 6
+HLT 
+NEW 7, 6
+ADD 7, 3, 6
+MOV 4, 3, 5
+DIV 2, 0, 6
+DIV 0, 7, 7
+NEW 3, 0
+MUL 1, 4, 4
+ADD 1, 0, 3
+OUT 0
+MUL 5, 3, 1
+OUT 3
+NEW 1, 3
+NAND 0, 2, 7
+DIV 6, 1, 0
+HLT 
+MUL 7, 3, 3
+STA 6, 5, 1
+OUT 3
+ADD 1, 5, 0
+STA 2, 7, 4
+NAND 7, 3, 3
+OUT 7
+MUL 2, 0, 6
+NAND 7, 6, 1
+DEL 0
+HLT 
+NEW 3, 7
+NAND 2, 2, 0
+ADD 0, 7, 2
+MOV 2, 6, 3
+DIV 0, 6, 0
+MUL 5, 5, 1
+STA 2, 7, 0
+HLT 
+DIV 7, 4, 5
+OUT 4
+STA 2, 4, 2
+NEW 2, 0
+MUL 5, 2, 6
+OUT 0
+DIV 3, 1, 0
+HLT 
+NEW 6, 5
+DIV 2, 4, 6
+HLT 
+NEW 0, 0
+DIV 2, 5, 1
+OUT 5
+NEW 1, 5
+NEW 3, 2
+ADD 1, 6, 6
+MOV 0, 7, 6
+MOV 3, 3, 7
+OUT 0
+OUT 2
+ADD 0, 7, 5
+STA 3, 0, 3
+ADD 6, 7, 2
+ADD 3, 5, 4
+OUT 1
+STA 1, 4, 2
+MOV 4, 5, 4
+OUT 0
+ADD 7, 4, 2
+OUT 4
+MOV 4, 1, 4
+ADD 0, 0, 2
+OUT 5
+ADD 0, 4, 6
+MOV 7, 1, 4
+ADD 5, 3, 0
+ADD 7, 7, 3
+OUT 5
+STA 4, 3, 4
+ADD 6, 7, 6
+STA 4, 1, 4
+STA 7, 1, 3
+MUL 5, 1, 3
+HLT 
+ADD 7, 5, 7
+HLT 
+DIV 3, 0, 7
+ADD 0, 1, 0
+ADD 5, 2, 6
+DEL 7
+NAND 4, 0, 3
+ADD 2, 7, 2
+NAND 7, 5, 5
+DEL 5
+MUL 2, 5, 2
+DIV 5, 2, 3
+STA 1, 7, 5
+OUT 5
+DEL 6
+ADD 7, 2, 1
+DEL 0
+DEL 7
+NEW 0, 4
+NEW 1, 4
+DEL 6
+NEW 4, 7
+DEL 3
+DEL 5
+NEW 4, 5
+NAND 5, 1, 6
+DEL 1
+LDA 1, 5, 1
+NAND 2, 6, 1
+OUT 0
+DIV 7, 7, 7
+MUL 7, 3, 6
+NEW 0, 2
+NEW 7, 3
+ADD 0, 6, 5
+DEL 5
+HLT 
+MOV 5, 1, 4
+MOV 0, 0, 1
+OUT 7
+NEW 5, 4
+OUT 5
+PRG 6, 7
+INP 5
+NEW 4, 0
+STA 0, 6, 2
+DEL 0
+OUT 0
+DIV 4, 2, 4
+MUL 2, 3, 4
+DIV 7, 5, 5
+OUT 5
+OUT 5
+NEW 3, 7
+HLT 
+DEL 4
+DEL 7
+LDI 1, 0x18f4db6
+STA 3, 0, 0
+NAND 1, 5, 6
+MOV 1, 2, 2
+OUT 2
+HLT 
+MUL 0, 7, 7
+NEW 5, 1
+DEL 6
+NEW 3, 5
+OUT 2
+MUL 6, 6, 2
+DEL 1
+HLT 
+HLT 
+LDI 1, 0x1bc28b0
+NAND 2, 2, 2
+ADD 2, 5, 7
+OUT 6
+OUT 5
+NEW 2, 1
+DEL 4
+DEL 2
+OUT 4
+NEW 1, 4
+OUT 2
+ADD 4, 7, 7
+ADD 3, 2, 4
+OUT 1
+DIV 2, 0, 1
+INP 5
+NAND 7, 0, 6
+OUT 0
+OUT 7
+NEW 6, 1
+OUT 4
+OUT 5
+NAND 6, 2, 3
+NAND 1, 5, 0
+NEW 4, 3
+OUT 4
+DEL 0
+NEW 1, 6
+NEW 1, 3
+NEW 3, 7
+PRG 2, 7
+NAND 3, 5, 4
+NEW 0, 5
+HLT 
+NEW 2, 1
+NEW 0, 5
+NEW 0, 6
+NEW 0, 2
+OUT 7
+OUT 1
+OUT 2
+OUT 6
+MOV 2, 0, 0
+NAND 6, 6, 4
+DEL 3
+STA 6, 0, 3
+OUT 0
+OUT 2
+STA 6, 7, 6
+OUT 7
+OUT 7
+MOV 0, 5, 1
+NAND 3, 7, 0
+DEL 6
+MOV 0, 4, 4
+OUT 0
+NAND 3, 6, 5
+HLT 
+DEL 2
+NEW 2, 3
+PRG 5, 3
+OUT 1
+DEL 5
+NEW 7, 5
+DEL 2
+NEW 4, 4
+DEL 4
+DEL 7
+NEW 6, 0
+MOV 2, 5, 4
+MUL 1, 2, 7
+STA 2, 7, 1
+MOV 5, 5, 3
+MOV 4, 5, 4
+LDA 6, 0, 6
+PRG 1, 5
+OUT 2
+OUT 1
+OUT 3
+DIV 1, 5, 1
+OUT 5
+NEW 0, 1
+NEW 2, 0
+OUT 4
+NAND 0, 5, 3
+DEL 0
+OUT 6
+NEW 6, 5
+MOV 2, 6, 6
+LDA 1, 0, 5
+LDI 1, 0x1d28914
+MUL 1, 1, 6
+DIV 3, 1, 3
+NEW 1, 7
+HLT 
+MOV 4, 1, 4
+NEW 5, 6
+OUT 7
+STA 3, 7, 1
+OUT 5
+NEW 0, 5
+OUT 7
+DIV 3, 1, 6
+OUT 1
+OUT 4
+OUT 2
+INP 3
+DEL 1
+DEL 6
+OUT 1
+MUL 7, 3, 3
+OUT 7
+OUT 5
+OUT 0
+OUT 0
+OUT 4
+OUT 6
+DEL 0
+DEL 7
+OUT 5
+PRG 4, 6
+MUL 7, 3, 7
+HLT 
+ADD 4, 6, 2
+HLT 
+OUT 1
+DEL 7
+NEW 7, 5
+STA 1, 0, 1
+NEW 4, 6
+MOV 6, 4, 5
+OUT 6
+DEL 6
+DEL 0
+NEW 3, 7
+DEL 6
+OUT 7
+OUT 1
+OUT 3
+ADD 2, 5, 5
+ADD 0, 4, 6
+HLT 
+HLT 
+DEL 3
+DIV 3, 1, 3
+NEW 6, 7
+DEL 0
+NEW 6, 4
+MUL 0, 4, 4
+DEL 7
+PRG 0, 6
+INP 3
+OUT 7
+OUT 1
+OUT 5
+OUT 5
+ADD 7, 2, 1
+DIV 3, 6, 3
+DEL 5
+NEW 6, 7
+NAND 1, 6, 5
+DIV 3, 3, 6
+NEW 1, 5
+STA 2, 5, 3
+NEW 1, 2
+OUT 6
+NEW 4, 4
+DIV 5, 3, 6
+NAND 4, 5, 0
+DEL 7
+DEL 1
+NEW 5, 0
+DEL 0
+DEL 2
+NAND 7, 3, 5
+NEW 7, 1
+MOV 2, 4, 3
+NEW 6, 7
+DEL 5
+MUL 1, 4, 5
+NEW 3, 0
+MUL 4, 1, 6
+NEW 6, 0
+OUT 3
+MOV 3, 5, 2
+DEL 7
+STA 7, 1, 5
+NAND 5, 3, 0
+DEL 5
+HLT 
+OUT 2
+NEW 6, 3
+MUL 6, 1, 2
+OUT 3
+NEW 7, 3
+STA 3, 4, 6
+DIV 2, 0, 0
+DEL 4
+STA 5, 6, 0
+OUT 1
+DEL 3
+OUT 0
+LDA 7, 2, 2
+DIV 5, 6, 3
+DEL 7
+DIV 5, 4, 0
+OUT 5
+NEW 6, 4
+DIV 6, 1, 4
+HLT 
+DEL 6
+OUT 0
+NEW 2, 5
+OUT 0
+NEW 7, 4
+MOV 3, 4, 2
+ADD 2, 0, 2
+MOV 0, 0, 4
+MOV 0, 4, 5
+ADD 2, 6, 7
+OUT 0
+OUT 7
+MUL 2, 3, 2
+DEL 6
+MOV 7, 0, 7
+MUL 5, 3, 2
+DEL 1
+DIV 4, 7, 7
+DIV 5, 7, 4
+NEW 0, 3
+HLT 
+NEW 6, 2
+NEW 0, 1
+DIV 6, 4, 7
+ADD 6, 4, 0
+ADD 3, 6, 3
+HLT 
+MUL 7, 1, 1
+STA 4, 6, 1
+NEW 3, 5
+MOV 2, 7, 3
+NAND 5, 7, 4
+ADD 7, 5, 6
+OUT 0
+MOV 4, 3, 1
+MUL 5, 4, 4
+MOV 7, 2, 1
+NEW 1, 5
+DIV 2, 4, 6
+ADD 0, 5, 5
+STA 6, 6, 2
+DIV 1, 3, 1
+STA 0, 0, 2
+STA 6, 6, 3
+STA 1, 7, 0
+DEL 2
+NEW 2, 3
+STA 4, 0, 5
+OUT 1
+MOV 4, 0, 7
+HLT 
+HLT 
+OUT 6
+NEW 1, 4
+STA 7, 4, 3
+OUT 5
+STA 2, 4, 3
+DEL 1
+ADD 4, 6, 3
+OUT 1
+STA 6, 2, 7
+HLT 
+OUT 6
+NAND 5, 6, 2
+NAND 7, 0, 2
+OUT 6
+OUT 0
+DEL 4
+OUT 7
+NAND 3, 7, 2
+MOV 0, 2, 6
+HLT 
+OUT 6
+DEL 6
+OUT 2
+MUL 3, 5, 0
+OUT 2
+DIV 0, 7, 1
+MOV 7, 1, 5
+OUT 0
+LDA 4, 0, 0
+MOV 6, 7, 1
+HLT 
+MOV 5, 1, 1
+OUT 4
+MOV 6, 2, 2
+OUT 2
+NEW 0, 3
+STA 6, 5, 5
+MUL 2, 1, 7
+INP 2
+INP 3
+OUT 5
+OUT 2
+MUL 5, 3, 3
+MOV 4, 6, 7
+HLT 
+OUT 2
+STA 2, 1, 0
+MUL 5, 5, 6
+HLT 
+DIV 2, 2, 2
+DIV 3, 3, 3
+HLT 
+DEL 6
+LDI 3, 0x678fed
+ADD 2, 0, 1
+MOV 3, 1, 7
+MUL 7, 3, 6
+NAND 1, 2, 2
+DEL 4
+DEL 3
+NEW 0, 1
+DEL 1
+OUT 6
+NAND 4, 7, 6
+NAND 0, 5, 5
+NEW 6, 6
+NEW 3, 3
+NAND 4, 5, 0
+ADD 4, 2, 6
+INP 3
+NEW 4, 1
+NEW 5, 3
+MUL 5, 1, 4
+NAND 0, 6, 2
+DIV 3, 5, 5
+DIV 2, 6, 6
+DIV 6, 3, 0
+NAND 6, 7, 0
+NAND 0, 5, 5
+OUT 5
+NAND 0, 1, 0
+NAND 5, 6, 6
+NEW 5, 0
+ADD 7, 7, 6
+HLT 
+NEW 4, 5
+NEW 3, 7
+DEL 0
+DEL 5
+NEW 4, 0
+MOV 3, 5, 1
+OUT 0
+NEW 3, 7
+MUL 4, 7, 6
+NAND 0, 7, 2
+ADD 3, 0, 6
+DIV 2, 2, 6
+STA 4, 0, 1
+INP 3
+MOV 0, 5, 5
+OUT 2
+NEW 1, 1
+NAND 7, 7, 5
+NAND 0, 2, 2
+OUT 0
+DEL 1
+NAND 5, 7, 1
+NAND 4, 3, 1
+NAND 5, 1, 1
+OUT 1
+OUT 6
+OUT 0
+OUT 3
+LDI 3, 0xb18daa
+DEL 3
+DEL 0
+OUT 3
+NEW 7, 2
+DIV 7, 1, 0
+OUT 0
+HLT 
+OUT 5
+OUT 7
+DEL 4
+DEL 3
+OUT 3
+NAND 5, 4, 5
+NAND 1, 0, 1
+PRG 6, 7
+DEL 5
+DEL 6
+NAND 2, 7, 1
+NEW 7, 6
+ADD 7, 4, 2
+NAND 7, 6, 6
+STA 0, 7, 4
+OUT 3
+OUT 2
+NAND 0, 3, 1
+OUT 5
+OUT 2
+OUT 2
+NAND 2, 4, 4
+DIV 7, 4, 3
+OUT 7
+NAND 3, 6, 5
+OUT 4
+OUT 7
+OUT 1
+OUT 4
+OUT 7
+NAND 7, 2, 7
+NEW 2, 7
+OUT 5
+OUT 3
+NEW 3, 5
+OUT 3
+DEL 0
+LDI 0, 0x17399e7
+DEL 6
+DEL 5
+OUT 0
+DEL 3
+NEW 3, 2
+DEL 3
+NAND 7, 2, 0
+LDA 2, 7, 4
+OUT 1
+DIV 2, 2, 2
+NEW 3, 6
+ADD 2, 1, 0
+DEL 2
+ADD 3, 2, 4
+INP 0
+MOV 1, 6, 6
+DEL 4
+ADD 7, 3, 5
+MUL 0, 1, 6
+NAND 7, 4, 3
+OUT 0
+MUL 6, 1, 2
+DIV 6, 1, 5
+MUL 1, 4, 2
+OUT 3
+DIV 6, 1, 5
+MUL 2, 7, 4
+OUT 3
+NEW 4, 5
+STA 4, 3, 3
+DIV 4, 1, 2
+OUT 2
+NEW 1, 5
+DIV 4, 0, 6
+OUT 4
+HLT 
+DIV 0, 6, 4
+OUT 4
+HLT 
+NAND 5, 6, 5
+OUT 4
+DIV 7, 3, 4
+DIV 7, 7, 3
+NAND 1, 5, 0
+STA 7, 6, 3
+MUL 1, 7, 5
+DIV 3, 1, 3
+DIV 3, 1, 5
+DIV 1, 1, 2
+DIV 4, 4, 1
+DIV 4, 5, 7
+DEL 3
+NEW 3, 5
+OUT 2
+OUT 3
+MUL 6, 6, 7
+MUL 0, 3, 7
+MUL 4, 7, 2
+MOV 7, 2, 1
+MUL 0, 1, 1
+OUT 6
+OUT 5
+NAND 0, 1, 7
+DIV 0, 5, 0
+DIV 3, 7, 4
+NEW 0, 3
+HLT 
+STA 6, 4, 0
+MOV 4, 0, 4
+OUT 5
+NEW 4, 5
+OUT 7
+OUT 7
+OUT 2
+LDI 2, 0xbea81e
+INP 6
+OUT 1
+NEW 3, 7
+OUT 3
+OUT 7
+OUT 1
+OUT 7
+NAND 6, 7, 3
+OUT 7
+MOV 3, 2, 1
+NEW 3, 1
+OUT 5
+OUT 4
+NEW 5, 1
+LDI 2, 0x2e8d24
+DEL 4
+DEL 6
+DEL 1
+OUT 7
+MOV 5, 6, 5
+OUT 6
+NEW 1, 3
+NAND 3, 6, 7
+STA 5, 3, 6
+ADD 4, 4, 5
+HLT 
+MUL 5, 0, 5
+ADD 7, 7, 6
+OUT 7
+MOV 0, 7, 2
+LDA 1, 1, 1
+ADD 7, 6, 2
+DIV 6, 2, 3
+NEW 6, 1
+OUT 0
+DEL 6
+ADD 2, 0, 2
+OUT 6
+OUT 1
+OUT 4
+OUT 7
+OUT 2
+LDA 6, 0, 5
+DIV 5, 0, 0
+DIV 2, 0, 6
+OUT 4
+OUT 7
+ADD 3, 4, 1
+MUL 7, 1, 7
+MUL 2, 7, 2
+DIV 5, 2, 0
+DIV 0, 6, 7
+DIV 3, 7, 1
+DIV 1, 7, 5
+DIV 3, 1, 3
+DIV 3, 1, 5
+DIV 5, 1, 2
+DIV 2, 0, 1
+DEL 7
+MOV 1, 6, 7
+DEL 3
+OUT 1
+DEL 7
+STA 0, 6, 5
+OUT 2
+OUT 0
+NAND 2, 7, 3
+LDA 3, 2, 1
+DIV 7, 3, 6
+MOV 7, 2, 5
+OUT 7
+OUT 4
+MUL 2, 3, 3
+ADD 0, 1, 6
+STA 6, 4, 5
+ADD 6, 2, 2
+NAND 4, 1, 6
+INP 1
+OUT 4
+DEL 7
+MUL 3, 1, 7
+OUT 4
+OUT 0
+DIV 7, 7, 0
+OUT 4
+MOV 7, 6, 2
+OUT 7
+NEW 2, 6
+OUT 1
+LDI 1, 0x1718d7d
+DEL 1
+OUT 0
+OUT 7
+OUT 1
+INP 1
+NEW 6, 7
+NEW 7, 1
+MUL 6, 5, 3
+OUT 4
+MUL 4, 5, 1
+MUL 2, 4, 4
+OUT 7
+NEW 7, 2
+DEL 3
+PRG 0, 1
+DEL 2
+NEW 7, 1
+INP 4
+MOV 0, 5, 1
+NAND 4, 0, 0
+DEL 6
+OUT 4
+DIV 5, 5, 6
+NEW 5, 3
+MUL 1, 6, 5
+MUL 7, 5, 2
+NAND 2, 7, 5
+HLT 
+OUT 2
+LDI 4, 0x410181
+HLT 
+NEW 3, 6
+MUL 3, 5, 3
+OUT 7
+OUT 4
+DIV 6, 0, 2
+DEL 5
+OUT 5
+LDA 1, 7, 0
+DEL 4
+INP 2
+INP 6
+NEW 1, 7
+OUT 4
+LDI 4, 0x111b068
+NEW 3, 4
+ADD 1, 1, 3
+NEW 5, 4
+MOV 3, 2, 3
+LDA 3, 0, 0
+INP 1
+DEL 0
+STA 3, 2, 5
+HLT 
+NEW 6, 7
+NEW 5, 6
+MUL 4, 1, 0
+NAND 4, 7, 0
+DIV 1, 3, 1
+OUT 0
+NAND 6, 4, 3
+HLT 
+DIV 6, 4, 7
+INP 0
+MOV 4, 6, 6
+OUT 1
+DEL 4
+OUT 0
+MOV 7, 7, 2
+OUT 2
+ADD 6, 6, 2
+ADD 0, 3, 6
+MOV 6, 4, 0
+ADD 5, 4, 1
+OUT 4
+DIV 0, 7, 5
+DEL 3
+OUT 5
+OUT 4
+OUT 3
+OUT 4
+NEW 3, 3
+OUT 1
+DIV 4, 0, 1
+NEW 1, 5
+OUT 2
+NAND 3, 1, 5
+NEW 5, 7
+OUT 4
+DEL 5
+ADD 4, 3, 2
+MUL 0, 4, 1
+OUT 5
+OUT 2
+NEW 3, 4
+DIV 4, 5, 1
+OUT 7
+DEL 5
+MUL 4, 7, 6
+OUT 7
+NAND 5, 6, 7
+ADD 4, 7, 1
+HLT 
+NAND 7, 6, 4
+LDA 6, 0, 5
+ADD 1, 1, 0
+NEW 1, 5
+INP 5
+MUL 4, 6, 1
+DIV 3, 6, 1
+NAND 1, 7, 5
+MOV 3, 6, 7
+OUT 4
+HLT 
+INP 5
+HLT 
+HLT 
+DIV 7, 0, 5
+INP 2
+ADD 3, 7, 7
+OUT 4
+MOV 6, 5, 4
+MOV 0, 0, 1
+MOV 2, 4, 2
+OUT 2
+OUT 4
+ADD 5, 4, 2
+LDA 3, 7, 1
+INP 2
+DIV 6, 5, 2
+DEL 1
+NAND 7, 4, 1
+INP 4
+OUT 5
+PRG 5, 7
+HLT 
+INP 4
+HLT 
+DEL 3
+MOV 6, 0, 5
+ADD 5, 0, 3
+ADD 3, 3, 6
+MOV 1, 0, 3
+MOV 1, 1, 7
+OUT 2
+HLT 
+MOV 2, 1, 4
+MOV 1, 4, 6
+MOV 5, 5, 0
+LDI 3, 0x5e2af7
+NEW 3, 1
+OUT 5
+OUT 4
+NAND 0, 0, 7
+DIV 3, 1, 3
+MUL 0, 6, 5
+DIV 4, 7, 5
+NEW 2, 1
+NAND 4, 0, 1
+MOV 3, 5, 3
+INP 1
+NAND 7, 7, 7
+OUT 7
+DIV 0, 4, 2
+STA 3, 7, 3
+NAND 5, 3, 5
+INP 2
+HLT 
+INP 1
+MUL 3, 2, 7
+MOV 5, 5, 2
+HLT 
+NEW 2, 6
+OUT 0
+OUT 3
+DEL 6
+MUL 5, 0, 2
+OUT 3
+INP 5
+MOV 5, 5, 4
+INP 3
+NAND 5, 6, 2
+NAND 6, 0, 4
+OUT 6
+NAND 2, 5, 3
+NAND 3, 4, 4
+OUT 5
+DIV 2, 4, 0
+INP 3
+NAND 6, 2, 3
+DIV 0, 7, 2
+MOV 7, 2, 3
+OUT 4
+MUL 4, 2, 3
+ADD 0, 5, 0
+OUT 2
+NAND 6, 7, 5
+HLT 
+ADD 1, 1, 0
+ADD 5, 4, 5
+MOV 1, 1, 4
+MOV 6, 6, 5
+STA 0, 2, 4
+MOV 2, 6, 6
+LDA 3, 0, 4
+OUT 1
+OUT 2
+OUT 5
+ADD 5, 4, 6
+DEL 1
+MOV 1, 6, 4
+OUT 4
+INP 5
+MOV 5, 6, 3
+OUT 4
+MOV 2, 1, 3
+OUT 0
+NEW 4, 6
+MOV 2, 1, 5
+NEW 0, 2
+INP 5
+OUT 5
+INP 7
+INP 0
+DIV 2, 4, 6
+LDA 7, 7, 4
+DEL 1
+STA 6, 2, 4
+OUT 2
+OUT 6
+MOV 3, 2, 4
+MUL 4, 2, 2
+NAND 7, 0, 1
+ADD 1, 2, 3
+HLT 
+NEW 6, 7
+INP 0
+NAND 7, 4, 2
+DEL 7
+DEL 3
+NAND 5, 7, 2
+NAND 1, 6, 5
+MUL 4, 4, 2
+NAND 2, 3, 0
+NAND 0, 3, 2
+INP 3
+NAND 1, 5, 5
+NAND 4, 7, 0
+STA 3, 5, 1
+DEL 5
+DEL 0
+HLT 
+DIV 7, 0, 0
+MUL 4, 3, 1
+LDI 4, 0x109b371
+NAND 5, 1, 4
+DIV 5, 6, 6
+MOV 4, 5, 1
+OUT 1
+MOV 3, 4, 0
+MUL 1, 5, 5
+ADD 1, 7, 4
+MOV 1, 2, 2
+MUL 2, 7, 3
+LDA 3, 3, 7
+STA 5, 1, 3
+MOV 5, 7, 0
+MOV 0, 2, 2
+MUL 3, 7, 5
+STA 7, 6, 4
+STA 5, 7, 7
+LDA 6, 0, 1
+LDA 5, 3, 1
+DEL 4
+MOV 3, 6, 6
+ADD 1, 2, 2
+MOV 0, 4, 1
+MOV 7, 5, 0
+HLT 
+INP 2
+MUL 3, 5, 3
+MUL 6, 7, 7
+OUT 2
+MOV 0, 5, 6
+DIV 4, 7, 5
+NAND 6, 4, 0
+LDA 0, 2, 2
+MUL 1, 2, 2
+MUL 6, 5, 0
+MUL 4, 5, 2
+MUL 1, 5, 4
+MUL 2, 4, 1
+MOV 2, 7, 0
+ADD 0, 6, 5
+MOV 7, 2, 7
+HLT 
+LDA 2, 0, 5
+INP 2
+MOV 1, 6, 0
+MOV 1, 4, 0
+STA 5, 5, 5
+MOV 5, 0, 1
+ADD 0, 6, 5
+INP 4
+INP 7
+INP 3
+INP 3
+NAND 4, 5, 5
+MUL 7, 2, 4
+LDA 7, 2, 6
+LDA 2, 5, 6
+MUL 7, 2, 0
+OUT 6
+NAND 5, 5, 1
+ADD 4, 4, 6
+OUT 3
+NAND 0, 4, 7
+INP 4
+OUT 0
+MOV 7, 7, 3
+INP 5
+INP 5
+MOV 5, 6, 7
+INP 5
+OUT 1
+INP 7
+OUT 7
+NEW 5, 7
+STA 4, 4, 3
+DIV 3, 4, 5
+INP 0
+OUT 0
+INP 2
+NEW 6, 3
+INP 5
+INP 0
+STA 5, 3, 3
+NEW 0, 5
+INP 1
+ADD 2, 2, 5
+INP 7
+OUT 1
+INP 0
+MOV 5, 6, 7
+LDI 1, 0x135b540
+INP 2
+NEW 0, 1
+INP 4
+ADD 2, 1, 4
+MOV 6, 5, 1
+INP 7
+NAND 2, 3, 5
+NEW 3, 3
+INP 5
+OUT 3
+STA 6, 6, 3
+NAND 3, 3, 1
+HLT 
+NEW 3, 0
+STA 4, 3, 7
+STA 3, 4, 1
+MOV 0, 4, 4
+DIV 2, 3, 5
+DIV 5, 6, 1
+STA 3, 6, 3
+STA 7, 4, 4
+INP 5
+MUL 2, 7, 2
+INP 6
+INP 6
+MUL 3, 7, 1
+INP 1
+MOV 3, 7, 6
+MUL 6, 7, 5
+NEW 6, 7
+OUT 6
+INP 0
+INP 2
+INP 4
+INP 6
+LDA 5, 2, 7
+MOV 4, 0, 2
+MUL 4, 7, 1
+LDA 6, 2, 6
+LDA 6, 2, 0
+LDA 1, 2, 2
+INP 2
+MUL 3, 0, 4
+INP 0
+DIV 1, 1, 0
+DIV 7, 2, 0
+INP 2
+MOV 5, 2, 2
+MOV 4, 3, 5
+STA 2, 0, 6
+MUL 4, 7, 5
+HLT 
+DEL 0
+INP 0
+MOV 7, 6, 5
+STA 2, 3, 0
+INP 2
+LDA 5, 0, 0
+INP 2
+DIV 3, 7, 7
+LDA 5, 6, 6
+INP 4
+INP 4
+LDA 5, 1, 0
+DEL 0
+INP 6
+ADD 4, 0, 2
+DEL 5
+STA 0, 1, 6
+ADD 1, 3, 1
+INP 5
+INP 0
+NEW 1, 3
+MUL 3, 0, 7
+LDA 6, 2, 4
+DIV 1, 2, 2
+ADD 7, 5, 2
+DIV 5, 7, 4
+LDA 5, 7, 4
+INP 6
+STA 1, 1, 3
+OUT 7
+LDA 3, 7, 6
+MOV 5, 0, 7
+MOV 2, 1, 5
+MOV 1, 5, 6
+MOV 6, 2, 2
+MOV 6, 4, 1
+MOV 3, 7, 2
+DIV 3, 3, 4
+LDA 5, 3, 5
+INP 1
+ADD 3, 5, 4
+OUT 6
+ADD 2, 5, 4
+ADD 6, 7, 4
+MUL 3, 0, 6
+OUT 3
+MOV 3, 6, 1
+LDA 0, 0, 1
+OUT 1
+OUT 5
+INP 5
+MOV 4, 2, 1
+DIV 7, 3, 5
+MOV 2, 7, 0
+MUL 2, 0, 3
+NEW 3, 6
+NAND 6, 7, 4
+HLT 
+OUT 6
+ADD 2, 6, 2
+DIV 2, 5, 2
+MUL 3, 2, 1
+MUL 2, 1, 0
+HLT 
+MOV 6, 0, 7
+LDA 0, 4, 7
+INP 0
+OUT 5
+DIV 1, 2, 4
+OUT 6
+OUT 4
+MOV 5, 1, 1
+INP 0
+MUL 2, 5, 0
+NAND 7, 2, 1
+OUT 7
+MOV 1, 0, 5
+STA 2, 6, 1
+MOV 7, 3, 2
+INP 7
+INP 4
+MOV 0, 2, 4
+LDI 0, 0x111b8a0
+OUT 2
+MOV 1, 2, 4
+DEL 6
+ADD 1, 6, 6
+MUL 4, 2, 2
+MUL 5, 7, 5
+INP 7
+DEL 5
+ADD 1, 6, 4
+MOV 5, 4, 4
+ADD 4, 0, 6
+MUL 4, 5, 7
+STA 6, 7, 6
+NEW 2, 2
+OUT 1
+ADD 2, 0, 2
+MOV 5, 1, 1
+INP 1
+INP 6
+NEW 1, 0
+OUT 0
+DEL 6
+DEL 7
+OUT 6
+MOV 5, 7, 0
+MOV 1, 6, 2
+MOV 1, 5, 5
+INP 3
+MOV 1, 0, 7
+DEL 5
+MUL 2, 4, 7
+OUT 3
+ADD 1, 5, 7
+DIV 7, 0, 0
+DEL 0
+DEL 6
+STA 4, 1, 3
+MOV 1, 6, 5
+INP 5
+NAND 1, 3, 5
+NAND 5, 5, 5
+NAND 2, 7, 6
+DIV 0, 6, 2
+INP 7
+NEW 4, 6
+OUT 2
+INP 5
+INP 7
+INP 0
+INP 4
+OUT 7
+MOV 1, 2, 2
+NEW 2, 6
+INP 5
+ADD 1, 3, 1
+OUT 6
+INP 0
+INP 7
+INP 1
+DEL 4
+OUT 1
+MUL 1, 5, 3
+MUL 5, 0, 0
+INP 2
+STA 2, 7, 5
+MOV 2, 1, 5
+INP 3
+DEL 3
+NEW 4, 2
+OUT 5
+NAND 5, 1, 0
+OUT 6
+ADD 5, 5, 0
+MOV 4, 1, 1
+NEW 2, 3
+MOV 3, 7, 3
+MOV 2, 7, 0
+MOV 3, 1, 0
+STA 7, 6, 7
+ADD 4, 3, 1
+INP 3
+MUL 6, 2, 7
+NAND 7, 3, 2
+INP 2
+STA 5, 5, 4
+INP 6
+INP 4
+DIV 7, 2, 7
+MOV 7, 2, 3
+LDI 5, 0x103b7bb
+OUT 7
+STA 7, 4, 1
+INP 3
+STA 7, 4, 7
+DIV 1, 4, 0
+MOV 3, 2, 3
+HLT 
+MUL 4, 7, 1
+MOV 7, 6, 4
+MUL 1, 5, 6
+MOV 7, 0, 2
+MOV 0, 1, 7
+INP 6
+INP 6
+DIV 2, 2, 4
+LDA 3, 6, 4
+MUL 2, 0, 5
+MUL 6, 5, 5
+LDA 2, 6, 0
+STA 0, 0, 2
+INP 5
+HLT 
+DIV 6, 2, 0
+INP 7
+INP 6
+STA 5, 3, 6
+INP 3
+HLT 
+MOV 4, 4, 6
+DIV 7, 6, 5
+INP 6
+INP 4
+MOV 4, 5, 6
+ADD 7, 1, 1
+INP 6
+INP 5
+INP 0
+STA 3, 2, 1
+INP 1
+INP 6
+MUL 6, 3, 3
+HLT 
+LDA 6, 4, 0
+STA 0, 0, 4
+LDI 6, 0x24bb84
+MUL 7, 0, 5
+STA 6, 6, 2
+ADD 3, 7, 2
+STA 3, 1, 7
+HLT 
+INP 3
+INP 6
+STA 3, 4, 2
+MOV 1, 5, 4
+INP 3
+INP 5
+INP 5
+MOV 7, 7, 5
+MUL 2, 1, 2
+LDI 6, 0x1e2b84a
+OUT 3
+INP 1
+INP 5
+INP 0
+INP 2
+INP 1
+INP 2
+MUL 0, 3, 3
+LDA 7, 0, 5
+INP 5
+INP 7
+INP 1
+STA 2, 0, 3
+INP 5
+INP 0
+OUT 0
+INP 2
+MOV 7, 2, 1
+INP 1
+INP 7
+INP 5
+INP 1
+DEL 2
+INP 7
+MOV 0, 0, 0
+MOV 2, 2, 3
+DIV 7, 6, 2
+NEW 3, 4
+ADD 3, 0, 7
+NEW 4, 7
+INP 1
+STA 1, 1, 0
+INP 1
+LDA 4, 5, 1
+INP 4
+INP 3
+MOV 4, 1, 1
+STA 4, 6, 4
+OUT 5
+INP 2
+INP 1
+INP 6
+OUT 6
+INP 6
+LDI 6, 0x147b9bd
+INP 5
+HLT 
+ADD 7, 7, 4
+ADD 5, 5, 0
+NEW 5, 1
+INP 0
+INP 7
+NEW 5, 0
+DIV 2, 1, 5
+OUT 5
+INP 1
+NEW 2, 4
+ADD 6, 5, 6
+OUT 3
+MUL 1, 4, 4
+NAND 7, 6, 0
+MOV 5, 6, 5
+INP 2
+NEW 0, 3
+NEW 3, 6
+OUT 0
+DEL 4
+LDA 7, 1, 1
+STA 4, 5, 2
+STA 4, 5, 4
+MOV 2, 3, 0
+ADD 1, 1, 2
+MUL 6, 3, 1
+OUT 6
+PRG 1, 3
+DIV 2, 3, 4
+MUL 6, 4, 5
+MOV 5, 0, 2
+MOV 7, 1, 2
+MOV 2, 5, 5
+STA 1, 0, 4
+STA 5, 0, 4
+STA 6, 3, 3
+MUL 0, 7, 5
+INP 6
+MUL 0, 6, 0
+HLT 
+NEW 2, 3
+OUT 1
+DIV 4, 0, 1
+OUT 1
+MOV 4, 4, 6
+NEW 5, 5
+STA 1, 7, 7
+MOV 3, 3, 6
+OUT 3
+OUT 2
+OUT 7
+OUT 3
+ADD 7, 1, 7
+MOV 6, 1, 0
+MOV 4, 7, 0
+INP 3
+MOV 6, 6, 4
+DIV 6, 2, 5
+MOV 3, 6, 4
+INP 3
+INP 5
+INP 6
+STA 2, 5, 1
+NEW 7, 7
+ADD 1, 2, 4
+OUT 4
+NEW 3, 1
+MOV 2, 1, 7
+MOV 0, 0, 1
+OUT 0
+INP 0
+INP 6
+LDI 1, 0x11f801e
+ADD 3, 6, 6
+LDA 2, 2, 6
+ADD 3, 4, 7
+STA 2, 1, 7
+OUT 2
+DIV 6, 1, 7
+MOV 0, 5, 2
+NAND 7, 7, 7
+MOV 1, 0, 2
+LDA 3, 1, 3
+INP 5
+DEL 6
+NEW 5, 0
+OUT 2
+LDI 3, 0x8a3007
+ADD 7, 2, 4
+ADD 2, 4, 6
+OUT 0
+OUT 0
+HLT 
+MOV 0, 5, 4
+INP 5
+NAND 7, 2, 1
+ADD 5, 4, 5
+MOV 2, 7, 4
+NAND 2, 6, 2
+NAND 3, 1, 5
+OUT 0
+DIV 1, 4, 3
+OUT 0
+HLT 
+OUT 6
+MUL 5, 6, 1
+STA 2, 3, 5
+INP 7
+DIV 4, 5, 4
+NAND 1, 3, 1
+NEW 7, 6
+INP 0
+INP 5
+NAND 4, 3, 3
+STA 7, 2, 6
+STA 6, 0, 2
+NEW 1, 5
+LDI 1, 0xa88d76
+OUT 0
+INP 0
+NEW 1, 4
+INP 3
+INP 0
+NEW 7, 5
+DEL 7
+DIV 6, 4, 7
+OUT 6
+NAND 0, 4, 7
+NEW 6, 5
+OUT 5
+DEL 2
+OUT 5
+INP 6
+NEW 4, 3
+ADD 6, 0, 5
+DEL 5
+DEL 0
+INP 3
+OUT 4
+OUT 3
+OUT 0
+INP 1
+INP 3
+MUL 2, 3, 4
+NEW 6, 7
+OUT 5
+INP 2
+LDI 7, 0x12d7c64
+INP 3
+DIV 0, 2, 0
+MOV 5, 2, 7
+INP 5
+HLT 
+OUT 3
+MUL 2, 3, 0
+DIV 5, 5, 2
+HLT 
+INP 0
+INP 7
+INP 4
+INP 3
+INP 5
+DIV 0, 3, 4
+LDA 4, 0, 7
+INP 5
+HLT 
+INP 0
+MOV 2, 0, 3
+MOV 6, 3, 5
+INP 1
+OUT 4
+INP 3
+INP 6
+INP 6
+INP 6
+MOV 6, 5, 0
+ADD 0, 3, 0
+INP 5
+INP 5
+INP 0
+MOV 7, 6, 5
+MOV 6, 4, 6
+INP 5
+MOV 5, 7, 7
+HLT 
+MOV 4, 4, 4
+INP 2
+INP 0
+INP 0
+MOV 2, 6, 4
+LDA 3, 5, 7
+NEW 5, 5
+PRG 0, 4
+INP 2
+MOV 1, 4, 0
+MOV 0, 6, 5
+NAND 4, 0, 1
+DEL 7
+OUT 7
+NEW 5, 3
+OUT 1
+INP 0
+STA 3, 5, 2
+LDA 1, 4, 0
+INP 5
+DEL 2
+MOV 1, 5, 5
+LDI 6, 0x17042d8
+INP 5
+INP 2
+INP 6
+MUL 2, 0, 1
+MUL 3, 7, 6
+MUL 1, 4, 1
+MOV 6, 4, 6
+STA 4, 2, 1
+MUL 3, 1, 6
+MOV 6, 7, 2
+MOV 1, 4, 3
+MUL 5, 5, 6
+MOV 7, 0, 2
+MOV 5, 5, 7
+DIV 0, 5, 4
+INP 0
+INP 7
+INP 5
+INP 0
+INP 2
+MOV 3, 4, 4
+MUL 5, 6, 4
+MOV 3, 0, 4
+PRG 1, 6
+PRG 6, 4
+MOV 0, 6, 7
+MOV 5, 4, 2
+PRG 4, 6
+INP 5
+NAND 2, 4, 5
+INP 1
+INP 3
+INP 3
+MOV 7, 6, 7
+MOV 6, 7, 0
+INP 7
+INP 4
+LDA 7, 7, 7
+DIV 4, 6, 1
+ADD 7, 5, 1
+INP 0
+INP 1
+MOV 6, 5, 0
+NEW 5, 6
+DIV 5, 6, 0
+LDA 5, 0, 3
+INP 2
+INP 2
+MOV 7, 0, 4
+INP 5
+INP 0
+INP 3
+OUT 2
+STA 4, 4, 5
+INP 0
+MOV 4, 7, 7
+OUT 7
+MOV 5, 5, 7
+DEL 7
+INVALID LDA 0, 3, 1
+INP 6
+HLT 
+MOV 4, 2, 7
+INP 4
+MOV 0, 2, 7
+INP 7
+MOV 5, 4, 2
+OUT 7
+MOV 2, 5, 6
+OUT 0
+MOV 6, 6, 4
+MOV 2, 1, 5
+MOV 2, 0, 6
+LDA 7, 7, 2
+MOV 3, 3, 5
+ADD 3, 6, 2
+MUL 0, 1, 4
+DEL 5
+INP 4
+OUT 7
+NAND 4, 0, 3
+NAND 0, 7, 3
+ADD 6, 4, 6
+MOV 3, 3, 6
+MUL 0, 2, 4
+MOV 2, 2, 7
+MUL 6, 6, 2
+PRG 7, 5
+LDI 6, 0xc1bc93
+INP 5
+OUT 1
+MUL 1, 0, 1
+INP 4
+INP 2
+INP 6
+PRG 1, 3
+INP 1
+NEW 3, 1
+INP 4
+INP 5
+PRG 0, 6
+MOV 5, 2, 1
+DEL 1
+DIV 2, 3, 2
+MOV 5, 4, 6
+INVALID DEL 1
