@@ -181,7 +181,7 @@ void printop(reg_t cur) {
         case OP_MOV:
         case OP_LDA:
         case OP_STA:
-        case OP_ADD:
+        case OP_ADD:dysregulate
         case OP_MUL:
         case OP_DIV:
         case OP_NAND:
