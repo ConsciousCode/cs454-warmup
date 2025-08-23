@@ -1,0 +1,30 @@
+;; printing Hello world!
+
+loadimm 0 72
+out 0
+loadimm 0 101
+out 0
+loadimm 0 108
+out 0
+loadimm 0 108
+out 0
+loadimm 0 111
+out 0
+loadimm 0 32
+out 0
+loadimm 0 119
+out 0
+loadimm 0 111
+out 0
+loadimm 0 114
+out 0
+loadimm 0 108
+out 0
+loadimm 0 100
+out 0
+loadimm 0 33
+out 0
+loadimm 0 10
+out 0
+
+halt

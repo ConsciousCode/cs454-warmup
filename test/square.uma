@@ -1,0 +1,465 @@
+;; read a decimal number terminated with newline; print its square [no error checking]
+
+;; uses C-standard conventions
+
+;; Common prelude
+label @__start__
+  loadimm 0 0
+  loadimm 1 1
+  loadimm 5 4
+  alloc 2 5
+  loadimm 7 @__end__
+  aupd 2 1 7
+  loadimm 4 @ummain
+  loadprog 0 4
+  label @__end__
+  halt
+
+label @subtract ;; framesize=5
+;; frame:
+;;  args:
+;;   2: x
+;;   3: y
+;;  returns:
+;;   4: <return>
+  loadimm 6 3
+  aidx 6 2 6 ;; r6 = y
+  nand 6 6 6
+  add 6 6 1 ;; r6 = -y
+  loadimm 7 2
+  aidx 7 2 7 ;; r7 = x
+  add 6 6 7 ;; r6 = x - y
+  loadimm 7 4
+  aupd 2 7 6 
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
+
+label @equal ;; framesize=5
+;; frame:
+;;  args:
+;;   2: x
+;;   3: y
+;;  returns:
+;;   4: <return>
+  ;; call subtract
+  loadimm 5 5
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @equal:ret1
+  aupd 6 1 7
+  loadimm 5 2
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 5 3
+  aidx 7 2 5
+  loadimm 5 3
+  aupd 6 5 7
+  loadimm 4 @subtract
+  cmov 2 6 1
+  loadprog 0 4
+  label @equal:ret1
+  aidx 6 2 0
+  loadimm 7 4
+  aidx 7 2 7
+  dealloc 2
+  cmov 2 6 1
+  cmov 6 1 1
+  cmov 6 0 7
+  loadimm 7 4
+  aupd 2 7 6
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
+
+label @in_line_decimal_int ;; framesize=8
+;; frame:
+;;  args:
+;;  returns:
+;;   2: <return>
+;;  temps:
+;;   3: number
+;;   4: digit
+;;   5: result of equal
+;;   6: temp = number * 10
+;;   7: result of subtract
+  loadimm 5 3
+  aupd 2 5 0
+  label @in_line_decimal_int:loop
+  in 6
+  loadimm 5 4
+  aupd 2 5 6
+  ;; call equal
+  loadimm 5 5
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @in_line_decimal_int:ret1
+  aupd 6 1 7
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 7 10
+  loadimm 5 3
+  aupd 6 5 7
+  loadimm 4 @equal
+  cmov 2 6 1
+  loadprog 0 4
+  label @in_line_decimal_int:ret1
+  aidx 6 2 0
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 5
+  aupd 6 5 7
+  dealloc 2
+  cmov 2 6 1
+  ;; end call equal
+  loadimm 5 5
+  aidx 7 2 5
+  loadimm 4 @in_line_decimal_int:loopbody
+  loadimm 5 @in_line_decimal_int:loopexit
+  cmov 4 5 7
+  loadprog 0 4
+  label @in_line_decimal_int:loopbody
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 7 10
+  mul 6 6 7
+  loadimm 5 6
+  aupd 2 5 6
+  ;; call subtract
+  loadimm 5 5
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @in_line_decimal_int:ret2
+  aupd 6 1 7
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 7 48
+  loadimm 5 3
+  aupd 6 5 7
+  loadimm 4 @subtract
+  cmov 2 6 1
+  loadprog 0 4
+  label @in_line_decimal_int:ret2
+  aidx 6 2 0
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 7
+  aupd 6 5 7
+  dealloc 2
+  cmov 2 6 1
+  ;; end call subtract
+  loadimm 5 6
+  aidx 6 2 5
+  loadimm 5 7
+  aidx 7 2 5
+  add 6 6 7
+  loadimm 5 3
+  aupd 2 5 6
+  loadimm 4 @in_line_decimal_int:loop
+  loadprog 0 4
+  label @in_line_decimal_int:loopexit
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 5 2
+  aupd 2 5 6
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
+
+label @out_line_decimal_int_reverse ;; framesize=8
+;; frame:
+;;  args:
+;;   2: x
+;;  returns:
+;;  temps:
+;;   3: number
+;;   4: div
+;;   5: rem
+;;   6: digit
+;;   7: temp = div * 10
+  loadimm 5 2
+  aidx 6 2 5 
+  loadimm 5 3
+  aupd 2 5 6
+  label @out_line_decimal_int_reverse:loopbody
+  ;; div = number / 10
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 7 10
+  div 6 6 7
+  loadimm 5 4
+  aupd 2 5 6
+  ;; temp = div * 10
+  loadimm 5 4
+  aidx 6 2 5
+  loadimm 7 10
+  mul 6 6 7
+  loadimm 5 7
+  aupd 2 5 6
+  ;; rem = subtract (number, div * 10)
+  ;; call subtract
+  loadimm 5 5
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @out_line_decimal_int_reverse:ret1
+  aupd 6 1 7
+  loadimm 5 3
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 5 7
+  aidx 7 2 5
+  loadimm 5 3
+  aupd 6 5 7
+  loadimm 4 @subtract
+  cmov 2 6 1
+  loadprog 0 4
+  label @out_line_decimal_int_reverse:ret1
+  aidx 6 2 0
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 5
+  aupd 6 5 7
+  dealloc 2
+  cmov 2 6 1
+  ;; end call subtract
+  ;; digit = rem + 48
+  loadimm 5 5
+  aidx 6 2 5
+  loadimm 7 48
+  add 6 6 7
+  loadimm 5 6
+  aupd 2 5 6
+  ;; um_out (digit)
+  loadimm 5 6
+  aidx 6 2 5
+  out 6
+  ;; number = div
+  loadimm 5 4
+  aidx 6 2 5
+  loadimm 5 3
+  aupd 2 5 6
+  ;; while (number != 0)
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 4 @out_line_decimal_int_reverse:loopexit
+  loadimm 5 @out_line_decimal_int_reverse:loopbody
+  cmov 4 5 6
+  loadprog 0 4
+  label @out_line_decimal_int_reverse:loopexit
+  ;; um_out (0x0000000a)
+  loadimm 6 10
+  out 6
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
+
+label @out_line_decimal_int ;; framesize=10
+;; frame:
+;;  args:
+;;   2: x
+;;  returns:
+;;  temps:
+;;   3: number
+;;   4: div
+;;   5: rem
+;;   6: digit
+;;   7: temp = div * 10
+;;   8: digits
+;;   9: newdigit
+  ;; digits = NULL
+  loadimm 5 8
+  aupd 2 5 0
+  ;; number = x
+  loadimm 5 2
+  aidx 6 2 5 
+  loadimm 5 3
+  aupd 2 5 6
+  label @out_line_decimal_int:loopbody
+  ;; div = number / 10
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 7 10
+  div 6 6 7
+  loadimm 5 4
+  aupd 2 5 6
+  ;; temp = div * 10
+  loadimm 5 4
+  aidx 6 2 5
+  loadimm 7 10
+  mul 6 6 7
+  loadimm 5 7
+  aupd 2 5 6
+  ;; rem = subtract (number, div * 10)
+  ;; call subtract
+  loadimm 5 5
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @out_line_decimal_int:ret1
+  aupd 6 1 7
+  loadimm 5 3
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 5 7
+  aidx 7 2 5
+  loadimm 5 3
+  aupd 6 5 7
+  loadimm 4 @subtract
+  cmov 2 6 1
+  loadprog 0 4
+  label @out_line_decimal_int:ret1
+  aidx 6 2 0
+  loadimm 5 4
+  aidx 7 2 5
+  loadimm 5 5
+  aupd 6 5 7
+  dealloc 2
+  cmov 2 6 1
+  ;; end call subtract
+  ;; digit = rem + 48
+  loadimm 5 5
+  aidx 6 2 5
+  loadimm 7 48
+  add 6 6 7
+  loadimm 5 6
+  aupd 2 5 6
+  ;; newdigit = (intlist *) malloc (sizeof (intlist));
+  loadimm 6 2
+  alloc 6 6
+  loadimm 5 9
+  aupd 2 5 6
+  ;; newdigit->i = digit
+  loadimm 5 6
+  aidx 6 2 5
+  loadimm 5 9
+  aidx 7 2 5
+  aupd 7 0 6
+  ;; newdigit->next = digits
+  loadimm 5 8
+  aidx 6 2 5
+  loadimm 5 9
+  aidx 7 2 5
+  aupd 7 1 6
+  ;; digits = newdigit
+  loadimm 5 9
+  aidx 6 2 5
+  loadimm 5 8
+  aupd 2 5 6
+  ;; number = div
+  loadimm 5 4
+  aidx 6 2 5
+  loadimm 5 3
+  aupd 2 5 6
+  ;; while (number != 0)
+  loadimm 5 3
+  aidx 6 2 5
+  loadimm 4 @out_line_decimal_int:loopexit
+  loadimm 5 @out_line_decimal_int:loopbody
+  cmov 4 5 6
+  loadprog 0 4
+  label @out_line_decimal_int:loopexit
+  ;; second while loop:
+  label @out_line_decimal_int:loop2head
+  loadimm 5 8
+  aidx 6 2 5
+  loadimm 4 @out_line_decimal_int:loop2exit
+  loadimm 5 @out_line_decimal_int:loop2body
+  cmov 4 5 6
+  loadprog 0 4
+  label @out_line_decimal_int:loop2body
+  ;; digit = digits->i
+  loadimm 5 8
+  aidx 6 2 5
+  aidx 6 6 0
+  loadimm 5 6
+  aupd 2 5 6
+  ;; um_out (digit)
+  loadimm 5 6
+  aidx 6 2 5
+  out 6
+  ;; newdigit = digits->next
+  loadimm 5 8
+  aidx 6 2 5
+  aidx 6 6 1
+  loadimm 5 9
+  aupd 2 5 6
+  ;; free (digits)
+  loadimm 5 8
+  aidx 6 2 5
+  dealloc 6
+  ;; digits = newdigit
+  loadimm 5 9
+  aidx 6 2 5
+  loadimm 5 8
+  aupd 2 5 6
+  ;; end while:
+  loadimm 4 @out_line_decimal_int:loop2head
+  loadprog 0 4
+  label @out_line_decimal_int:loop2exit
+  ;; um_out (0x0000000a)
+  loadimm 6 10
+  out 6
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
+
+;; End common prelude
+
+
+label @ummain ;; framesize=4
+;; frame:
+;;  args:
+;;  returns:
+;;  temps:
+;;   2: number
+;;   3: square
+  ;; call in_line_decimal_int
+  loadimm 5 8
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @ummain:ret1
+  aupd 6 1 7
+  loadimm 4 @in_line_decimal_int
+  cmov 2 6 1
+  loadprog 0 4
+  label @ummain:ret1
+  aidx 6 2 0
+  loadimm 5 2
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  dealloc 2
+  cmov 2 6 1
+  ;; end call in_line_decimal_int
+  loadimm 5 2
+  aidx 6 2 5
+  mul 6 6 6
+  loadimm 5 3
+  aupd 2 5 6
+  ;; call out_line_decimal_int
+  loadimm 5 10
+  alloc 6 5
+  aupd 6 0 2
+  loadimm 7 @ummain:ret2
+  aupd 6 1 7
+  loadimm 5 3
+  aidx 7 2 5
+  loadimm 5 2
+  aupd 6 5 7
+  loadimm 4 @out_line_decimal_int
+  cmov 2 6 1
+  loadprog 0 4
+  label @ummain:ret2
+  aidx 6 2 0
+  dealloc 2
+  cmov 2 6 1
+  ;; end call out_line_decimal_int
+;; return sequence:
+  aidx 4 2 1
+  loadprog 0 4
