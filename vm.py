@@ -184,7 +184,9 @@ def main_dis(fname):
                 else:
                     print(f"ldi {reg} 0x{imm:02x}")
             case (name, regs):
-                line = f"{name} {' '.join(map(str, regs))}"
+                line = name
+                if regs:
+                    line += f" {' '.join(map(str, regs))}"
                 if is_canonical(code):
                     print(line)
                 else:

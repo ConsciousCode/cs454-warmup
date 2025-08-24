@@ -19,40 +19,6 @@
 
 //#define USE_COMPUTED 1
 
-#define FAIL(err) return err
-
-/**
- * Saw this trick in the CPython interpreter years ago, seems to be more
- *  complicated now but a simpler version can be found at
- *  https://eli.thegreenplace.net/2012/07/12/computed-goto-for-efficient-dispatch-tables
- *
- * Speed-up is primarily because branch prediction is per-address, meaning if
- *  it's based on a single branch (eg the switch statement) the branch predictor
- *  can't predict anything effectively.
- *
- * However, switch is still faster on unoptimized builds. Computed goto is a
- *  couple seconds faster with -Ofast running sandmark.
-**/
-#if defined(USE_COMPUTED) && (defined(__GNUC__) || defined(__clang__))
-    #define DISPATCH_TABLE(...) void *dispatch_table[] = {__VA_ARGS__}
-    #define SWITCH(cur) do { \
-        reg_t op = OPCODE(cur); \
-        if(op >= OP_INVALID) FAIL(ERR_INV); \
-        goto *dispatch_table[op]; \
-    } while(0);
-    #define DISPATCH_GOTO() do { \
-        if(vm.pc >= vm.prog.size) FAIL(ERR_EOF); \
-        cur = INDEX(reg_t, vm.prog, vm.pc++); \
-        SWITCH(cur); \
-    } while(0)
-    #define TARGET(op) TARGET_ ## op
-#else
-    #define DISPATCH_TABLE(...)
-    #define DISPATCH_GOTO() continue
-    #define TARGET(op) case op
-    #define SWITCH(op) switch(OPCODE(op))
-#endif
-
 // XXXX .... .... .... .... ...A AABB BCCC (generic)
 // 1101 III. NNNN NNNN NNNN NNNN NNNN NNNN (ldi)
 #define OPCODE(n) ((n) >> 28)
@@ -112,17 +78,6 @@ typedef struct {
 
 #define INDEX(type, arr, index) ((type *)((arr).data))[index]
 
-void array_new(Array *array, reg_t capacity) {
-    array->size = 0;
-    array->data = (reg_t *)malloc(capacity * sizeof(reg_t));
-}
-
-void array_free(Array *array) {
-    free(array->data);
-    array->size = 0;
-    array->data = NULL;
-}
-
 void link_freelist(Freelist *free, reg_t i, reg_t last) {
     for(; i < last; ++i) {
         free[i].next = i + 1;
@@ -140,26 +95,6 @@ typedef struct {
     reg_t registers[8];
 } VM;
 
-const char *opname(reg_t opcode) {
-    switch(opcode) {
-        case OP_MOV: return "MOV";
-        case OP_LDA: return "LDA";
-        case OP_STA: return "STA";
-        case OP_ADD: return "ADD";
-        case OP_MUL: return "MUL";
-        case OP_DIV: return "DIV";
-        case OP_NAND: return "NAND";
-        case OP_HLT: return "HLT";
-        case OP_NEW: return "NEW";
-        case OP_DEL: return "DEL";
-        case OP_OUT: return "OUT";
-        case OP_INP: return "INP";
-        case OP_PRG: return "PRG";
-        case OP_LDI: return "LDI";
-        default: return "INVALID";
-    }
-}
-
 const char *errname(Error err) {
     switch(err) {
         case ERR_OK: return "OK";
@@ -174,64 +109,41 @@ const char *errname(Error err) {
     }
 }
 
-void printop(reg_t cur) {
-    printf("%s ", opname(OPCODE(cur)));
-    reg_t op = OPCODE(cur);
-    switch(op) {
-        case OP_MOV:
-        case OP_LDA:
-        case OP_STA:
-        case OP_ADD:dysregulate
-        case OP_MUL:
-        case OP_DIV:
-        case OP_NAND:
-            printf("%u, %u, %u\n", RA(cur), RB(cur), RC(cur));
-            break;
-        
-        case OP_HLT:
-            printf("\n");
-            break;
-        
-        case OP_NEW:
-        case OP_PRG:
-            printf("%u, %u\n", RB(cur), RC(cur));
-            break;
-        
-        case OP_DEL:
-        case OP_OUT:
-        case OP_INP:
-            printf("%u\n", RC(cur));
-            break;
-        
-        case OP_LDI: {
-            reg_t i = IMM();
-            printf("%u, ", RI(cur));
-            if(i >= 0x20 && i < 0x7f) {
-                printf("'%c'\n", (char)i);
-            }
-            else {
-                printf("0x%02x\n", IMM());
-            }
-            break;
-        }
-    }
-}
+/**
+ * Saw this trick in the CPython interpreter years ago, seems to be more
+ *  complicated now but a simpler version can be found at
+ *  https://eli.thegreenplace.net/2012/07/12/computed-goto-for-efficient-dispatch-tables
+ *
+ * Speed-up is primarily because branch prediction is per-address, meaning if
+ *  it's based on a single branch (eg the switch statement) the branch predictor
+ *  can't predict anything effectively.
+ *
+ * However, switch is still faster on unoptimized builds. Computed goto is a
+ *  couple seconds faster with -Ofast running sandmark.
+**/
+#if defined(USE_COMPUTED) && (defined(__GNUC__) || defined(__clang__))
+    #define DISPATCH_TABLE(...) void *dispatch_table[] = {__VA_ARGS__}
+    #define SWITCH(cur) goto *dispatch_table[OPCODE(cur)]; if(1)
+    #define DISPATCH_GOTO() do { \
+        if(vm.pc >= vm.prog.size) FAIL(ERR_EOF); \
+        cur = INDEX(reg_t, vm.prog, vm.pc++); \
+        SWITCH(cur); \
+    } while(0)
+    #define TARGET(op) TARGET_ ## op
+#else
+    #define DISPATCH_TABLE(...)
+    #define DISPATCH_GOTO() continue
+    #define TARGET(op) case op
+    #define SWITCH(op) switch(OPCODE(op))
+#endif
 
-void printregs(const VM *vm) {
-    const char *REG = "ABCDEFGH";
-    printf("Registers: ");
-    for(int i = 0; i < 8; ++i) {
-        if(vm->registers[i]) {
-            printf("%c=0x%02x ", REG[i], vm->registers[i]);
-        }
-    }
-    putchar('\n');
-}
+#define FAIL(err) do { error = err; goto finish; } while(0)
 
 /**
  * Pass VM by value to avoid indirection overhead. Return for debug.
 **/
 Error interpret(VM vm) {
+    Error error = ERR_OK;
     DISPATCH_TABLE(
         &&TARGET(OP_MOV),
         &&TARGET(OP_LDA), &&TARGET(OP_STA),
@@ -239,40 +151,45 @@ Error interpret(VM vm) {
         &&TARGET(OP_NAND), &&TARGET(OP_HLT),
         &&TARGET(OP_NEW), &&TARGET(OP_DEL),
         &&TARGET(OP_OUT), &&TARGET(OP_INP),
-        &&TARGET(OP_PRG), &&TARGET(OP_LDI)
+        &&TARGET(OP_PRG), &&TARGET(OP_LDI),
+        &&finish, &&finish
     );
+
     do {
         reg_t cur = INDEX(reg_t, vm.prog, vm.pc++);
         //printop(cur);
         //printregs(&vm);
         SWITCH(cur) {
-            TARGET(OP_MOV):
-                if(REG_C()) REG_A() = REG_B();
+            TARGET(OP_MOV): {
+                /**
+                 * Tried (in ascending order of speed):
+                 * - A = a ^ (a ^ B) & -!!C (9.767s)
+                 * - A ^= (A ^ B) & -!!C (9.127s)
+                 * - A = A & -!C | B & -!!C (9.019s)
+                 * - if(C) A = B  (8.972s)
+                 * - A = C? B : A (8.447s)
+                **/
+                REG_A() = REG_C()? REG_B() : REG_A();
                 DISPATCH_GOTO();
+            }
             
             TARGET(OP_LDA): {
-                reg_t b = REG_B();
-                if(b >= vm.arrays.size) FAIL(ERR_ARR); // No such array
-                
+                reg_t b = REG_B(), c = REG_C();
+                if(b >= vm.arrays.size) FAIL(ERR_ARR);
+
                 Array array = INDEX(Array, vm.arrays, b);
-                if(array.data == NULL) FAIL(ERR_ARR); // Inactive array
-
-                reg_t c = REG_C();
-                if(c >= array.size) FAIL(ERR_ARR); // Out of bounds
-
+                if(/*array.data == NULL || */ c >= array.size) FAIL(ERR_ARR);
+                
                 REG_A() = INDEX(reg_t, array, c);
                 DISPATCH_GOTO();
             }
             
             TARGET(OP_STA): {
-                reg_t a = REG_A();
-                if(a >= vm.arrays.size) FAIL(ERR_ARR); // No such array
+                reg_t a = REG_A(), b = REG_B();
+                if(a >= vm.arrays.size) FAIL(ERR_ARR);
 
                 Array array = INDEX(Array, vm.arrays, a);
-                if(array.data == NULL) FAIL(ERR_ARR); // Inactive array
-
-                reg_t b = REG_B();
-                if(b >= array.size) FAIL(ERR_ARR); // Out of bounds
+                if(/*array.data == NULL || */ b >= array.size) FAIL(ERR_ARR);
 
                 INDEX(reg_t, array, b) = REG_C();
                 DISPATCH_GOTO();
@@ -298,7 +215,7 @@ Error interpret(VM vm) {
                 DISPATCH_GOTO();
             
             TARGET(OP_HLT):
-                return ERR_OK;
+                goto finish;
             
             TARGET(OP_NEW): {
                 reg_t index = vm.free;
@@ -362,10 +279,10 @@ Error interpret(VM vm) {
                 // absolute jump.
                 reg_t ident = REG_B();
                 if(ident) {
-                    if(ident >= vm.arrays.size) FAIL(ERR_PRG); // No such program
-                    
+                    if(ident >= vm.arrays.size) FAIL(ERR_ARR);
+
                     Array origin = INDEX(Array, vm.arrays, ident);
-                    if(origin.data == NULL) FAIL(ERR_PRG); // Inactive array
+                    if(origin.data == NULL) FAIL(ERR_PRG);
 
                     // Free the current program
                     free(vm.prog.data);
@@ -396,13 +313,9 @@ Error interpret(VM vm) {
 
     // Just in case
     FAIL(ERR_EOF);
-}
 
-void disassemble(Array prog) {
-    for(reg_t i = 0; i < prog.size; ++i) {
-        reg_t cur = INDEX(reg_t, prog, i);
-        printop(cur);
-    }
+    finish:
+        return error;
 }
 
 int main(int argc, char *argv[]) {
@@ -451,7 +364,6 @@ int main(int argc, char *argv[]) {
         .prog = prog,
         .arrays = arrays
     };
-    //disassemble(vm.prog);
     Error err = interpret(vm);
     if(err) {
         fprintf(stderr, "%s\n", errname(err));
