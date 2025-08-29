@@ -40,7 +40,7 @@
 #define OP_ADD   3 // A <- B + C mod 2^32
 #define OP_MUL   4 // A <- B * C mod 2^32
 #define OP_DIV   5 // A <- int(B / C)
-#define OP_NAND  6 // A <- ~(B & C)
+#define OP_NAN  6 // A <- ~(B & C)
 #define OP_HLT   7 // halt execution
 #define OP_NEW   8 // B <- new reg_t[C]
 #define OP_DEL   9 // delete C
@@ -123,7 +123,7 @@ const char *errname(Error err) {
 **/
 #if defined(USE_COMPUTED) && (defined(__GNUC__) || defined(__clang__))
     #define DISPATCH_TABLE(...) void *dispatch_table[] = {__VA_ARGS__}
-    #define SWITCH(cur) goto *dispatch_table[OPCODE(cur)]; if(1)
+    #define SWITCH(cur) goto *dispatch_table[OPCODE(cur)];
     #define DISPATCH_GOTO() do { \
         if(vm.pc >= vm.prog.size) FAIL(ERR_EOF); \
         cur = INDEX(reg_t, vm.prog, vm.pc++); \
@@ -148,11 +148,11 @@ Error interpret(VM vm) {
         &&TARGET(OP_MOV),
         &&TARGET(OP_LDA), &&TARGET(OP_STA),
         &&TARGET(OP_ADD), &&TARGET(OP_MUL), &&TARGET(OP_DIV),
-        &&TARGET(OP_NAND), &&TARGET(OP_HLT),
+        &&TARGET(OP_NAN), &&TARGET(OP_HLT),
         &&TARGET(OP_NEW), &&TARGET(OP_DEL),
         &&TARGET(OP_OUT), &&TARGET(OP_INP),
         &&TARGET(OP_PRG), &&TARGET(OP_LDI),
-        &&finish, &&finish
+        &&TARGET(OP_x14), &&TARGET(OP_x15)
     );
 
     do {
@@ -210,7 +210,7 @@ Error interpret(VM vm) {
                 DISPATCH_GOTO();
             }
             
-            TARGET(OP_NAND):
+            TARGET(OP_NAN):
                 REG_A() = ~(REG_B() & REG_C());
                 DISPATCH_GOTO();
             
@@ -305,6 +305,10 @@ Error interpret(VM vm) {
             TARGET(OP_LDI):
                 REG_I() = IMM();
                 DISPATCH_GOTO();
+            
+            TARGET(OP_x14):
+            TARGET(OP_x15):
+                FAIL(ERR_INV);
         }
         
         // Fall-through if using switch

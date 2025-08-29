@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from itertools import batched
 import re
 from typing import DefaultDict, Iterable
@@ -7,8 +9,8 @@ MAX_IMM = (1 << 25) - 1
 ASMRE = re.compile(r"""
     \s*(?:
         (?P<inv>0x[0-9a-fA-F]+)|
-        (?P<op>\w+)\s*
-        (?P<args>[^;]*)
+        (?P<op>\w+)\s* (?P<args>[^;]*)|
+        "(?P<str>(?:\\x[\da-fA-F].|.)+)"
     )?
     (?:; (?P<comment>.*))?
 """, re.VERBOSE)
@@ -28,7 +30,7 @@ CANONICAL = [
 ARGC: dict[str, int] = { # name: argc
     "mov": 3,
     "lda": 3, "sta": 3,
-    "add": 3, "mul": 3, "div": 3, "nand": 3,
+    "add": 3, "mul": 3, "div": 3, "nan": 3,
     "hlt": 0,
     "new": 2, "del": 1,
     "out": 1, "inp": 1,
@@ -61,6 +63,16 @@ def progasm(lines: Iterable[str]):
         if (op := m['op']) is None:
             if inv := m['inv']:
                 code = int(inv, 16)
+            elif s := m['str']:
+                s = re.sub(
+                    r"\\x([\da-fA-F]{2})",
+                    lambda m: chr(int(m[1], 16)),
+                    s
+                )
+                s += "\0"*((4 - len(s) % 4)%4)
+                for a, b, c, d in batched((ord(c) for c in s), 4):
+                    data.append(a<<24 | b<<16 | c<<8 | d)
+                continue
             else:
                 continue
         else:
@@ -106,7 +118,7 @@ def progasm(lines: Iterable[str]):
                 except KeyError:
                     raise ValueError(f"Unknown instruction: {op}") from None
                 
-                for i, arg in enumerate(reversed(args)):
+                for i, arg in enumerate(args):
                     if arg.startswith("@"):
                         label = arg[1:]
                         if label in symtab:
@@ -117,7 +129,7 @@ def progasm(lines: Iterable[str]):
                     else:
                         arg = parse_value(arg)
                     
-                    code |= (arg & 7) << (3*i)
+                    code |= (arg & 7) << (3*(len(args) - i - 1))
 
             data.append(code)
         
@@ -126,7 +138,6 @@ def progasm(lines: Iterable[str]):
     
     for label, addrs in patches.items():
         if label not in symtab:
-            print(symtab)
             raise ValueError(f"Undefined label: @{label}")
         addr = symtab[label]
         for a in addrs:
@@ -138,7 +149,8 @@ def main_asm(inp, out):
     try:
         with open(inp, 'r') as inpf:
             with open(out, "wb") as outf:
-                for op in progasm(inpf):
+                xx = progasm(inpf)
+                for op in xx:#progasm(inpf):
                     outf.write(op.to_bytes(4, 'big'))
 
     except FileNotFoundError:
@@ -150,7 +162,9 @@ def main_asm(inp, out):
 def is_canonical(code: int):
     # ldi is always canonical because it uses all bits
     if code >> 28 == 13: return True
-    return not (code & (MAX_IMM ^ ((1 << 9) - 1)))
+    # Mask out only the register bits used by the instruction
+    mask = (1 << (ARGC[NAMES[code >> 28]]*3)) - 1
+    return not (code & MAX_IMM & ~mask)
 
 def opdis(code: int):
     op = code >> 28
@@ -195,14 +209,17 @@ def main_dis(fname):
     return 0
 
 def main(*argv):
-    match argv:
+    match argv[1:]:
         case ["asm", inp, out]: return main_asm(inp, out)
         case ["dis", inp]: return main_dis(inp)
 
         case _:
-            print("Usage: python vm.py <command> <filename>")
+            print(f"Usage: python {argv[0]} <command> ...")
+            print("Commands:")
+            print("  asm <in> <out>   Assemble code")
+            print("  dis <in>         Disassemble binary")
             return 1
 
 if __name__ == "__main__":
     import sys
-    main(*sys.argv[1:])
+    main(*sys.argv)
