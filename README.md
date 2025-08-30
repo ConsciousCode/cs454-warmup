@@ -572,3 +572,6 @@ https://chatgpt.com/share/68a6ade6-8d08-8010-a246-b35217d28406
 
 ### Part 2
 I tried to ask both ChatGPT and Claude to look for the underlying correctness issues but they were both catastrophically wrong about most of it for different reasons. I think they got confused by the memory layout meant for speed rather than clarity. In my experience, LLMs get easily tripped up when you do "weird" things even when they're correct, like trouble thinking outside the box.
+
+### Part 2.5
+I didn't bother asking AI for anything relating to the fizzbuzz program I wrote to demonstrate the assembler.

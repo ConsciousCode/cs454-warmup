@@ -13,6 +13,6 @@ vm.tar: hw1.c hw1.cpp um.py Makefile README.md test/
 clean: 
 	rm -f switch computed
 
-all: switch computed
+all: switch computed vm.tar
 
 .PHONY: clean all
