@@ -40,7 +40,7 @@
 #define OP_ADD   3 // A <- B + C mod 2^32
 #define OP_MUL   4 // A <- B * C mod 2^32
 #define OP_DIV   5 // A <- int(B / C)
-#define OP_NAND  6 // A <- ~(B & C)
+#define OP_NAN  6 // A <- ~(B & C)
 #define OP_HLT   7 // halt execution
 #define OP_NEW   8 // B <- new reg_t[C]
 #define OP_DEL   9 // delete C
@@ -100,11 +100,12 @@ struct Array {
 };
 
 typedef union {
-    struct { // Active array
+    struct {
         reg_t size;
         reg_t offset;
     };
-    struct { // Freelist
+
+    struct {
         int32_t next; // Next free identifier
         reg_t is_active; // Zero for inactive arrays except for array 0 (program)
     };
@@ -122,36 +123,44 @@ struct VM {
     reg_t pc;
     reg_t registers[8];
 
+    void set_next(reg_t ident, reg_t dst) {
+        index[ident].next = dst - ident - 1;
+    }
+
+    reg_t get_next(reg_t ident) {
+        return index[ident].next + ident + 1;
+    }
+
     void push_free(reg_t ident) {
-        index[ident].next = free - ident - 1;
+        set_next(ident, free);
         free = ident;
     }
-    reg_t pop_free() {
+
+    reg_t push_new() {
         reg_t ident = free;
         if(ident) {
-            free = index[ident].next + ident + 1;
+            free = get_next(ident);
         }
         else {
             // Freelist is empty, need to grow
             ident = index.size;
             free = ident + 1;
             index.resize(index.size*2);
-            reg_t last = index.size - 1;
-            index[last].next = -last - 1; // Last points to index 0
+            set_next(index.size - 1, 0); // Last points to 0
         }
         return ident;
     }
 
     void shrink_hole(reg_t offset, reg_t size) {
+        reg_t used = memory.size - unused;
+        reg_t end = offset + size;
         // Shift the memory to avoid holes
-        memory.move(
-            offset, offset + size,
-            memory.size - unused - (offset + size)
-        );
+        memory.move(offset, end, used - end);
 
         // Update the index (including the deleted array)
         // This won't touch inactive arrays because their offset = 0
-        for(reg_t i = 0; i < index.size; ++i) {
+        // (skip array 0)
+        for(reg_t i = 1; i < index.size; ++i) {
             if(index[i].offset >= offset) {
                 // if offset == start (deleted array), now offset = 0
                 index[i].offset -= size;
@@ -161,25 +170,57 @@ struct VM {
         unused += size;
     }
 
+    /**
+     * Allocate enough memory to fit an object of the given size
+    **/
     void alloc_memory(reg_t size) {
-        if(unused <= size) {
-            // Need to allocate more memory
-            reg_t msize = (memory.size + size)*2;
-            unused += msize - memory.size;
-            memory.resize(msize);
+        if(unused < size) {
+            // Fill the unused space, then grow to be twice what would be
+            // needed to fit the rest of the new size
+            reg_t used = memory.size - unused;
+            reg_t msize = used + size;
+            memory.resize(msize*2);
+            unused = memory.size - used;
         }
         unused -= size;
     }
 
+    /**
+     * Grow the program array's capacity to receive a bigger program.
+    **/
     void grow_program(reg_t new_capacity) {
         reg_t start = capacity, end = new_capacity;
-        alloc_memory(end - start);
+        reg_t extra = end - start;
+        alloc_memory(extra);
         // Move everything after the program to accomodate the new program.
-        memory.move(
-            end, start,
-            memory.size - unused - start
-        );
+        reg_t used = memory.size - unused;
+        // Used memory after the program
+        memory.move(end, start,used - start);
+        // Update the offsets (skip array 0)
+        for(reg_t i = 1; i < index.size; ++i) {
+            if(index[i].is_active) {
+                index[i].offset += extra;
+            }
+        }
         capacity = new_capacity;
+    }
+
+    void print_state() {
+        printf("arrays { %d }\n", index.size);
+        /*
+        printf("arrays { ");
+        for(reg_t i = 0; i < index.size; ++i) {
+            if(index[i].is_active || i == 0) {
+                printf("%u: (off=%u size=%u) ", i, index[i].offset, index[i].size);
+            }
+        }
+        printf("}\n");
+        */
+        printf("PC=%u | free=%u | progsize=%u | capacity=%u | unused=%u\n", pc, free, progsize, capacity, unused);
+        for(reg_t i = 0; i < 8; ++i) {
+            printf("R%u=%u ", i, registers[i]);
+        }
+        printf("\n");
     }
 };
 //*/
@@ -203,7 +244,7 @@ const char *opname(reg_t code) {
         case OP_ADD: return "ADD";
         case OP_MUL: return "MUL";
         case OP_DIV: return "DIV";
-        case OP_NAND: return "NAND";
+        case OP_NAN: return "NAN";
         case OP_HLT: return "HLT";
         case OP_NEW: return "NEW";
         case OP_DEL: return "DEL";
@@ -249,7 +290,7 @@ const char *errname(Error err) {
     #define DISPATCH_GOTO() do { \
         if(vm.pc >= vm.progsize) FAIL(ERR_EOF); \
         cur = vm.memory[vm.pc++]; \
-        SWITCH(cur); \
+        SWITCH(cur) {} \
     } while(0)
     #define TARGET(op) TARGET_ ## op
 #else
@@ -265,13 +306,13 @@ const char *errname(Error err) {
  * Pass VM by value to avoid indirection overhead. Return for debug.
 **/
 Error interpret(VM vm) {
-    printf("Prog size %u | free %u\n", vm.progsize, vm.free);
+    //printf("Prog size %u | free %u\n", vm.progsize, vm.free);
     Error error = ERR_OK;
     DISPATCH_TABLE(
         &&TARGET(OP_MOV),
         &&TARGET(OP_LDA), &&TARGET(OP_STA),
         &&TARGET(OP_ADD), &&TARGET(OP_MUL), &&TARGET(OP_DIV),
-        &&TARGET(OP_NAND), &&TARGET(OP_HLT),
+        &&TARGET(OP_NAN), &&TARGET(OP_HLT),
         &&TARGET(OP_NEW), &&TARGET(OP_DEL),
         &&TARGET(OP_OUT), &&TARGET(OP_INP),
         &&TARGET(OP_PRG), &&TARGET(OP_LDI),
@@ -311,9 +352,9 @@ Error interpret(VM vm) {
                 if(b >= vm.index.size) FAIL(ERR_ARR);
 
                 auto array = vm.index[b];
-                //printf("%u[%u]\n", array.offset, array.size);
-                //printf("b=%u c=%u\n", b, c);
-                if(!array.is_active && b || c >= array.size) FAIL(ERR_ARR);
+                if((!array.is_active && b) || c >= array.size) {
+                    FAIL(ERR_ARR);
+                }
                 
                 REG_A() = vm.memory[array.offset + c];
                 DISPATCH_GOTO();
@@ -324,7 +365,9 @@ Error interpret(VM vm) {
                 if(a >= vm.index.size) FAIL(ERR_ARR);
 
                 auto array = vm.index[a];
-                if(!array.is_active && a || b >= array.size) FAIL(ERR_ARR);
+                if((!array.is_active && a) || b >= array.size) {
+                    FAIL(ERR_ARR);
+                }
 
                 vm.memory[array.offset + b] = REG_C();
                 DISPATCH_GOTO();
@@ -345,7 +388,7 @@ Error interpret(VM vm) {
                 DISPATCH_GOTO();
             }
             
-            TARGET(OP_NAND):
+            TARGET(OP_NAN):
                 REG_A() = ~(REG_B() & REG_C());
                 DISPATCH_GOTO();
             
@@ -353,6 +396,7 @@ Error interpret(VM vm) {
                 goto finish;
             
             TARGET(OP_NEW): {
+                /*
                 reg_t ident = vm.pop_free();
                 
                 // Allocate the new array
@@ -369,17 +413,38 @@ Error interpret(VM vm) {
                 //printf("NEW %u size %u\n", ident, size);
                 //printf("Mem size %u unused %u\n", vm.memory.size, vm.unused);
                 DISPATCH_GOTO();
+                */
+
+                // VM spec doesn't specify that `new 0` is invalid, so we'll
+                // specially allocate it so it takes up 1 word but is size 0.
+                printf("New before\n");
+                vm.print_state();
+                reg_t size = REG_C();
+                reg_t ident = vm.push_new();
+                reg_t offset = vm.memory.size - vm.unused;
+                vm.index[ident] = {size, offset};
+                vm.alloc_memory(size);
+                vm.memory.clear(offset, size);
+                REG_B() = ident; // Store the new array index in B
+                printf("New after\n");
+                vm.print_state();
+                DISPATCH_GOTO();
             }
 
             TARGET(OP_DEL): {
+                printf("Del before\n");
+                vm.print_state();
                 reg_t ident = REG_C();
                 if(ident == 0) FAIL(ERR_DEL); // Attempted to delete the program
+                if(ident >= vm.index.size) FAIL(ERR_DEL);
                 
                 auto array = vm.index[ident];
-                // Account for size 0 arrays taking up 1 word
-                if(array.size == 0) array.size = 1;
+                if(!array.is_active) FAIL(ERR_DEL); // Inactive array
+
                 vm.shrink_hole(array.offset, array.size);
                 vm.push_free(ident);
+                printf("Del after\n");
+                vm.print_state();
                 DISPATCH_GOTO();
             }
 
@@ -404,16 +469,18 @@ Error interpret(VM vm) {
                     if(ident >= vm.index.size) FAIL(ERR_ARR);
 
                     auto array = vm.index[ident];
-                    if(array.offset == 0) FAIL(ERR_PRG);
+                    if(!array.is_active) FAIL(ERR_PRG);
 
-                    if(vm.capacity <= array.size) {
+                    if(vm.capacity < array.size) {
                         // Need to grow the memory to fit
                         vm.grow_program(array.size);
+                        array = vm.index[ident]; // Refresh
                     }
                     
                     // Assign it
                     vm.progsize = array.size;
                     vm.memory.move(0, array.offset, array.size);
+                    printf("PC=%u\n", REG_C());
                 }
                 vm.pc = REG_C();
                 DISPATCH_GOTO();
@@ -425,6 +492,7 @@ Error interpret(VM vm) {
             
             TARGET(OP_x14):
             TARGET(OP_x15):
+                printf("PC=%u %s\n", vm.pc - 1, opname(cur));
                 FAIL(ERR_INV);
         }
         
@@ -470,7 +538,6 @@ int main(int argc, char *argv[]) {
 
     Array<ArrayDef> index(256);
     index[0] = {size, 0}; // Program array
-    index[255].next = -256; // End of freelist pointing back to 0
 
     VM vm = {
         1, // Next free ident is 1
@@ -478,8 +545,11 @@ int main(int argc, char *argv[]) {
         size, // Size of the program
         index, // Array index
         0, // Unused memory
-        Array<reg_t>(size, data) // Memory
+        Array<reg_t>(size, data), // Memory
+        0, // PC
+        {0} // Registers
     };
+    vm.set_next(255, 0);
     
     Error err = interpret(vm);
     if(err) {
