@@ -1,19 +1,16 @@
 CC = g++
-CFLAGS = -Wall -Wextra -Werror -fno-exceptions -fno-rtti
+CFLAGS = -Wall -Wextra -Werror -Ofast -fno-exceptions -fno-rtti -DUSE_COMPUTED
 WHICH = try.cpp
 
-switch: $(WHICH)
+um: $(WHICH)
 	$(CC) $(CFLAGS) -o $@ $^
-
-computed: $(WHICH)
-	$(CC) $(CFLAGS) -o $@ $^ -DUSE_COMPUTED
 
 vm.tar: hw1.c hw1.cpp um.py Makefile README.md test/
 	tar -cvf $@ $^
 
 clean: 
-	rm -f switch computed
+	rm -f um
 
-all: switch computed
+all: um
 
 .PHONY: clean all

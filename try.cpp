@@ -22,16 +22,12 @@
 // XXXX .... .... .... .... ...A AABB BCCC (generic)
 // 1101 III. NNNN NNNN NNNN NNNN NNNN NNNN (ldi)
 #define OPCODE(n) ((n) >> 28)
-#define RX(n, x) (((x) >> ((n)*3)) & 0x7)
-#define RI(x) (((x) >> 25) & 0x7)
-#define RA(x) (RX(2, x))
-#define RB(x) (RX(1, x))
-#define RC(x) (RX(0, x))
+#define RX(n, x) (((x) >> ((n)*3)) & 7)
 #define REG(x) vm.registers[x]
-#define REG_I() REG(RI(cur))
-#define REG_A() REG(RA(cur))
-#define REG_B() REG(RB(cur))
-#define REG_C() REG(RC(cur))
+#define REG_I() REG((cur >> 25) & 7)
+#define RA() REG(RX(2, cur))
+#define RB() REG(RX(1, cur))
+#define RC() REG(RX(0, cur))
 #define IMM() (cur & 0x01ffffff) // Immediate value, 25 bits
 
 #define OP_MOV  0 // A <- B unless C = 0
@@ -82,6 +78,11 @@ struct Array {
         return data[index];
     }
 
+    void resize(reg_t new_size) {
+        size = new_size;
+        data = (T *)std::realloc(data, size * sizeof(T));
+    }
+
     void copy(const Array<T> &other) {
         size = other.size;
         data = (T *)std::realloc(data, size * sizeof(T));
@@ -103,29 +104,10 @@ struct Array {
     }
 };
 
-template<typename T>
-struct List : public Array<T> {
-    using Array<T>::size;
-    using Array<T>::data;
-    reg_t capacity;
-    
-    List(reg_t initial_capacity)
-        : Array<T>(0, (T *)std::calloc(initial_capacity, sizeof(T))),
-            capacity(initial_capacity) {}
-
-    void push_back(const T &value) {
-        if(size >= capacity) {
-            capacity *= 2;
-            data = (T *)std::realloc(data, capacity * sizeof(T));
-        }
-        data[size++] = value;
-    }
-};
-
 struct VM {
     reg_t free;
     Array<reg_t> prog; // Cached program array
-    List<Array<reg_t>> arrays;
+    Array<Array<reg_t>> arrays;
 
     reg_t pc;
     reg_t registers[8];
@@ -143,19 +125,17 @@ struct VM {
         free = ident;
     }
 
-    reg_t push_new(reg_t size) {
-        //printf("push_new1 %d %d %ld\n", free, size, arrays.size);
-        auto &&array = Array<reg_t>(size);
+    reg_t pop_new() {
         reg_t ident = free;
         if(ident) {
             free = get_next(ident);
-            arrays[ident] = array;
         }
         else {
             ident = arrays.size;
-            arrays.push_back(array);
+            free = ident + 1;
+            arrays.resize(arrays.size * 2);
+            set_next(arrays.size - 1, 0);
         }
-        //printf("push_new2 %d %d %ld\n", free, size, arrays.size);
         return ident;
     }
 };
@@ -202,7 +182,7 @@ const char *errname(Error err) {
     #define SWITCH(op) switch(OPCODE(op))
 #endif
 
-#define FAIL(err) do { error = err; goto finish; } while(0)
+#define FAIL(err) do [[unlikely]] { error = err; goto finish; } while(0)
 
 /**
  * Pass VM by value to avoid indirection overhead. Return for debug.
@@ -227,68 +207,81 @@ Error interpret(VM vm) {
         SWITCH(cur) {
             TARGET(OP_MOV): {
                 /**
-                 * Tried (in ascending order of speed):
-                 * - A = a ^ (a ^ B) & -!!C (9.767s)
+                 * Tried (Caps = REG_*(), lower = cached):
+                 * - A = a ^ ((a ^ B) & -!!C) (9.767s)
+                 * - A = REG(1 + !C) (9.444s)
+                 * - A = REG(C? 1 : 2) (9.444s)
+                 * - A = c? b : a (9.198s)
                  * - A ^= (A ^ B) & -!!C (9.127s)
                  * - A = A & -!C | B & -!!C (9.019s)
-                 * - if(C) A = B  (8.972s)
-                 * - A = C? B : A (8.447s)
+                 * - if(C) A = B (9.011s)
+                 * - A = C? B : A (8.881s)
+                 *
+                 * I think this is the fastest because 1. The bitwise operations
+                 * have overhead and 2. Ternary means it can assume RA() isn't
+                 * UB so it can optimize better as an unconditional assignment.
+                 * 
+                 * Not actually sure why REG(C? 1 : 2) is slower though.
+                 * Functionally that looks like R[A] = R[R[C]? B : A] and the
+                 * assembly shows it uses cmove and no branches...
                 **/
-                REG_A() = REG_C()? REG_B() : REG_A();
+                RA() = RC()? RB() : RA();
                 DISPATCH_GOTO();
             }
             
             TARGET(OP_LDA): {
-                reg_t b = REG_B(), c = REG_C();
+                reg_t b = RB(), c = RC();
                 if(b >= vm.arrays.size) FAIL(ERR_ARR);
 
                 auto array = vm.arrays[b];
                 if(array.data == nullptr || c >= array.size) FAIL(ERR_ARR);
                 
-                REG_A() = array[c];
+                RA() = array[c];
                 DISPATCH_GOTO();
             }
             
             TARGET(OP_STA): {
-                reg_t a = REG_A(), b = REG_B();
+                reg_t a = RA(), b = RB();
                 if(a >= vm.arrays.size) FAIL(ERR_ARR);
 
                 auto array = vm.arrays[a];
                 if(array.data == nullptr || b >= array.size) FAIL(ERR_ARR);
 
-                array[b] = REG_C();
+                array[b] = RC();
                 DISPATCH_GOTO();
             }
             
             TARGET(OP_ADD):
-                REG_A() = REG_B() + REG_C(); // Implicit mod
+                RA() = RB() + RC(); // Implicit mod
                 DISPATCH_GOTO();
             
             TARGET(OP_MUL):
-                REG_A() = REG_B() * REG_C();
+                RA() = RB() * RC();
                 DISPATCH_GOTO();
             
             TARGET(OP_DIV): {
-                reg_t c = REG_C();
+                reg_t c = RC();
                 if(c == 0) FAIL(ERR_DIV);
-                REG_A() = REG_B() / c;
+                RA() = RB() / c;
                 DISPATCH_GOTO();
             }
             
             TARGET(OP_NAN):
-                REG_A() = ~(REG_B() & REG_C());
+                RA() = ~(RB() & RC());
                 DISPATCH_GOTO();
             
             TARGET(OP_HLT):
                 goto finish;
             
             TARGET(OP_NEW): {
-                REG_B() = vm.push_new(REG_C());
+                reg_t ident = vm.pop_new();
+                vm.arrays[ident] = Array<reg_t>(RC());
+                RB() = ident;
                 DISPATCH_GOTO();
             }
 
             TARGET(OP_DEL): {
-                reg_t ident = REG_C();
+                reg_t ident = RC();
                 if(ident == 0) FAIL(ERR_DEL); // Attempted to delete the program
                 
                 vm.arrays[ident].free();
@@ -297,7 +290,7 @@ Error interpret(VM vm) {
             }
 
             TARGET(OP_OUT): {
-                reg_t c = REG_C();
+                reg_t c = RC();
                 if(c > 0xff) FAIL(ERR_CHR); // Invalid character
                 putchar(c);
                 DISPATCH_GOTO();
@@ -305,7 +298,7 @@ Error interpret(VM vm) {
 
             TARGET(OP_INP): {
                 int c = getchar();
-                REG_C() = (c == EOF? -1 : c);
+                RC() = (c == EOF? -1 : c);
                 DISPATCH_GOTO();
             }
 
@@ -313,7 +306,7 @@ Error interpret(VM vm) {
                 // It's not explicitly stated but PRG 0 is a no-op aside from
                 // assigning the PC, so it's likely intended to double as an
                 // absolute jump.
-                if(reg_t ident = REG_B()) {
+                if(reg_t ident = RB()) {
                     if(ident >= vm.arrays.size) FAIL(ERR_ARR);
 
                     auto origin = vm.arrays[ident];
@@ -322,7 +315,7 @@ Error interpret(VM vm) {
                     vm.prog.copy(origin);
                     vm.arrays[0] = vm.prog;
                 }
-                vm.pc = REG_C();
+                vm.pc = RC();
                 DISPATCH_GOTO();
             }
 
@@ -374,14 +367,17 @@ int main(int argc, char *argv[]) {
 
     fclose(fp);
 
-    List<Array<reg_t>> arrays(256);
-    arrays.push_back(prog);
+    Array<Array<reg_t>> arrays(256);
+    arrays[0] = prog;
 
     VM vm = {
-        .free = 0,
+        .free = 1,
         .prog = prog,
-        .arrays = arrays
+        .arrays = arrays,
+        .pc = 0,
+        .registers = {0}
     };
+    vm.set_next(255, 0);
     Error err = interpret(vm);
     if(err) {
         fprintf(stderr, "ERR_%s\n", errname(err));
