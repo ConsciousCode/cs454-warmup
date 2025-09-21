@@ -215,12 +215,13 @@ Error interpret(VM vm) {
                  * - A ^= (A ^ B) & -!!C (9.127s)
                  * - A = A & -!C | B & -!!C (9.019s)
                  * - if(C) A = B (9.011s)
+                 * - A ^= C? A ^ B : 0 (8.999s)
                  * - A = C? B : A (8.881s)
                  *
                  * I think this is the fastest because 1. The bitwise operations
                  * have overhead and 2. Ternary means it can assume RA() isn't
                  * UB so it can optimize better as an unconditional assignment.
-                 * 
+                 *
                  * Not actually sure why REG(C? 1 : 2) is slower though.
                  * Functionally that looks like R[A] = R[R[C]? B : A] and the
                  * assembly shows it uses cmove and no branches...
@@ -228,18 +229,18 @@ Error interpret(VM vm) {
                 RA() = RC()? RB() : RA();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_LDA): {
                 reg_t b = RB(), c = RC();
                 if(b >= vm.arrays.size) FAIL(ERR_ARR);
 
                 auto array = vm.arrays[b];
                 if(array.data == nullptr || c >= array.size) FAIL(ERR_ARR);
-                
+
                 RA() = array[c];
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_STA): {
                 reg_t a = RA(), b = RB();
                 if(a >= vm.arrays.size) FAIL(ERR_ARR);
@@ -250,29 +251,29 @@ Error interpret(VM vm) {
                 array[b] = RC();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_ADD):
                 RA() = RB() + RC(); // Implicit mod
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_MUL):
                 RA() = RB() * RC();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_DIV): {
                 reg_t c = RC();
                 if(c == 0) FAIL(ERR_DIV);
                 RA() = RB() / c;
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_NAN):
                 RA() = ~(RB() & RC());
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_HLT):
                 goto finish;
-            
+
             TARGET(OP_NEW): {
                 reg_t ident = vm.pop_new();
                 vm.arrays[ident] = Array<reg_t>(RC());
@@ -283,7 +284,7 @@ Error interpret(VM vm) {
             TARGET(OP_DEL): {
                 reg_t ident = RC();
                 if(ident == 0) FAIL(ERR_DEL); // Attempted to delete the program
-                
+
                 vm.arrays[ident].free();
                 vm.push_free(ident);
                 DISPATCH_GOTO();
@@ -322,12 +323,12 @@ Error interpret(VM vm) {
             TARGET(OP_LDI):
                 REG_I() = IMM();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_x14):
             TARGET(OP_x15):
                 FAIL(ERR_INV);
         }
-        
+
         // Fall-through if using switch
         FAIL(ERR_INV);
     } while(vm.pc < vm.prog.size);
