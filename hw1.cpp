@@ -338,7 +338,7 @@ Error interpret(VM vm) {
                  * I think this is the fastest because 1. The bitwise operations
                  * have overhead and 2. Ternary means it can assume REG_A() isn't
                  * UB so it can optimize better as an unconditional assignment.
-                 * 
+                 *
                  * Not actually sure why REG(C? 1 : 2) is slower though.
                  * Functionally that looks like R[A] = R[R[C]? B : A] and the
                  * assembly shows it uses cmove and no branches...
@@ -346,7 +346,7 @@ Error interpret(VM vm) {
                 REG_A() = REG_C()? REG_B() : REG_A();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_LDA): {
                 reg_t b = REG_B(), c = REG_C();
                 if(b >= vm.index.size) FAIL(ERR_ARR);
@@ -355,11 +355,11 @@ Error interpret(VM vm) {
                 if((!array.is_active && b) || c >= array.size) {
                     FAIL(ERR_ARR);
                 }
-                
+
                 REG_A() = vm.memory[array.offset + c];
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_STA): {
                 reg_t a = REG_A(), b = REG_B();
                 if(a >= vm.index.size) FAIL(ERR_ARR);
@@ -372,33 +372,33 @@ Error interpret(VM vm) {
                 vm.memory[array.offset + b] = REG_C();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_ADD):
                 REG_A() = REG_B() + REG_C(); // Implicit mod
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_MUL):
                 REG_A() = REG_B() * REG_C();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_DIV): {
                 reg_t c = REG_C();
                 if(c == 0) FAIL(ERR_DIV);
                 REG_A() = REG_B() / c;
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_NAN):
                 REG_A() = ~(REG_B() & REG_C());
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_HLT):
                 goto finish;
-            
+
             TARGET(OP_NEW): {
                 /*
                 reg_t ident = vm.pop_free();
-                
+
                 // Allocate the new array
                 reg_t size = REG_C(), offset = vm.memory.size - vm.unused;
                 vm.index[ident] = {size, offset};
@@ -417,8 +417,6 @@ Error interpret(VM vm) {
 
                 // VM spec doesn't specify that `new 0` is invalid, so we'll
                 // specially allocate it so it takes up 1 word but is size 0.
-                printf("New before\n");
-                vm.print_state();
                 reg_t size = REG_C();
                 reg_t ident = vm.push_new();
                 reg_t offset = vm.memory.size - vm.unused;
@@ -426,25 +424,19 @@ Error interpret(VM vm) {
                 vm.alloc_memory(size);
                 vm.memory.clear(offset, size);
                 REG_B() = ident; // Store the new array index in B
-                printf("New after\n");
-                vm.print_state();
                 DISPATCH_GOTO();
             }
 
             TARGET(OP_DEL): {
-                printf("Del before\n");
-                vm.print_state();
                 reg_t ident = REG_C();
                 if(ident == 0) FAIL(ERR_DEL); // Attempted to delete the program
                 if(ident >= vm.index.size) FAIL(ERR_DEL);
-                
+
                 auto array = vm.index[ident];
                 if(!array.is_active) FAIL(ERR_DEL); // Inactive array
 
                 vm.shrink_hole(array.offset, array.size);
                 vm.push_free(ident);
-                printf("Del after\n");
-                vm.print_state();
                 DISPATCH_GOTO();
             }
 
@@ -476,11 +468,10 @@ Error interpret(VM vm) {
                         vm.grow_program(array.size);
                         array = vm.index[ident]; // Refresh
                     }
-                    
+
                     // Assign it
                     vm.progsize = array.size;
                     vm.memory.move(0, array.offset, array.size);
-                    printf("PC=%u\n", REG_C());
                 }
                 vm.pc = REG_C();
                 DISPATCH_GOTO();
@@ -489,13 +480,13 @@ Error interpret(VM vm) {
             TARGET(OP_LDI):
                 REG_I() = IMM();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_x14):
             TARGET(OP_x15):
                 printf("PC=%u %s\n", vm.pc - 1, opname(cur));
                 FAIL(ERR_INV);
         }
-        
+
         // Fall-through if using switch
         FAIL(ERR_INV);
     } while(vm.pc < vm.progsize);
@@ -550,7 +541,7 @@ int main(int argc, char *argv[]) {
         {0} // Registers
     };
     vm.set_next(255, 0);
-    
+
     Error err = interpret(vm);
     if(err) {
         fprintf(stderr, "ERR_%s\n", errname(err));

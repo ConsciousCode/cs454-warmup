@@ -122,13 +122,8 @@ struct Page {
     // Large objects can never be in a freelist so we can store the size here{
     Page *next; // May be garbage if not in a freelist
 
-    union {
-        struct {
-            uint16_t nslots; // How many slots are in this size class
-            uint16_t used; // How many slots are currently used
-        };
-        uint32_t lgob_size;
-    };
+    uint16_t nslots; // How many slots are in this size class
+    uint16_t used; // How many slots are currently used
 
     uint16_t szclass;
     uint16_t fullmask; // Which bitmaps are full (contain no free slots)
@@ -137,13 +132,12 @@ struct Page {
     uint32_t data[];
 
     Page(uint32_t sz) {
+        next = nullptr;
         szclass = sz;
         nslots = SZ(sz)? (PAGE - offsetof(Page, data))/SZ(sz) : 0;
         used = 0;
         fullmask = 0;
         std::memset(bitmap, 0, sizeof(bitmap));
-        // Only meaningful within a freelist, may be garbage
-        //next = nullptr;
     }
 
     void set_free(word_t slot) {

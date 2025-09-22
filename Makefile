@@ -1,6 +1,6 @@
 CC = g++
-CFLAGS = -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DUSE_COMPUTED -g
-WHICH = try4.cpp
+CFLAGS = -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DUSE_COMPUTED -O3
+WHICH = try.cpp
 
 um: $(WHICH)
 	$(CC) $(CFLAGS) -o $@ $^
