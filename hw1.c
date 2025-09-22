@@ -172,18 +172,18 @@ Error interpret(VM vm) {
                 REG_A() = REG_C()? REG_B() : REG_A();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_LDA): {
                 reg_t b = REG_B(), c = REG_C();
                 if(b >= vm.arrays.size) FAIL(ERR_ARR);
 
                 Array array = INDEX(Array, vm.arrays, b);
                 if(/*array.data == NULL || */ c >= array.size) FAIL(ERR_ARR);
-                
+
                 REG_A() = INDEX(reg_t, array, c);
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_STA): {
                 reg_t a = REG_A(), b = REG_B();
                 if(a >= vm.arrays.size) FAIL(ERR_ARR);
@@ -194,29 +194,29 @@ Error interpret(VM vm) {
                 INDEX(reg_t, array, b) = REG_C();
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_ADD):
                 REG_A() = REG_B() + REG_C(); // Implicit mod
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_MUL):
                 REG_A() = REG_B() * REG_C();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_DIV): {
                 reg_t c = REG_C();
                 if(c == 0) FAIL(ERR_DIV);
                 REG_A() = REG_B() / c;
                 DISPATCH_GOTO();
             }
-            
+
             TARGET(OP_NAN):
                 REG_A() = ~(REG_B() & REG_C());
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_HLT):
                 goto finish;
-            
+
             TARGET(OP_NEW): {
                 reg_t index = vm.free;
                 if(index) {
@@ -235,7 +235,7 @@ Error interpret(VM vm) {
                     vm.free = index + 1;
                     link_freelist((Freelist *)vm.arrays.data, vm.free, size - 1);
                 }
-                
+
                 // Allocate the new array
                 reg_t size = REG_C();
                 INDEX(Array, vm.arrays, index) = (Array){
@@ -249,12 +249,12 @@ Error interpret(VM vm) {
             TARGET(OP_DEL): {
                 reg_t ident = REG_C();
                 if(ident == 0) FAIL(ERR_DEL); // Attempted to delete the program
-                
+
                 Freelist *freearr = &INDEX(Freelist, vm.arrays, ident);
                 free(freearr->data);
-                *freearr = (Freelist){ 
-                    .next = vm.free, 
-                    .data = NULL 
+                *freearr = (Freelist){
+                    .next = vm.free,
+                    .data = NULL
                 };
                 vm.free = ident;
                 DISPATCH_GOTO();
@@ -286,7 +286,7 @@ Error interpret(VM vm) {
 
                     // Free the current program
                     free(vm.prog.data);
-                    
+
                     // Copy the program data
                     reg_t size = origin.size;
                     void *data = malloc(size * sizeof(reg_t));
@@ -305,12 +305,12 @@ Error interpret(VM vm) {
             TARGET(OP_LDI):
                 REG_I() = IMM();
                 DISPATCH_GOTO();
-            
+
             TARGET(OP_x14):
             TARGET(OP_x15):
                 FAIL(ERR_INV);
         }
-        
+
         // Fall-through if using switch
         FAIL(ERR_INV);
     } while(vm.pc < vm.prog.size);
@@ -338,7 +338,7 @@ int main(int argc, char *argv[]) {
     size_t size = ftell(fp);
     fseek(fp, 0, SEEK_SET);
 
-    reg_t *data = malloc(size);
+    reg_t *data = (reg_t *)malloc(size);
 
     for(size_t i = 0; i < size / sizeof(reg_t); ++i) {
         uint8_t buf[4];
@@ -352,7 +352,7 @@ int main(int argc, char *argv[]) {
     fclose(fp);
 
     Array prog = {
-        .size = size / sizeof(reg_t),
+        .size = (reg_t)(size / sizeof(reg_t)),
         .data = data
     };
     Array arrays = {
@@ -366,7 +366,9 @@ int main(int argc, char *argv[]) {
     VM vm = {
         .free = 1,
         .prog = prog,
-        .arrays = arrays
+        .arrays = arrays,
+        .pc = 0,
+        .registers = {0}
     };
     Error err = interpret(vm);
     if(err) {
